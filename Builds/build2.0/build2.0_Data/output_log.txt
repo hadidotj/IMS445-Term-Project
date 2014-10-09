@@ -1,0 +1,64 @@
+Initialize engine version: 4.5.4f1 (e036f44c54c9)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: Intel(R) HD Graphics 4000 (ID=0x166)
+    Vendor:   Intel
+    VRAM:     32 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Aaron\Dropbox\fallsemester2014\IMS445\Final_Project\IMS445-Term-Project\Builds\build2.0\build2.0_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Aaron\Dropbox\fallsemester2014\IMS445\Final_Project\IMS445-Term-Project\Builds\build2.0\build2.0_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Aaron\Dropbox\fallsemester2014\IMS445\Final_Project\IMS445-Term-Project\Builds\build2.0\build2.0_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Aaron\Dropbox\fallsemester2014\IMS445\Final_Project\IMS445-Term-Project\Builds\build2.0\build2.0_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Aaron\Dropbox\fallsemester2014\IMS445\Final_Project\IMS445-Term-Project\Builds\build2.0\build2.0_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading C:\Users\Aaron\Dropbox\fallsemester2014\IMS445\Final_Project\IMS445-Term-Project\Builds\build2.0\build2.0_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
+- Completed reload, in  0.137 seconds
+desktop: 1920x1080 60Hz; virtual: 5760x1620 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+UnloadTime: 0.396644 ms
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 90.
+Total: 0.999762 ms (FindLiveObjects: 0.007244 ms CreateObjectMapping: 0.010866 ms MarkObjects: 0.152137 ms  DeleteObjects: 0.012074 ms)
+
+UnloadTime: 0.328424 ms
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 92.
+Total: 0.971990 ms (FindLiveObjects: 0.007244 ms CreateObjectMapping: 0.010866 ms MarkObjects: 0.125573 ms  DeleteObjects: 0.010866 ms)
+
+UnloadTime: 0.251147 ms
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 90.
+Total: 0.599495 ms (FindLiveObjects: 0.005433 ms CreateObjectMapping: 0.007244 ms MarkObjects: 0.094180 ms  DeleteObjects: 0.007848 ms)
+
+UnloadTime: 0.254770 ms
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 92.
+Total: 0.662885 ms (FindLiveObjects: 0.006037 ms CreateObjectMapping: 0.007848 ms MarkObjects: 0.095991 ms  DeleteObjects: 0.007244 ms)
+
+UnloadTime: 0.329027 ms
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 91.
+Total: 1.031155 ms (FindLiveObjects: 0.007244 ms CreateObjectMapping: 0.011470 ms MarkObjects: 0.133422 ms  DeleteObjects: 0.010263 ms)
+
+UnloadTime: 0.237866 ms
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 92.
+Total: 0.612173 ms (FindLiveObjects: 0.005433 ms CreateObjectMapping: 0.007244 ms MarkObjects: 0.098406 ms  DeleteObjects: 0.007848 ms)
+
+WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
+UnloadTime: 0.499277 ms
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 12584.
+Total: 2.786776 ms (FindLiveObjects: 0.875395 ms CreateObjectMapping: 0.092369 ms MarkObjects: 0.650811 ms  DeleteObjects: 0.495655 ms)
+
+Platform assembly: C:\Users\Aaron\Dropbox\fallsemester2014\IMS445\Final_Project\IMS445-Term-Project\Builds\build2.0\build2.0_Data\Managed\Boo.Lang.dll (this message is harmless)
+Platform assembly: C:\Users\Aaron\Dropbox\fallsemester2014\IMS445\Final_Project\IMS445-Term-Project\Builds\build2.0\build2.0_Data\Managed\System.dll (this message is harmless)
+WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
