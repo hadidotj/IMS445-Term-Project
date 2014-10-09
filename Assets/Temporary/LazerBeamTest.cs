@@ -8,7 +8,7 @@ public class LazerBeamTest : MonoBehaviour {
 	void Update () {
 		if(timePassed <= 0.0f) {
 			timePassed = 1.0f;
-			LazerBeam.CreateLazerBeam(transform.position, transform.rotation, myColor);
+			LazerBeam.CreateLazerBeam(transform.position, transform.rotation, myColor, gameObject);
 		}
 
 		timePassed -= Time.deltaTime;
