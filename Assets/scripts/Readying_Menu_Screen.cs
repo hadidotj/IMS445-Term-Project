@@ -8,8 +8,11 @@ public class Readying_Menu_Screen : MonoBehaviour {
 
 	void OnGUI(){
 		GUI.DrawTexture (new Rect(0,0,Screen.width,Screen.height),background);
-		if(!ready && GUI.Button(new Rect(Screen.width/2-90,Screen.height/2+175,180,65),"Return")){
-			Application.LoadLevel(1);
+		if(!ready && GUI.Button(new Rect(Screen.width/2-90+250,Screen.height/2+175,180,65),"Return")){
+			Application.LoadLevel("main_menu");
+		}
+		if(!ready && GUI.Button(new Rect(Screen.width/2-250-90,Screen.height/2+175,180,65),"Play Protoype.")){
+			Application.LoadLevel("LazerBeamTest");
 		}
 	}
 
