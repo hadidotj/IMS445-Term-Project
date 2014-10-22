@@ -24,7 +24,12 @@ public class JoinMenu : AbstractMenu {
 		GUI.backgroundColor = Color.green;
 		Rect connectButtonRect = new Rect(Screen.width-connect.width-10.0f, Screen.height-connect.height-10.0f, connect.width, connect.height);
 		if(GUI.Button (connectButtonRect, connect)){
-			Debug.Log("Connect TO Server!");
+			try {
+				NetworkManager.ConnectToServer(joinIP);
+			} catch(UnityException e) {
+				Debug.Log("CAUGHT EXECPTION!");
+			}
+			ButtonPressed("MainMenu");
 		} else if(currentHoveredOver != 0 && connectButtonRect.Contains(mouse)) {
 			currentHoveredOver = 0;
 			ButtonHover();

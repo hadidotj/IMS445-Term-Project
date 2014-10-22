@@ -4,8 +4,8 @@ using System.Collections;
 public enum NetworkChannel { GAMEPLAY, PROTOCOL, OTHER };
 
 public class NetworkManager : MonoBehaviour {
-	public static readonly int DEFAULT_MAX_CONNECTIONS = 10;
-	public static readonly int DEFAULT_PORT = 28965;
+	public const int DEFAULT_MAX_CONNECTIONS = 10;
+	public const int DEFAULT_PORT = 28965;
 
 	public static void CreateServer(int maxConnections = DEFAULT_MAX_CONNECTIONS, int port = DEFAULT_PORT) {
 		Network.InitializeSecurity();
@@ -18,13 +18,12 @@ public class NetworkManager : MonoBehaviour {
 		// Switch menu to loading menu (state=contacting server)
 	}
 
-	public static void SetNetworkChannel(NetworkChannel channel) {
-		Network.SetSendingEnabled(channel, false);
-		Network.SetReceivingEnabled(channel, false);
+	public static void SetNetworkChannel(NetworkChannel channel, bool enable) {
+		Network.SetSendingEnabled((int)channel, enable);
 	}
 
 	public void OnFailedToConnect(NetworkConnectionError error) {
-		// Switch menu to main menu. Show disconnected error.
+		MenuManager.DisplayDialogBox("Failed to connect to server!");
 	}
 
 	public void OnServerInitialized() {

@@ -3,6 +3,8 @@ using System.Collections;
 
 public class MenuManager : MonoBehaviour {
 
+	private static string dialogMsg = null;
+
 	public AudioClip hoverSound;
 	public AudioClip clickSound;
 	public AbstractMenu[] menus;
@@ -20,7 +22,12 @@ public class MenuManager : MonoBehaviour {
 	}
 
 	public void OnGUI() {
-		if(activeMenu != null) {
+		if(dialogMsg != null) {
+			GUI.Box(new Rect(Screen.width/2.0f-100.0f, Screen.height/2.0f-50.0f,200.0f,100.0f), dialogMsg);
+			if(GUI.Button(new Rect(Screen.width/2.0f-75.0f, Screen.height/2.0f-50.0f+100.0f-30.0f, 150.0f, 25.0f), "OK")) {
+				dialogMsg = null;
+			}
+		} else if(activeMenu != null) {
 			activeMenu.Draw();
 		}
 	}
@@ -39,5 +46,9 @@ public class MenuManager : MonoBehaviour {
 		}
 
 		Debug.LogError("Could not find menu with name '" + name + "'! Called from menu: " + activeMenu.name);
+	}
+
+	public static void DisplayDialogBox(string msg) {
+		dialogMsg = msg;
 	}
 }
