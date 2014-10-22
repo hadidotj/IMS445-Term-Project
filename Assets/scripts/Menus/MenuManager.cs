@@ -10,6 +10,7 @@ public class MenuManager : MonoBehaviour {
 	private AbstractMenu activeMenu = null;
 
 	public void Start() {
+		Application.runInBackground = true;
 		if(menus != null && menus.Length > 0 && menus[0] != null) {
 			activeMenu = menus[0];
 			foreach(AbstractMenu menu in menus) {
