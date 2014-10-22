@@ -6,12 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/intro.unity
-  - enabled: 1
     path: Assets/Scenes/main_menu.unity
   - enabled: 1
-    path: Assets/Scenes/options_menu.unity
-  - enabled: 1
-    path: Assets/Scenes/getting_ready_to_play.unity
-  - enabled: 1
-    path: Assets/Temporary/LazerBeamTest.unity
+    path: Assets/Scenes/Ice_Cap.unity

@@ -20,7 +20,7 @@ public class CreateMenu : AbstractMenu {
 		GUI.backgroundColor = Color.blue;
 		Rect connectButtonRect = new Rect(Screen.width-create.width-10.0f, Screen.height-create.height-10.0f, create.width, create.height);
 		if(GUI.Button (connectButtonRect, create)){
-			Debug.Log("Create new server!");
+			NetworkManager.CreateServer();
 		} else if(currentHoveredOver != 0 && connectButtonRect.Contains(mouse)) {
 			currentHoveredOver = 0;
 			ButtonHover();

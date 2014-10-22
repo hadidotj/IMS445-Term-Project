@@ -3,15 +3,18 @@ using System.Collections;
 
 public class MenuManager : MonoBehaviour {
 
-	private static string dialogMsg = null;
+	public static MenuManager instance;
 
 	public AudioClip hoverSound;
 	public AudioClip clickSound;
 	public AbstractMenu[] menus;
 
+	private string dialogMsg = null;
 	private AbstractMenu activeMenu = null;
-
+	
 	public void Start() {
+		instance = this;
+		GameObject.DontDestroyOnLoad(gameObject);
 		Application.runInBackground = true;
 		if(menus != null && menus.Length > 0 && menus[0] != null) {
 			activeMenu = menus[0];
@@ -32,9 +35,16 @@ public class MenuManager : MonoBehaviour {
 		}
 	}
 
+	public static void Open_Menu(string name) {
+		instance.OpenMenu(name);
+	}
+
 	public void OpenMenu(string name) {
 		if(name == "QUIT") {
 			Application.Quit();
+			return;
+		} else if(name == "CLOSE") {
+			activeMenu = null;
 			return;
 		}
 
@@ -49,6 +59,6 @@ public class MenuManager : MonoBehaviour {
 	}
 
 	public static void DisplayDialogBox(string msg) {
-		dialogMsg = msg;
+		instance.dialogMsg = msg;
 	}
 }

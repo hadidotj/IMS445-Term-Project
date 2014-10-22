@@ -10,6 +10,8 @@ public class NetworkManager : MonoBehaviour {
 	public static void CreateServer(int maxConnections = DEFAULT_MAX_CONNECTIONS, int port = DEFAULT_PORT) {
 		Network.InitializeSecurity();
 		Network.InitializeServer(maxConnections, port, !Network.HavePublicAddress());
+		MenuManager.Open_Menu("CLOSE");
+		Application.LoadLevel("Ice_Cap");
 		// Switch menu to loading menu (state=setting up)
 	}
 
