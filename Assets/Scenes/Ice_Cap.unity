@@ -125,6 +125,10 @@ Prefab:
       propertyPath: movement.maxBackwardsSpeed
       value: 30
       objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: b55bdf2aa4cc3aa4cb7a308e33d17ed0, type: 2}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b55bdf2aa4cc3aa4cb7a308e33d17ed0, type: 2}
   m_RootGameObject: {fileID: 429497573}
@@ -203,9 +207,10 @@ GameObject:
   - 114: {fileID: 429497577}
   - 114: {fileID: 429497576}
   - 114: {fileID: 429497575}
+  - 114: {fileID: 429497582}
   m_Layer: 0
   m_Name: Red_P1
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -365,6 +370,17 @@ CharacterController:
   m_SkinWidth: .0500000007
   m_MinMoveDistance: 0
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &429497582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 429497573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 876717a9725bb914abe43b3a24fffc66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &503858294
 GameObject:
   m_ObjectHideFlags: 0
@@ -376,6 +392,9 @@ GameObject:
   - 33: {fileID: 503858297}
   - 23: {fileID: 503858296}
   - 114: {fileID: 503858295}
+  - 65: {fileID: 503858300}
+  - 54: {fileID: 503858299}
+  - 114: {fileID: 503858301}
   m_Layer: 4
   m_Name: Nighttime Simple Water
   m_TagString: Untagged
@@ -436,6 +455,44 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
+--- !u!54 &503858299
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 503858294}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+--- !u!65 &503858300
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 503858294}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9999994, y: 0, z: 1.99999893}
+  m_Center: {x: -3.27825575e-07, y: 0, z: 3.27825575e-07}
+--- !u!114 &503858301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 503858294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5834e3c786fae524bb99862d5b29d360, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &627386008
 GameObject:
   m_ObjectHideFlags: 0
