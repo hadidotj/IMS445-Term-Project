@@ -34,5 +34,10 @@ public class Player_Controler : MonoBehaviour {
 		//if in base
 			//addCharge(5.0);
 
+		//if there is no charge then no ability
+		if(charge <= 0.0) {
+			PowerUp_Controler pc = (PowerUp_Controler) gameObject.GetComponent("PowerUp_Controler");
+			pc.noMode();
+		}
 	}
 }
