@@ -171,7 +171,6 @@ GameObject:
   - 114: {fileID: 822459051}
   - 114: {fileID: 822459053}
   - 114: {fileID: 822459052}
-  - 114: {fileID: 822459055}
   - 114: {fileID: 822459054}
   m_Layer: 0
   m_Name: Menu_Manager
@@ -238,7 +237,6 @@ MonoBehaviour:
   - {fileID: 822459051}
   - {fileID: 822459053}
   - {fileID: 822459052}
-  - {fileID: 822459055}
 --- !u!114 &822459051
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -291,17 +289,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7423833afa8c70f4a804edfae3ce275e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &822459055
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 822459047}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc7026b7f2d824647b134820da7c7ed1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  header: {fileID: 2800000, guid: c3d6f5a8bf9008d4b8b3de9a7c3f459c, type: 3}
-  back: {fileID: 2800000, guid: 6793f3712c576a74982ab66a64267984, type: 3}
-  create: {fileID: 2800000, guid: 3a6974799c47609418b9ea025990587c, type: 3}
