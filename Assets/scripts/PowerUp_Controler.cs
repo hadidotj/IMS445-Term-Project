@@ -7,12 +7,10 @@ public class PowerUp_Controler : MonoBehaviour {
 	private float waterDuration = 5.0f;
 	private float waterCurrent = 0.0f;
 
-	// Use this for initialization
 	void Start () {
 	
 	}
-	
-	// Update is called once per frame
+
 	void Update () {
 	 	switch(mode) {
 			case 1:
