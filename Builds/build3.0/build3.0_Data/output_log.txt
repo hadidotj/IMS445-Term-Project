@@ -1,0 +1,22 @@
+Initialize engine version: 4.5.3f3 (fca41a4fabea)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA NVS 4200M     (ID=0x1056)
+    Vendor:   NVIDIA
+    VRAM:     467 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Builds\build3.0\build3.0_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Builds\build3.0\build3.0_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Builds\build3.0\build3.0_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Builds\build3.0\build3.0_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Builds\build3.0\build3.0_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Builds\build3.0\build3.0_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Builds\build3.0\build3.0_Data\Managed\Assembly-UnityScript-firstpass.dll (this message is harmless)
+Loading C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Builds\build3.0\build3.0_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Builds\build3.0\build3.0_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Builds\build3.0\build3.0_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
+- Completed reload, in  0.065 seconds
+desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
