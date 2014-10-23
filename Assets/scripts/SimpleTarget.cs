@@ -5,10 +5,12 @@ public class SimpleTarget : MonoBehaviour {
 
 	private int hitTimes = 0;
 	private bool enabled = false;
+	// This is wrong, but I don't know how to access the script.
 	Search s;
 
 	void start(){
-		gameObject.SetActive(false);
+		// They  still don't start disabled for some reason
+		gameObject.SetActive(false); 
 	}
 
 	public void LazerBeamHit(GameObject owner) {
@@ -18,6 +20,8 @@ public class SimpleTarget : MonoBehaviour {
 			hitTimes++;
 			if(hitTimes >= 1) {
 				disableTarget();
+				// This is the wrong way of doing it (s doesn't exist really), 
+				// and it doesn't access the script to add points/enable new target.
 				s.addPoint(t.teamName);
 				s.enableNextTarget(t.teamName);
 			}

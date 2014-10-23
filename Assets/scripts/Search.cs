@@ -14,7 +14,8 @@ public class Search : MonoBehaviour {
 	void Start () {
 		redTargets = GameObject.FindGameObjectsWithTag("RedTarget");
 		greenTargets = GameObject.FindGameObjectsWithTag("GreenTarget");
-		
+
+		// The game doesn't like this code
 		redTargets[0].GetComponent<SimpleTarget>().enableTarget();
 		greenTargets[0].GetComponent<SimpleTarget>().enableTarget();
 	}
@@ -32,6 +33,7 @@ public class Search : MonoBehaviour {
 	}
 	public void enableNextTarget(string team){
 		index++;
+		// Game doesn't like this code
 		if(team.Equals("RedTeam"))
 			redTargets[index].GetComponent<SimpleTarget>().enableTarget();
 		else

@@ -20,6 +20,12 @@ public class NetworkManager : MonoBehaviour {
 		// Switch menu to loading menu (state=contacting server)
 	}
 
+	public static void DisconnectFromServer() {
+				Network.Disconnect();
+				GameObject.DestroyObject(MenuManager.instance.gameObject);
+				Application.LoadLevel("main_menu");
+	}
+
 	public static void SetNetworkChannel(NetworkChannel channel, bool enable) {
 		Network.SetSendingEnabled((int)channel, enable);
 	}
