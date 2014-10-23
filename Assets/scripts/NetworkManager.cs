@@ -19,9 +19,9 @@ public class NetworkManager : MonoBehaviour {
 	}
 
 	public static void DisconnectFromServer() {
-		Network.Disconnect();
-		GameObject.DestroyObject(MenuManager.instance.gameObject);
-		Application.LoadLevel("main_menu");
+				Network.Disconnect();
+				GameObject.DestroyObject(MenuManager.instance.gameObject);
+				Application.LoadLevel("main_menu");
 	}
 
 	public static void SetNetworkChannel(NetworkChannel channel, bool enable) {
@@ -38,7 +38,6 @@ public class NetworkManager : MonoBehaviour {
 	}
 
 	public void OnConnectedToServer() {
-		MenuManager.DisplayDialogBox(null);
 		MenuManager.Open_Menu("IngameMenu");
 		Application.LoadLevel("Ice_Cap");
 	}
