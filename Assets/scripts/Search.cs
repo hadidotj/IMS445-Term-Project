@@ -5,39 +5,51 @@ public class Search : MonoBehaviour {
 
 	private int redScore = 0;
 	private int greenScore = 0;
-	private int index = 0;
 
-	private GameObject[] redTargets;
-	private GameObject[] greenTargets;
+	private ArrayList redTargets = new ArrayList();
+	private ArrayList greenTargets = new ArrayList();
 
 	// Use this for initialization
 	void Start () {
-		redTargets = GameObject.FindGameObjectsWithTag("RedTarget");
-		greenTargets = GameObject.FindGameObjectsWithTag("GreenTarget");
+		GameObject[] redTargetsArr = GameObject.FindGameObjectsWithTag("RedTarget");
+		GameObject[] greenTargetsArr = GameObject.FindGameObjectsWithTag("GreenTarget");
 
-		// The game doesn't like this code
-		redTargets[0].GetComponent<SimpleTarget>().enableTarget();
-		greenTargets[0].GetComponent<SimpleTarget>().enableTarget();
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		checkEndGame();
+		// Disable all targets
+		foreach(GameObject redTarget in redTargetsArr) {
+			redTargets.Add(redTarget);
+			redTarget.SetActive(false);
+			redTarget.GetComponent<SimpleTarget>().s = this;
+		}
+
+		foreach(GameObject greenTarget in greenTargetsArr) {
+			greenTargets.Add(greenTarget);
+			greenTarget.SetActive(false);
+			greenTarget.GetComponent<SimpleTarget>().s = this;
+		}
+
+		// Then enable the first target for each
+		redTargetsArr[0].SetActive(true);
+		greenTargetsArr[0].SetActive(true);
 	}
 
-	public void addPoint(string team){
-		if (team.Equals ("RedTeam"))
+	public void TargetDestroyed(string team) {
+		if(team.Equals("RedTeam")) {
 			redScore++;
-		else
+			greenTargets.RemoveAt(0);
+			if(greenTargets.Count <= 0) {
+				MenuManager.DisplayDialogBox("Red Team Wins!", "IngameMenu");
+			} else {
+				((GameObject) greenTargets[0]).SetActive(true);
+			}
+		} else {
 			greenScore++;
-	}
-	public void enableNextTarget(string team){
-		index++;
-		// Game doesn't like this code
-		if(team.Equals("RedTeam"))
-			redTargets[index].GetComponent<SimpleTarget>().enableTarget();
-		else
-			greenTargets[index].GetComponent<SimpleTarget>().enableTarget();
+			redTargets.RemoveAt(0);
+			if(redTargets.Count <= 0) {
+				MenuManager.DisplayDialogBox("Green Team Wins!", "IngameMenu");
+			} else {
+				((GameObject) redTargets[0]).SetActive(true);
+			}
+		}
 	}
 
 	public int getScore(string team){
@@ -45,11 +57,5 @@ public class Search : MonoBehaviour {
 			return redScore;
 		else
 			return greenScore;
-	}
-	private void checkEndGame(){
-		if(redScore >= 5)
-			print ("Red Team Wins!");
-		else if(greenScore >= 5)
-			print ("Green Team Wins!");
 	}
 }
