@@ -30,16 +30,8 @@ public class MouseLook : MonoBehaviour {
 
 	float rotationY = 0F;
 
-	private bool disableInput = false;
-
 	void Update ()
 	{
-		if(Input.GetKeyDown(KeyCode.Escape)) {
-			disableInput = !disableInput;
-		}
-		if(disableInput) {
-			return;
-		}
 		if (axes == RotationAxes.MouseXAndY)
 		{
 			float rotationX = transform.localEulerAngles.y + Input.GetAxis("Mouse X") * sensitivityX;

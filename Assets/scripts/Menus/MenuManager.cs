@@ -10,6 +10,7 @@ public class MenuManager : MonoBehaviour {
 	public AbstractMenu[] menus;
 
 	private string dialogMsg = null;
+	private string dismissMenu = null;
 	private AbstractMenu activeMenu = null;
 	
 	public void Start() {
@@ -27,8 +28,9 @@ public class MenuManager : MonoBehaviour {
 	public void OnGUI() {
 		if(dialogMsg != null) {
 			GUI.Box(new Rect(Screen.width/2.0f-100.0f, Screen.height/2.0f-50.0f,200.0f,100.0f), dialogMsg);
-			if(GUI.Button(new Rect(Screen.width/2.0f-75.0f, Screen.height/2.0f-50.0f+100.0f-30.0f, 150.0f, 25.0f), "OK")) {
-				dialogMsg = null;
+			if(dismissMenu != null && GUI.Button(new Rect(Screen.width/2.0f-75.0f, Screen.height/2.0f-50.0f+100.0f-30.0f, 150.0f, 25.0f), "OK")) {
+				OpenMenu(dismissMenu);
+				dismissMenu = dialogMsg = null;
 			}
 		} else if(activeMenu != null) {
 			activeMenu.Draw();
@@ -58,7 +60,8 @@ public class MenuManager : MonoBehaviour {
 		Debug.LogError("Could not find menu with name '" + name + "'! Called from menu: " + activeMenu.name);
 	}
 
-	public static void DisplayDialogBox(string msg) {
+	public static void DisplayDialogBox(string msg, string dismissMenu = null) {
 		instance.dialogMsg = msg;
+		instance.dismissMenu = dismissMenu;
 	}
 }

@@ -10,14 +10,12 @@ public class NetworkManager : MonoBehaviour {
 	public static void CreateServer(int maxConnections = DEFAULT_MAX_CONNECTIONS, int port = DEFAULT_PORT) {
 		Network.InitializeSecurity();
 		Network.InitializeServer(maxConnections, port, !Network.HavePublicAddress());
-		MenuManager.Open_Menu("IngameMenu");
-		Application.LoadLevel("Ice_Cap");
-		// Switch menu to loading menu (state=setting up)
+		MenuManager.DisplayDialogBox("Starting up server...");
 	}
 
 	public static void ConnectToServer(string serverIP, int port = DEFAULT_PORT) {
 		Network.Connect(serverIP, port);
-		// Switch menu to loading menu (state=contacting server)
+		MenuManager.DisplayDialogBox("Trying to connect...");
 	}
 
 	public static void DisconnectFromServer() {
@@ -31,15 +29,22 @@ public class NetworkManager : MonoBehaviour {
 	}
 
 	public void OnFailedToConnect(NetworkConnectionError error) {
-		MenuManager.DisplayDialogBox("Failed to connect to server!");
+		MenuManager.DisplayDialogBox("Failed to connect to server!", "JoinMenu");
 	}
 
 	public void OnServerInitialized() {
-		// Server only method. Switch menu to loading menu (state=loading)
+		MenuManager.Open_Menu("IngameMenu");
+		Application.LoadLevel("Ice_Cap");
 	}
 
 	public void OnConnectedToServer() {
-		// Client only method. Switch menu to loading menu (state=syncing). Request current level RPC
+		MenuManager.DisplayDialogBox(null);
+		MenuManager.Open_Menu("IngameMenu");
+		Application.LoadLevel("Ice_Cap");
+	}
+
+	public void OnLevelWasLoaded(int level) {
+		MenuManager.DisplayDialogBox(null);
 	}
 
 	[RPC]
