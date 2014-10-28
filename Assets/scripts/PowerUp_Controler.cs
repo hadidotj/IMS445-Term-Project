@@ -7,6 +7,7 @@ public class PowerUp_Controler : MonoBehaviour {
 	private float waterDuration = 5.0f;
 	private float waterCurrent = 0.0f;
 	private Transform graphic;
+//	private CharacterMotor chMotor;
 
 	// Use this for initialization
 	void Start () {
@@ -18,10 +19,13 @@ public class PowerUp_Controler : MonoBehaviour {
 		}
 		// name = gameObject.transform.GetChild (i).name;
 		graphic = gameObject.transform.GetChild (i);
+
+//		CharacterMotor ch = GetComponent<CharacterMotor>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
+//		chMotor.movement.maxForwardSpeed = 30.0f; // the default
 	 	switch(mode) {
 			case 1:
 				//when firing them both cost 1.5 the ammo
@@ -43,6 +47,7 @@ public class PowerUp_Controler : MonoBehaviour {
 				break;
 			case 4:
 				//double the speed rate
+//				chMotor.movement.maxForwardSpeed *= 2.0f;
 				break;
 			default:
 				break;
