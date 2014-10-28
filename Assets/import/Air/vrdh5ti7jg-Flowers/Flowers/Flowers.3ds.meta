@@ -1,0 +1,132 @@
+fileFormatVersion: 2
+guid: 864577a0f1ef8134c9b1d783e706c4dd
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Bonny_Cl
+    100002: Colorful
+    100004: //RootNode
+    100006: Multicol
+    100008: Orange_S
+    100010: Pink_Fri
+    100012: Primrose
+    100014: Red_Flow
+    100016: Red_Rose
+    100018: Small_Bl
+    100020: Small_Mu
+    100022: Sow_This
+    100024: White_Fl
+    100026: Yellow_F
+    100028: Young_Tu
+    400000: Bonny_Cl
+    400002: Colorful
+    400004: //RootNode
+    400006: Multicol
+    400008: Orange_S
+    400010: Pink_Fri
+    400012: Primrose
+    400014: Red_Flow
+    400016: Red_Rose
+    400018: Small_Bl
+    400020: Small_Mu
+    400022: Sow_This
+    400024: White_Fl
+    400026: Yellow_F
+    400028: Young_Tu
+    2300000: Bonny_Cl
+    2300002: Colorful
+    2300004: Multicol
+    2300006: Orange_S
+    2300008: Pink_Fri
+    2300010: Primrose
+    2300012: Red_Flow
+    2300014: Red_Rose
+    2300016: Small_Bl
+    2300018: Small_Mu
+    2300020: Sow_This
+    2300022: White_Fl
+    2300024: Yellow_F
+    2300026: Young_Tu
+    3300000: Bonny_Cl
+    3300002: Colorful
+    3300004: Multicol
+    3300006: Orange_S
+    3300008: Pink_Fri
+    3300010: Primrose
+    3300012: Red_Flow
+    3300014: Red_Rose
+    3300016: Small_Bl
+    3300018: Small_Mu
+    3300020: Sow_This
+    3300022: White_Fl
+    3300024: Yellow_F
+    3300026: Young_Tu
+    4300000: Primrose
+    4300002: Bonny_Cl
+    4300004: Colorful
+    4300006: Red_Flow
+    4300008: Sow_This
+    4300010: Multicol
+    4300012: Orange_S
+    4300014: Pink_Fri
+    4300016: Red_Rose
+    4300018: Small_Bl
+    4300020: Small_Mu
+    4300022: White_Fl
+    4300024: Yellow_F
+    4300026: Young_Tu
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .100000001
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
