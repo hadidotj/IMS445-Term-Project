@@ -166,6 +166,7 @@ GameObject:
   - 4: {fileID: 400018}
   - 54: {fileID: 5400000}
   - 65: {fileID: 6500000}
+  - 114: {fileID: 11400002}
   m_Layer: 0
   m_Name: Fire_PowerUp_Statue
   m_TagString: Untagged
@@ -849,6 +850,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!95 &9500002
 Animator:
   serializedVersion: 3
@@ -863,6 +865,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!108 &10800000
 Light:
   m_ObjectHideFlags: 1
@@ -1189,6 +1192,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a95e7d06fbb8e4a4aa3bf91166c1cc9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c91b901211d657b4da5c87a862af490b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  powerNum: 1
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

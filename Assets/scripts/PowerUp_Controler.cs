@@ -16,7 +16,6 @@ public class PowerUp_Controler : MonoBehaviour {
 	void Update () {
 	 	switch(mode) {
 			case 1:
-				//create the second wepon. 
 				//when firing them both cost 1.5 the ammo
 				break;
 			case 2:
@@ -48,6 +47,10 @@ public class PowerUp_Controler : MonoBehaviour {
 		return false;
 	}
 
+	public int getMode() {
+		return mode;
+	}
+
 	private void changeMode(int i) {
 		mode = i;
 	}
@@ -66,9 +69,5 @@ public class PowerUp_Controler : MonoBehaviour {
 
 	public void airMode() {
 		changeMode(4);
-	}
-
-	public int getMode() {
-		return mode;
 	}
 }
