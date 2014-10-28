@@ -2,21 +2,37 @@ Initialize engine version: 4.5.3f3 (fca41a4fabea)
 GfxDevice: creating device client; threaded=1
 Direct3D:
     Version:  Direct3D 11.0 [level 11.0]
-    Renderer: NVIDIA NVS 4200M     (ID=0x1056)
-    Vendor:   NVIDIA
-    VRAM:     467 MB
+    Renderer: Intel(R) HD Graphics 4000 (ID=0x166)
+    Vendor:   Intel
+    VRAM:     32 MB
 Begin MonoManager ReloadAssembly
-Platform assembly: C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Builds\build3.0\build3.0_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Builds\build3.0\build3.0_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Builds\build3.0\build3.0_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
-Loading C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Builds\build3.0\build3.0_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
-Platform assembly: C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Builds\build3.0\build3.0_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Builds\build3.0\build3.0_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Builds\build3.0\build3.0_Data\Managed\Assembly-UnityScript-firstpass.dll (this message is harmless)
-Loading C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Builds\build3.0\build3.0_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
-Platform assembly: C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Builds\build3.0\build3.0_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
-Loading C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Builds\build3.0\build3.0_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
-- Completed reload, in  0.065 seconds
-desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
+Platform assembly: C:\Users\Aaron\Dropbox\fallsemester2014\IMS445\Final_Project\IMS445-Term-Project\IMS445-Term-Project\Builds\build3.0\build3.0_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Aaron\Dropbox\fallsemester2014\IMS445\Final_Project\IMS445-Term-Project\IMS445-Term-Project\Builds\build3.0\build3.0_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Aaron\Dropbox\fallsemester2014\IMS445\Final_Project\IMS445-Term-Project\IMS445-Term-Project\Builds\build3.0\build3.0_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\Aaron\Dropbox\fallsemester2014\IMS445\Final_Project\IMS445-Term-Project\IMS445-Term-Project\Builds\build3.0\build3.0_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Aaron\Dropbox\fallsemester2014\IMS445\Final_Project\IMS445-Term-Project\IMS445-Term-Project\Builds\build3.0\build3.0_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Aaron\Dropbox\fallsemester2014\IMS445\Final_Project\IMS445-Term-Project\IMS445-Term-Project\Builds\build3.0\build3.0_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Aaron\Dropbox\fallsemester2014\IMS445\Final_Project\IMS445-Term-Project\IMS445-Term-Project\Builds\build3.0\build3.0_Data\Managed\Assembly-UnityScript-firstpass.dll (this message is harmless)
+Loading C:\Users\Aaron\Dropbox\fallsemester2014\IMS445\Final_Project\IMS445-Term-Project\IMS445-Term-Project\Builds\build3.0\build3.0_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Aaron\Dropbox\fallsemester2014\IMS445\Final_Project\IMS445-Term-Project\IMS445-Term-Project\Builds\build3.0\build3.0_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading C:\Users\Aaron\Dropbox\fallsemester2014\IMS445\Final_Project\IMS445-Term-Project\IMS445-Term-Project\Builds\build3.0\build3.0_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
+- Completed reload, in  0.103 seconds
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
+WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
+UnloadTime: 0.720239 ms
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 278.
+Total: 1.961491 ms (FindLiveObjects: 0.035015 ms CreateObjectMapping: 0.018111 ms MarkObjects: 0.179305 ms  DeleteObjects: 0.757066 ms)
+
+Platform assembly: C:\Users\Aaron\Dropbox\fallsemester2014\IMS445\Final_Project\IMS445-Term-Project\IMS445-Term-Project\Builds\build3.0\build3.0_Data\Managed\Boo.Lang.dll (this message is harmless)
+WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
+Platform assembly: C:\Users\Aaron\Dropbox\fallsemester2014\IMS445\Final_Project\IMS445-Term-Project\IMS445-Term-Project\Builds\build3.0\build3.0_Data\Managed\System.dll (this message is harmless)
+UnloadTime: 1.522585 ms
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 228 unused Assets to reduce memory usage. Loaded Objects now: 133.
+Total: 3.525129 ms (FindLiveObjects: 0.013281 ms CreateObjectMapping: 0.033808 ms MarkObjects: 0.120744 ms  DeleteObjects: 2.752366 ms)
+
