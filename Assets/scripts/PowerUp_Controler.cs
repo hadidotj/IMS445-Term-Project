@@ -55,6 +55,10 @@ public class PowerUp_Controler : MonoBehaviour {
 		mode = i;
 	}
 
+	public void noMode() {
+		changeMode(-1);
+	}
+
 	public void fireMode() {
 		changeMode(1);
 	}
