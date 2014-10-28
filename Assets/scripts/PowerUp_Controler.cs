@@ -6,10 +6,18 @@ public class PowerUp_Controler : MonoBehaviour {
 	private int mode = -1;
 	private float waterDuration = 5.0f;
 	private float waterCurrent = 0.0f;
+	private Transform graphic;
 
 	// Use this for initialization
 	void Start () {
-	
+		string name = gameObject.transform.GetChild (0).name;
+		int i = 0;
+		for(; i <gameObject.transform.childCount && name != "Graphics"; ++i) {
+			// increments till it finds the  the graphics componet of the fpc
+			name = gameObject.transform.GetChild (i).name;
+		}
+		// name = gameObject.transform.GetChild (i).name;
+		graphic = gameObject.transform.GetChild (i);
 	}
 	
 	// Update is called once per frame
@@ -22,9 +30,10 @@ public class PowerUp_Controler : MonoBehaviour {
 				waterCurrent += Time.deltaTime;
 				if(waterCurrent >= waterDuration) {
 					waterCurrent = 0;
-					changeMode(-1);
+					noMode();
+					graphic.renderer.enabled = true;
 				} else {
-					//set invisable
+					graphic.renderer.enabled = false;
 				}
 				break;
 			case 3:
