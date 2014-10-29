@@ -5,9 +5,11 @@ public class FireLazer : MonoBehaviour {
 	
 	public Transform fireLocation;
 	public Transform fireLocation2;
+	public float cost = 10.0f;
 	
 	public void Update () {
-		if(Input.GetMouseButtonDown(0)) {
+		if(Input.GetMouseButtonDown(0) && gameObject.GetComponent<Player_Controler>().getCharge() != 0.0) {
+			gameObject.GetComponent<Player_Controler>().subtractCharge(cost);
 			PowerUp_Controler pc = (PowerUp_Controler)gameObject.GetComponent("PowerUp_Controler");
 			if(pc.getMode() == 1) { // fire
 				LazerBeam.CreateLazerBeam(fireLocation.position, fireLocation.rotation, Color.red, gameObject);

@@ -17,6 +17,7 @@ public class LazerBeam : MonoBehaviour {
 	 * @param ownerRoot - Owner of lazer (cannot hit self, teammate (if enabled), own base (if enabled), etc
 	 */
 	public static GameObject CreateLazerBeam(Vector3 position, Quaternion rotation, Color color, GameObject ownerRoot) {
+		
 		// Create a new "Lazer"
 		GameObject beam = GameObject.CreatePrimitive(PrimitiveType.Capsule);
 		beam.name = "Lazer-Beam (" + beam.GetInstanceID() + ")";
@@ -84,6 +85,10 @@ public class LazerBeam : MonoBehaviour {
 		if(other.tag != TAG_NAME && other != ownerRoot && !other.transform.IsChildOf(ownerRoot.transform)) {
 			other.SendMessage(TRIGGER_MESSAGE, ownerRoot, SendMessageOptions.DontRequireReceiver);
 			Destroy(gameObject);
+		} else if (other.tag == "Player" && other.GetComponent<Team>().teamName != ownerRoot.GetComponent<Team>().teamName) {
+			other.GetComponent<Player_Controler>().playerHit();
+			Destroy(gameObject);
 		}
+
 	}
 }

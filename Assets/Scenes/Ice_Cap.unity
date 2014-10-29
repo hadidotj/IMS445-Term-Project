@@ -444,6 +444,7 @@ GameObject:
   - 114: {fileID: 429497576}
   - 114: {fileID: 429497575}
   - 114: {fileID: 429497582}
+  - 114: {fileID: 429497583}
   m_Layer: 0
   m_Name: Red_P1
   m_TagString: Player
@@ -504,6 +505,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fireLocation: {fileID: 1256327073}
   fireLocation2: {fileID: 0}
+  cost: 10
 --- !u!114 &429497578
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -615,6 +617,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 876717a9725bb914abe43b3a24fffc66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &429497583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 429497573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c02dabf99c341e43bd8fed779e73630, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &440964765
