@@ -1,38 +1,492 @@
-Initialize engine version: 4.5.3f3 (fca41a4fabea)
+Initialize engine version: 4.5.5f1 (7684ad0c5a44)
 GfxDevice: creating device client; threaded=1
 Direct3D:
     Version:  Direct3D 11.0 [level 11.0]
-    Renderer: Intel(R) HD Graphics 4000 (ID=0x166)
-    Vendor:   Intel
-    VRAM:     32 MB
+    Renderer: NVIDIA NVS 4200M     (ID=0x1056)
+    Vendor:   NVIDIA
+    VRAM:     467 MB
 Begin MonoManager ReloadAssembly
-Platform assembly: C:\Users\Aaron\Dropbox\fallsemester2014\IMS445\Final_Project\IMS445-Term-Project\IMS445-Term-Project\Builds\build3.0\build3.0_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\Users\Aaron\Dropbox\fallsemester2014\IMS445\Final_Project\IMS445-Term-Project\IMS445-Term-Project\Builds\build3.0\build3.0_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\Users\Aaron\Dropbox\fallsemester2014\IMS445\Final_Project\IMS445-Term-Project\IMS445-Term-Project\Builds\build3.0\build3.0_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
-Loading C:\Users\Aaron\Dropbox\fallsemester2014\IMS445\Final_Project\IMS445-Term-Project\IMS445-Term-Project\Builds\build3.0\build3.0_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
-Platform assembly: C:\Users\Aaron\Dropbox\fallsemester2014\IMS445\Final_Project\IMS445-Term-Project\IMS445-Term-Project\Builds\build3.0\build3.0_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\Users\Aaron\Dropbox\fallsemester2014\IMS445\Final_Project\IMS445-Term-Project\IMS445-Term-Project\Builds\build3.0\build3.0_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: C:\Users\Aaron\Dropbox\fallsemester2014\IMS445\Final_Project\IMS445-Term-Project\IMS445-Term-Project\Builds\build3.0\build3.0_Data\Managed\Assembly-UnityScript-firstpass.dll (this message is harmless)
-Loading C:\Users\Aaron\Dropbox\fallsemester2014\IMS445\Final_Project\IMS445-Term-Project\IMS445-Term-Project\Builds\build3.0\build3.0_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
-Platform assembly: C:\Users\Aaron\Dropbox\fallsemester2014\IMS445\Final_Project\IMS445-Term-Project\IMS445-Term-Project\Builds\build3.0\build3.0_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
-Loading C:\Users\Aaron\Dropbox\fallsemester2014\IMS445\Final_Project\IMS445-Term-Project\IMS445-Term-Project\Builds\build3.0\build3.0_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
-- Completed reload, in  0.103 seconds
-desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+Platform assembly: C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Builds\build3.0\build3.0_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Builds\build3.0\build3.0_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Builds\build3.0\build3.0_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Builds\build3.0\build3.0_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Builds\build3.0\build3.0_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Builds\build3.0\build3.0_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Builds\build3.0\build3.0_Data\Managed\Assembly-UnityScript-firstpass.dll (this message is harmless)
+Loading C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Builds\build3.0\build3.0_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Builds\build3.0\build3.0_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Builds\build3.0\build3.0_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
+- Completed reload, in  0.083 seconds
+desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+Initialize engine version: 4.5.5f1 (7684ad0c5a44)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA NVS 4200M     (ID=0x1056)
+    Vendor:   NVIDIA
+    VRAM:     467 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Builds\build3.0\build3.0_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Builds\build3.0\build3.0_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Builds\build3.0\build3.0_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Builds\build3.0\build3.0_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Builds\build3.0\build3.0_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Builds\build3.0\build3.0_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Builds\build3.0\build3.0_Data\Managed\Assembly-UnityScript-firstpass.dll (this message is harmless)
+Loading C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Builds\build3.0\build3.0_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Builds\build3.0\build3.0_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Builds\build3.0\build3.0_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
+- Completed reload, in  0.056 seconds
+desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
-UnloadTime: 0.720239 ms
+UnloadTime: 0.860574 ms
+System memory in use before: 28.5 MB.
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+System memory in use after: 26.1 MB.
 
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 278.
-Total: 1.961491 ms (FindLiveObjects: 0.035015 ms CreateObjectMapping: 0.018111 ms MarkObjects: 0.179305 ms  DeleteObjects: 0.757066 ms)
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 302.
+Total: 4.264102 ms (FindLiveObjects: 0.078683 ms CreateObjectMapping: 0.030789 ms MarkObjects: 0.362627 ms  DeleteObjects: 1.209137 ms)
 
-Platform assembly: C:\Users\Aaron\Dropbox\fallsemester2014\IMS445\Final_Project\IMS445-Term-Project\IMS445-Term-Project\Builds\build3.0\build3.0_Data\Managed\Boo.Lang.dll (this message is harmless)
+Platform assembly: C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Builds\build3.0\build3.0_Data\Managed\Boo.Lang.dll (this message is harmless)
 WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
-Platform assembly: C:\Users\Aaron\Dropbox\fallsemester2014\IMS445\Final_Project\IMS445-Term-Project\IMS445-Term-Project\Builds\build3.0\build3.0_Data\Managed\System.dll (this message is harmless)
-UnloadTime: 1.522585 ms
-Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+Platform assembly: C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Builds\build3.0\build3.0_Data\Managed\Boo.Lang.dll (this message is harmless)
+WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
+UnloadTime: 0.115174 ms
+System memory in use before: 28.8 MB.
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+System memory in use after: 26.3 MB.
 
-Unloading 228 unused Assets to reduce memory usage. Loaded Objects now: 133.
-Total: 3.525129 ms (FindLiveObjects: 0.013281 ms CreateObjectMapping: 0.033808 ms MarkObjects: 0.120744 ms  DeleteObjects: 2.752366 ms)
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 331.
+Total: 5.889463 ms (FindLiveObjects: 0.083244 ms CreateObjectMapping: 0.042952 ms MarkObjects: 0.485023 ms  DeleteObjects: 2.033982 ms)
+
+WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
+90
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+Player_Controler:subtractCharge(Single) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:21)
+Player_Controler:FireLazer(NetworkMessageInfo) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:76)
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[]) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\Networking.cs:408)
+Player_Controler:Update() (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:66)
+ 
+(Filename: C Line: 0)
+
+Platform assembly: C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Builds\build3.0\build3.0_Data\Managed\System.dll (this message is harmless)
+90
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+Player_Controler:subtractCharge(Single) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:21)
+Player_Controler:FireLazer(NetworkMessageInfo) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:76)
+ 
+(Filename: C Line: 0)
+
+Platform assembly: C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Builds\build3.0\build3.0_Data\Managed\System.dll (this message is harmless)
+80
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+Player_Controler:subtractCharge(Single) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:21)
+Player_Controler:FireLazer(NetworkMessageInfo) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:76)
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[]) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\Networking.cs:408)
+Player_Controler:Update() (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:66)
+ 
+(Filename: C Line: 0)
+
+80
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+Player_Controler:subtractCharge(Single) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:21)
+Player_Controler:FireLazer(NetworkMessageInfo) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:76)
+ 
+(Filename: C Line: 0)
+
+70
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+Player_Controler:subtractCharge(Single) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:21)
+Player_Controler:FireLazer(NetworkMessageInfo) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:76)
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[]) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\Networking.cs:408)
+Player_Controler:Update() (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:66)
+ 
+(Filename: C Line: 0)
+
+70
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+Player_Controler:subtractCharge(Single) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:21)
+Player_Controler:FireLazer(NetworkMessageInfo) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:76)
+ 
+(Filename: C Line: 0)
+
+60
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+Player_Controler:subtractCharge(Single) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:21)
+Player_Controler:FireLazer(NetworkMessageInfo) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:76)
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[]) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\Networking.cs:408)
+Player_Controler:Update() (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:66)
+ 
+(Filename: C Line: 0)
+
+60
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+Player_Controler:subtractCharge(Single) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:21)
+Player_Controler:FireLazer(NetworkMessageInfo) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:76)
+ 
+(Filename: C Line: 0)
+
+50
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+Player_Controler:subtractCharge(Single) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:21)
+Player_Controler:FireLazer(NetworkMessageInfo) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:76)
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[]) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\Networking.cs:408)
+Player_Controler:Update() (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:66)
+ 
+(Filename: C Line: 0)
+
+50
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+Player_Controler:subtractCharge(Single) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:21)
+Player_Controler:FireLazer(NetworkMessageInfo) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:76)
+ 
+(Filename: C Line: 0)
+
+40
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+Player_Controler:subtractCharge(Single) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:21)
+Player_Controler:FireLazer(NetworkMessageInfo) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:76)
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[]) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\Networking.cs:408)
+Player_Controler:Update() (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:66)
+ 
+(Filename: C Line: 0)
+
+40
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+Player_Controler:subtractCharge(Single) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:21)
+Player_Controler:FireLazer(NetworkMessageInfo) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:76)
+ 
+(Filename: C Line: 0)
+
+30
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+Player_Controler:subtractCharge(Single) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:21)
+Player_Controler:FireLazer(NetworkMessageInfo) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:76)
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[]) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\Networking.cs:408)
+Player_Controler:Update() (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:66)
+ 
+(Filename: C Line: 0)
+
+30
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+Player_Controler:subtractCharge(Single) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:21)
+Player_Controler:FireLazer(NetworkMessageInfo) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:76)
+ 
+(Filename: C Line: 0)
+
+20
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+Player_Controler:subtractCharge(Single) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:21)
+Player_Controler:FireLazer(NetworkMessageInfo) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:76)
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[]) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\Networking.cs:408)
+Player_Controler:Update() (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:66)
+ 
+(Filename: C Line: 0)
+
+20
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+Player_Controler:subtractCharge(Single) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:21)
+Player_Controler:FireLazer(NetworkMessageInfo) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:76)
+ 
+(Filename: C Line: 0)
+
+10
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+Player_Controler:subtractCharge(Single) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:21)
+Player_Controler:FireLazer(NetworkMessageInfo) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:76)
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[]) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\Networking.cs:408)
+Player_Controler:Update() (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:66)
+ 
+(Filename: C Line: 0)
+
+10
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+Player_Controler:subtractCharge(Single) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:21)
+Player_Controler:FireLazer(NetworkMessageInfo) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:76)
+ 
+(Filename: C Line: 0)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+Player_Controler:subtractCharge(Single) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:21)
+Player_Controler:FireLazer(NetworkMessageInfo) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:76)
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[]) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\Networking.cs:408)
+Player_Controler:Update() (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:66)
+ 
+(Filename: C Line: 0)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+Player_Controler:subtractCharge(Single) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:21)
+Player_Controler:FireLazer(NetworkMessageInfo) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:76)
+ 
+(Filename: C Line: 0)
+
+90
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+Player_Controler:subtractCharge(Single) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:21)
+Player_Controler:FireLazer(NetworkMessageInfo) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:76)
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[]) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\Networking.cs:408)
+Player_Controler:Update() (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:66)
+ 
+(Filename: C Line: 0)
+
+90
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+Player_Controler:subtractCharge(Single) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:21)
+Player_Controler:FireLazer(NetworkMessageInfo) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:76)
+ 
+(Filename: C Line: 0)
+
+80
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+Player_Controler:subtractCharge(Single) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:21)
+Player_Controler:FireLazer(NetworkMessageInfo) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:76)
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[]) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\Networking.cs:408)
+Player_Controler:Update() (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:66)
+ 
+(Filename: C Line: 0)
+
+80
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+Player_Controler:subtractCharge(Single) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:21)
+Player_Controler:FireLazer(NetworkMessageInfo) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:76)
+ 
+(Filename: C Line: 0)
+
+70
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+Player_Controler:subtractCharge(Single) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:21)
+Player_Controler:FireLazer(NetworkMessageInfo) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:76)
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[]) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\Networking.cs:408)
+Player_Controler:Update() (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:66)
+ 
+(Filename: C Line: 0)
+
+70
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+Player_Controler:subtractCharge(Single) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:21)
+Player_Controler:FireLazer(NetworkMessageInfo) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:76)
+ 
+(Filename: C Line: 0)
+
+60
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+Player_Controler:subtractCharge(Single) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:21)
+Player_Controler:FireLazer(NetworkMessageInfo) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:76)
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[]) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\Networking.cs:408)
+Player_Controler:Update() (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:66)
+ 
+(Filename: C Line: 0)
+
+60
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+Player_Controler:subtractCharge(Single) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:21)
+Player_Controler:FireLazer(NetworkMessageInfo) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:76)
+ 
+(Filename: C Line: 0)
+
+50
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+Player_Controler:subtractCharge(Single) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:21)
+Player_Controler:FireLazer(NetworkMessageInfo) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:76)
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[]) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\Networking.cs:408)
+Player_Controler:Update() (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:66)
+ 
+(Filename: C Line: 0)
+
+50
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+Player_Controler:subtractCharge(Single) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:21)
+Player_Controler:FireLazer(NetworkMessageInfo) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:76)
+ 
+(Filename: C Line: 0)
+
+40
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+Player_Controler:subtractCharge(Single) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:21)
+Player_Controler:FireLazer(NetworkMessageInfo) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:76)
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[]) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\Networking.cs:408)
+Player_Controler:Update() (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:66)
+ 
+(Filename: C Line: 0)
+
+40
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+Player_Controler:subtractCharge(Single) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:21)
+Player_Controler:FireLazer(NetworkMessageInfo) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:76)
+ 
+(Filename: C Line: 0)
+
+30
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+Player_Controler:subtractCharge(Single) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:21)
+Player_Controler:FireLazer(NetworkMessageInfo) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:76)
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[]) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\Networking.cs:408)
+Player_Controler:Update() (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:66)
+ 
+(Filename: C Line: 0)
+
+30
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+Player_Controler:subtractCharge(Single) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:21)
+Player_Controler:FireLazer(NetworkMessageInfo) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:76)
+ 
+(Filename: C Line: 0)
+
+20
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+Player_Controler:subtractCharge(Single) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:21)
+Player_Controler:FireLazer(NetworkMessageInfo) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:76)
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[]) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\Networking.cs:408)
+Player_Controler:Update() (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:66)
+ 
+(Filename: C Line: 0)
+
+20
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+Player_Controler:subtractCharge(Single) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:21)
+Player_Controler:FireLazer(NetworkMessageInfo) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:76)
+ 
+(Filename: C Line: 0)
+
+10
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+Player_Controler:subtractCharge(Single) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:21)
+Player_Controler:FireLazer(NetworkMessageInfo) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:76)
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[]) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\Networking.cs:408)
+Player_Controler:Update() (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:66)
+ 
+(Filename: C Line: 0)
+
+10
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+Player_Controler:subtractCharge(Single) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:21)
+Player_Controler:FireLazer(NetworkMessageInfo) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:76)
+ 
+(Filename: C Line: 0)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+Player_Controler:subtractCharge(Single) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:21)
+Player_Controler:FireLazer(NetworkMessageInfo) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:76)
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[]) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\Networking.cs:408)
+Player_Controler:Update() (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:66)
+ 
+(Filename: C Line: 0)
+
+0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.MonoBehaviour:print(Object) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\UnityEngineMonoBehaviour.cs:99)
+Player_Controler:subtractCharge(Single) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:21)
+Player_Controler:FireLazer(NetworkMessageInfo) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Controler.cs:76)
+ 
+(Filename: C Line: 0)
+
+The server has disconnected from the client. Most likely the server has shut down.
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/Runtime/Network/NetworkManager.cpp Line: 745)
 

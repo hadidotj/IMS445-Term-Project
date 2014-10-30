@@ -171,8 +171,9 @@ GameObject:
   - 114: {fileID: 822459051}
   - 114: {fileID: 822459053}
   - 114: {fileID: 822459052}
-  - 114: {fileID: 822459054}
   - 114: {fileID: 822459055}
+  - 114: {fileID: 822459054}
+  - 148: {fileID: 822459056}
   m_Layer: 0
   m_Name: Menu_Manager
   m_TagString: Untagged
@@ -291,6 +292,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7423833afa8c70f4a804edfae3ce275e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerPrefab: {fileID: 100002, guid: 6d695f9c2a4489441b4d6a303a379403, type: 2}
 --- !u!114 &822459055
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -304,3 +306,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   header: {fileID: 2800000, guid: c3d6f5a8bf9008d4b8b3de9a7c3f459c, type: 3}
   back: {fileID: 2800000, guid: 6793f3712c576a74982ab66a64267984, type: 3}
+--- !u!148 &822459056
+NetworkView:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 822459047}
+  m_Enabled: 1
+  m_StateSynchronization: 0
+  m_Observed: {fileID: 0}
+  m_ViewID:
+    m_ID: 1
+    m_Type: 1

@@ -83,12 +83,10 @@ public class LazerBeam : MonoBehaviour {
 
 	public void OnTriggerEnter(Collider other) {
 		if(other.tag != TAG_NAME && other != ownerRoot && !other.transform.IsChildOf(ownerRoot.transform)) {
-			other.SendMessage(TRIGGER_MESSAGE, ownerRoot, SendMessageOptions.DontRequireReceiver);
-			Destroy(gameObject);
-		} else if (other.tag == "Player" && other.GetComponent<Team>().teamName != ownerRoot.GetComponent<Team>().teamName) {
-			other.GetComponent<Player_Controler>().playerHit();
+			if(Network.isServer) {
+				other.SendMessage(TRIGGER_MESSAGE, ownerRoot, SendMessageOptions.DontRequireReceiver);
+			}
 			Destroy(gameObject);
 		}
-
 	}
 }

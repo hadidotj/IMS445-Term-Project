@@ -8,7 +8,7 @@ public class JoinMenu : AbstractMenu {
 	public Texture2D connect;
 	
 	private int currentHoveredOver = -1;
-	private string joinIP = "Server IP";
+	private string joinIP = "localhost";
 	
 	public override void Draw(){
 		Vector3 mouse = Input.mousePosition;
