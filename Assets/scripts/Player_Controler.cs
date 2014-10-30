@@ -33,6 +33,7 @@ public class Player_Controler : MonoBehaviour {
 	public void setTeam(bool t) {
 		if(!teamSet) {
 			team = t;
+			GetComponent<Team>().teamName = ((t) ? "Green" : "Red");
 			teamSet = true;
 		}
 	}
@@ -72,39 +73,40 @@ public class Player_Controler : MonoBehaviour {
 		
 	void Update () {
 		if(Input.GetMouseButtonDown(0)) {
-			networkView.RPC ("FireLazer", RPCMode.All);
+			FireMyLazer();
 		}
 
-		dist = Vector3.Distance(gameObject.transform.position, GameObject.FindWithTag("Green Base").transform.position);
+		dist = Vector3.Distance(gameObject.transform.position, GameObject.FindWithTag((GetComponent<Team>().teamName) + " Base").transform.position);
 		if(dist <= 50.0f) {
 			recharge ();
 		}
 	}
-	
-	[RPC]
-	public void FireLazer(NetworkMessageInfo info) {
-		GameObject obj = info.networkView.gameObject;
-		
-		Player_Controler plc = obj.GetComponent<Player_Controler>();
-		if(plc.getCharge() != 0.0) {
+
+	public void FireMyLazer() {
+		Player_Controler plc = gameObject.GetComponent<Player_Controler>();
+		if(plc.getCharge() >= 10.0) {
 			plc.subtractCharge(10.0f);
-			PowerUp_Controler pc = obj.GetComponent<PowerUp_Controler>();
-			Transform fl1 = plc.fireLocation1;
-			Transform fl2 = plc.fireLocation2;
+			PowerUp_Controler pc = gameObject.GetComponent<PowerUp_Controler>();
+
+			Color fireColor = ((gameObject.GetComponent<Team>().teamName == "Green") ? Color.green : Color.red);
 			
 			if(pc.getMode() == 1) { // fire
-				LazerBeam.CreateLazerBeam(fl1.position, fl1.rotation, new Color(1.0f, 0.627f, 0.0f), obj);
-				LazerBeam.CreateLazerBeam(fl2.position, fl2.rotation, new Color(1.0f, 0.627f, 0.0f), obj);
+				fireColor = new Color(1.0f, 0.627f, 0.0f);
+				networkView.RPC("FireLazer", RPCMode.All, plc.fireLocation2.position, plc.fireLocation2.rotation, fireColor);
 				// TODO remove extra charge in the player_conroler
 			} else if(pc.getMode() == 2) { // water
-				LazerBeam.CreateLazerBeam(fl1.position,fl1.rotation, Color.blue, obj);
+				fireColor = Color.blue;
 			} else if(pc.getMode() == 3) { // earth
-				LazerBeam.CreateLazerBeam(fl1.position,fl1.rotation, Color.yellow, obj);
+				fireColor = Color.yellow;
 			} else if(pc.getMode() == 4) { // air
-				LazerBeam.CreateLazerBeam(fl1.position,fl1.rotation, Color.cyan, obj);
-			} else { // default
-				LazerBeam.CreateLazerBeam(fl1.position, fl1.rotation, Color.green, obj);
+				fireColor = Color.cyan;
 			}
+			networkView.RPC("FireLazer", RPCMode.All, plc.fireLocation1.position, plc.fireLocation1.rotation, new Vector3(fireColor.r, fireColor.g, fireColor.b));
 		}
+	}
+	
+	[RPC]
+	public void FireLazer(Vector3 pos, Quaternion rot, Vector3 color, NetworkMessageInfo info) {
+		LazerBeam.CreateLazerBeam(pos, rot, new Color(color.x, color.y, color.z, 1.0f), info.networkView.gameObject);
 	}
 }

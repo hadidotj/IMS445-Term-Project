@@ -11,6 +11,7 @@ public class NetworkManager : MonoBehaviour {
 
 	private string currentLevelName;
 	private int currentLevelIdent = 0;
+	private int team = 0;
 
 	public void Start() {
 		networkView.group = (int)NetworkChannel.PROTOCOL;
@@ -80,7 +81,7 @@ public class NetworkManager : MonoBehaviour {
 	}
 
 	public void spawn() {
-		GameObject[] sps = GameObject.FindGameObjectsWithTag("SpawnPointGreen");
+		GameObject[] sps = GameObject.FindGameObjectsWithTag((team%2 == 0) ? "SpawnPointGreen" : "SpawnPointRed");
 		Transform sp = sps[Random.Range(0, sps.Length)].transform;
 
 		GameObject player = Network.Instantiate(playerPrefab, sp.position + new Vector3(0, 1.2f, 0), sp.rotation, 0) as GameObject;
@@ -90,16 +91,17 @@ public class NetworkManager : MonoBehaviour {
 		player.GetComponent<PowerUp_Controler>().enabled = true;
 		player.GetComponent<Player_loc>().enabled = true;
 		player.GetComponent<Player_Controler>().enabled = true;
+		player.GetComponent<Player_Controler>().setTeam(team%2 == 0);
 		player.name = "LocalPlayer";
 	}
 
 	[RPC]
 	public void GetCurrentLevel(NetworkMessageInfo info) {
-		networkView.RPC("LoadNetworkLevel", info.sender, currentLevelName, currentLevelIdent);
+		networkView.RPC("LoadNetworkLevel", info.sender, currentLevelName, currentLevelIdent, ++team);
 	}
 
 	[RPC]
-	public void LoadNetworkLevel(string levelName, int levelIdent) {
+	public void LoadNetworkLevel(string levelName, int levelIdent, int team) {
 		MenuManager.DisplayDialogBox("Loading level...");
 
 		SetNetworkChannel(NetworkChannel.GAMEPLAY, false);
@@ -112,6 +114,8 @@ public class NetworkManager : MonoBehaviour {
 				GameObject.DontDestroyOnLoad(obj);
 			}
 		}
+
+		this.team = team;
 
 		Application.LoadLevel(levelName);
 	}
