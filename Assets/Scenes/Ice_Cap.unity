@@ -186,6 +186,10 @@ Prefab:
       propertyPath: m_TagString
       value: GreenTarget
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 7e443fd6dc2914940b06e95250c39eb5, type: 2}
+      propertyPath: teamName
+      value: Green
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7e443fd6dc2914940b06e95250c39eb5, type: 2}
   m_RootGameObject: {fileID: 939857463}
@@ -235,7 +239,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ac5b55fdf6221f49bccbccf6cbc0dca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teamName: RedTeam
+  teamName: Red
 --- !u!114 &126984064
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -401,6 +405,10 @@ Prefab:
       propertyPath: m_TagString
       value: RedTarget
       objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: ce367521bd7d85148983cd7952d944c3, type: 2}
+      propertyPath: teamName
+      value: Red
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ce367521bd7d85148983cd7952d944c3, type: 2}
   m_RootGameObject: {fileID: 1303929188}
@@ -448,6 +456,10 @@ Prefab:
     - target: {fileID: 100000, guid: 7e443fd6dc2914940b06e95250c39eb5, type: 2}
       propertyPath: m_TagString
       value: GreenTarget
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 7e443fd6dc2914940b06e95250c39eb5, type: 2}
+      propertyPath: teamName
+      value: Green
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7e443fd6dc2914940b06e95250c39eb5, type: 2}
@@ -497,6 +509,10 @@ Prefab:
       propertyPath: m_TagString
       value: RedTarget
       objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: ce367521bd7d85148983cd7952d944c3, type: 2}
+      propertyPath: teamName
+      value: Red
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ce367521bd7d85148983cd7952d944c3, type: 2}
   m_RootGameObject: {fileID: 967938385}
@@ -544,6 +560,10 @@ Prefab:
     - target: {fileID: 100000, guid: ce367521bd7d85148983cd7952d944c3, type: 2}
       propertyPath: m_TagString
       value: RedTarget
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: ce367521bd7d85148983cd7952d944c3, type: 2}
+      propertyPath: teamName
+      value: Red
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ce367521bd7d85148983cd7952d944c3, type: 2}
@@ -723,7 +743,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ac5b55fdf6221f49bccbccf6cbc0dca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teamName: RedTeam
+  teamName: Red
 --- !u!114 &627386010
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -824,7 +844,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ac5b55fdf6221f49bccbccf6cbc0dca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teamName: GreenTeam
+  teamName: Green
 --- !u!114 &639382282
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -935,6 +955,10 @@ Prefab:
     - target: {fileID: 100000, guid: 7e443fd6dc2914940b06e95250c39eb5, type: 2}
       propertyPath: m_TagString
       value: GreenTarget
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 7e443fd6dc2914940b06e95250c39eb5, type: 2}
+      propertyPath: teamName
+      value: Green
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7e443fd6dc2914940b06e95250c39eb5, type: 2}
@@ -1053,6 +1077,10 @@ Prefab:
       propertyPath: m_TagString
       value: GreenTarget
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 7e443fd6dc2914940b06e95250c39eb5, type: 2}
+      propertyPath: teamName
+      value: Green
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7e443fd6dc2914940b06e95250c39eb5, type: 2}
   m_RootGameObject: {fileID: 1562144862}
@@ -1102,7 +1130,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ac5b55fdf6221f49bccbccf6cbc0dca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teamName: RedTeam
+  teamName: Red
 --- !u!114 &931947589
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1191,7 +1219,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ac5b55fdf6221f49bccbccf6cbc0dca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teamName: GreenTeam
+  teamName: Green
 --- !u!114 &939857465
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1304,7 +1332,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ac5b55fdf6221f49bccbccf6cbc0dca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teamName: RedTeam
+  teamName: Red
 --- !u!114 &967938388
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1431,6 +1459,10 @@ Prefab:
       propertyPath: m_TagString
       value: RedTarget
       objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: ce367521bd7d85148983cd7952d944c3, type: 2}
+      propertyPath: teamName
+      value: Red
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ce367521bd7d85148983cd7952d944c3, type: 2}
   m_RootGameObject: {fileID: 126984061}
@@ -1483,6 +1515,10 @@ Prefab:
       propertyPath: m_TagString
       value: RedTarget
       objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: ce367521bd7d85148983cd7952d944c3, type: 2}
+      propertyPath: teamName
+      value: Red
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ce367521bd7d85148983cd7952d944c3, type: 2}
   m_RootGameObject: {fileID: 627386008}
@@ -1532,7 +1568,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ac5b55fdf6221f49bccbccf6cbc0dca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teamName: RedTeam
+  teamName: Red
 --- !u!114 &1303929191
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1731,7 +1767,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ac5b55fdf6221f49bccbccf6cbc0dca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teamName: GreenTeam
+  teamName: Green
 --- !u!114 &1452795727
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1832,7 +1868,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ac5b55fdf6221f49bccbccf6cbc0dca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teamName: GreenTeam
+  teamName: Green
 --- !u!114 &1562144865
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2092,7 +2128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ac5b55fdf6221f49bccbccf6cbc0dca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teamName: GreenTeam
+  teamName: Green
 --- !u!114 &1898355756
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2264,6 +2300,10 @@ Prefab:
     - target: {fileID: 100000, guid: 7e443fd6dc2914940b06e95250c39eb5, type: 2}
       propertyPath: m_TagString
       value: GreenTarget
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 7e443fd6dc2914940b06e95250c39eb5, type: 2}
+      propertyPath: teamName
+      value: Green
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7e443fd6dc2914940b06e95250c39eb5, type: 2}

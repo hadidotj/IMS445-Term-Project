@@ -6,7 +6,7 @@ public class Player_Controler : MonoBehaviour {
 	private bool team;
 	private bool teamSet = false;
 	private float charge = 100.0f; // the amount of aromur and ammo can used
-	private float damage = 10.0f;
+	private float damage = 40.0f;
 	private float dist;
 
 	public float fireCost = 10.0f;
@@ -40,8 +40,13 @@ public class Player_Controler : MonoBehaviour {
 
 	public void LazerBeamHit(GameObject attacker) {
 		if(GetComponent<Team>().teamName != attacker.GetComponent<Team>().teamName) {
-			subtractCharge(damage);
+			gameObject.networkView.RPC("LazerBeamHitMe", RPCMode.All);
 		}
+	}
+
+	[RPC]
+	public void LazerBeamHitMe() {
+		subtractCharge(damage);
 	}
 
 	public void addDamage(float damageBuff) {
