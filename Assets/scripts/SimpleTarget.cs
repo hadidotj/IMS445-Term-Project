@@ -13,7 +13,6 @@ public class SimpleTarget : MonoBehaviour {
 			hitTimes++;
 			if(hitTimes >= 1) {
 				s.TargetDestroyed(t.teamName);
-				GameObject.Destroy(gameObject);
 			}
 		}
 	}

@@ -19,7 +19,6 @@ public class Player_Controler : MonoBehaviour {
 
 	public void subtractCharge(float amnt) {
 		charge -= amnt;
-		print (charge);
 	}
 
 	public double getCharge(){
@@ -31,6 +30,11 @@ public class Player_Controler : MonoBehaviour {
 	}
 	
 	public void setTeam(bool t) {
+		networkView.RPC("RPCSetTeam", RPCMode.All, t);
+	}
+
+	[RPC]
+	public void RPCSetTeam(bool t) {
 		if(!teamSet) {
 			team = t;
 			GetComponent<Team>().teamName = ((t) ? "Green" : "Red");

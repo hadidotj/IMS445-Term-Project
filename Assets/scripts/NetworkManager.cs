@@ -12,8 +12,12 @@ public class NetworkManager : MonoBehaviour {
 	private string currentLevelName;
 	private int currentLevelIdent = 0;
 	private int team = 0;
+	private MonoBehaviour gametype;
+
+	public static NetworkManager instance;
 
 	public void Start() {
+		instance = this;
 		networkView.group = (int)NetworkChannel.PROTOCOL;
 	}
 
@@ -38,9 +42,7 @@ public class NetworkManager : MonoBehaviour {
 	}
 
 	public void OnDisconnectedFromServer(NetworkDisconnection info) {
-		if(info == NetworkDisconnection.LostConnection) {
-			MenuManager.DisplayDialogBox("Lost connection to server!", "main_menu");
-		}
+		MenuManager.DisplayDialogBox("Lost connection to server!", "MainMenu");
 	}
 
 	public void OnPlayerDisconnected(NetworkPlayer player) {
@@ -93,6 +95,19 @@ public class NetworkManager : MonoBehaviour {
 		player.GetComponent<Player_Controler>().enabled = true;
 		player.GetComponent<Player_Controler>().setTeam(team%2 == 0);
 		player.name = "LocalPlayer";
+	}
+
+	public static void SetGametype(MonoBehaviour gametype) {
+		instance.gametype = gametype;
+	}
+
+	public static void GametypeSend(string msg, string args) {
+		instance.networkView.RPC("GametypeMessage", RPCMode.All, msg, args);
+	}
+
+	[RPC]
+	public void GametypeMessage(string msg, string args) {
+		gametype.BroadcastMessage(msg, args, SendMessageOptions.DontRequireReceiver);
 	}
 
 	[RPC]

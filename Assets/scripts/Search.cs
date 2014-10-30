@@ -11,6 +11,7 @@ public class Search : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		NetworkManager.SetGametype(this);
 		GameObject[] redTargetsArr = GameObject.FindGameObjectsWithTag("RedTarget");
 		GameObject[] greenTargetsArr = GameObject.FindGameObjectsWithTag("GreenTarget");
 
@@ -33,8 +34,13 @@ public class Search : MonoBehaviour {
 	}
 
 	public void TargetDestroyed(string team) {
-		if(team.Equals("RedTeam")) {
+		NetworkManager.GametypeSend("RPCTargetDestroyed", team);
+	}
+	
+	public void RPCTargetDestroyed(string team) {
+		if(team.Equals("Red")) {
 			redScore++;
+			Destroy((GameObject)greenTargets[0]);
 			greenTargets.RemoveAt(0);
 			if(greenTargets.Count <= 0) {
 				MenuManager.DisplayDialogBox("Red Team Wins!", "IngameMenu");
@@ -43,6 +49,7 @@ public class Search : MonoBehaviour {
 			}
 		} else {
 			greenScore++;
+			Destroy((GameObject)redTargets[0]);
 			redTargets.RemoveAt(0);
 			if(redTargets.Count <= 0) {
 				MenuManager.DisplayDialogBox("Green Team Wins!", "IngameMenu");
@@ -53,7 +60,7 @@ public class Search : MonoBehaviour {
 	}
 
 	public int getScore(string team){
-		if (team.Equals ("RedTeam"))
+		if (team.Equals ("Red"))
 			return redScore;
 		else
 			return greenScore;
