@@ -6,6 +6,7 @@ TagManager:
   - LazerBeam
   - GreenTarget
   - RedTarget
+  - Green Base
   - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX

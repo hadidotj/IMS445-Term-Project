@@ -5,7 +5,7 @@ public class FireLazer : MonoBehaviour {
 	
 	public Transform fireLocation;
 	public Transform fireLocation2;
-	public float cost = 10.0f;
+	public float cost = 5.0f;
 	
 	public void Update () {
 		if(Input.GetMouseButtonDown(0) && gameObject.GetComponent<Player_Controler>().getCharge() != 0.0) {
