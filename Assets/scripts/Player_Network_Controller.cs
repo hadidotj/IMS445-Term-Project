@@ -27,7 +27,7 @@ public class Player_Network_Controller : MonoBehaviour {
 			
 			if(pc.getMode() == 1) { // fire
 				fireColor = new Color(1.0f, 0.627f, 0.0f);
-				networkView.RPC("FireLazer", RPCMode.All, plc.fireLocation2.position, plc.fireLocation2.rotation, fireColor);
+				networkView.RPC("FireLazer", RPCMode.All, plc.fireLocation2.position, plc.fireLocation2.rotation, new Vector3(fireColor.r, fireColor.g, fireColor.b));
 				// TODO remove extra charge in the player_conroler
 			} else if(pc.getMode() == 2) { // water
 				fireColor = Color.blue;
