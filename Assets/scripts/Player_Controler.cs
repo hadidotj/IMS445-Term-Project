@@ -13,6 +13,11 @@ public class Player_Controler : MonoBehaviour {
 	public Texture2D crosshair;
 	public string playerName;
 
+	public AudioClip fireSound;
+	public AudioClip taggedSound;
+	public AudioClip powerDownSound;
+	public AudioClip powerUpSound;
+
 	public void addCharge(float amnt) {
 		charge = Mathf.Clamp(charge+amnt, 0, 100);
 	}
@@ -41,6 +46,10 @@ public class Player_Controler : MonoBehaviour {
 	[RPC]
 	public void LazerBeamHitMe() {
 		subtractCharge(damage);
+		SoundUtils.playSound(gameObject, taggedSound, 1.0f);
+		if(charge <= 0) {
+			SoundUtils.playSound(gameObject, powerDownSound, 0.8f);
+		}
 	}
 
 	public void addDamage(float damageBuff) {
@@ -51,9 +60,8 @@ public class Player_Controler : MonoBehaviour {
 		damage -= damageReduction;
 	}
 
-	public void recharge() {
-		if(charge < 100.0f)
-			addCharge(20.0f*Time.deltaTime);
+	public float getDist() {
+		return dist;
 	}
 
 	void OnGUI() {
@@ -75,8 +83,14 @@ public class Player_Controler : MonoBehaviour {
 		}
 
 		dist = Vector3.Distance(gameObject.transform.position, GameObject.FindWithTag((GetComponent<Team>().teamName) + " Base").transform.position);
-		if(dist <= 50.0f) {
-			recharge ();
+		if(dist <= 50.0f && charge < 100.0f) {
+			if(SoundUtils.isNotPlayingClip(gameObject, powerUpSound)) {
+				SoundUtils.playSoundAt(gameObject, powerUpSound, charge/100.0f*powerUpSound.length, 0.8f);
+			}
+			addCharge(33.0f*Time.deltaTime);
+
+		} else {
+			SoundUtils.stopAllForClip(gameObject, powerUpSound);
 		}
 	}
 }

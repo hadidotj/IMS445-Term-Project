@@ -20,10 +20,20 @@ public class SoundUtils {
 	 * @param volume - The volume to play at
 	 */
 	public static void playSound(GameObject gameObject, AudioClip clip, float volume = 1.0f) {
+		playSoundAt(gameObject, clip, 0.0f, volume);
+	}
+
+	public static void playSoundAt(GameObject gameObject, AudioClip clip, float startTime = 0, float volume = 1.0f) {
 		AudioSource src = gameObject.AddComponent<AudioSource> () as AudioSource;
 		src.clip = clip;
 		src.volume = volume;
+		src.rolloffMode = AudioRolloffMode.Linear;
+		src.minDistance = 1.0f;
+		src.maxDistance = 20.0f;
 		src.Play();
+		if(startTime != 0) {
+			src.time = startTime;
+		}
 		GameObject.Destroy (src, clip.length);
 	}
 

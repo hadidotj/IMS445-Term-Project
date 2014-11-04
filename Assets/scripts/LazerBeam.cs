@@ -57,9 +57,7 @@ public class LazerBeam : MonoBehaviour {
 			body.collisionDetectionMode = CollisionDetectionMode.ContinuousDynamic;
 		}
 
-		if(ownerRoot.audio != null) {
-			ownerRoot.audio.Play();
-		}
+		SoundUtils.playSound(ownerRoot, ownerRoot.GetComponent<Player_Controler>().fireSound, 1.0f);
 
 		return beam;
 	}
