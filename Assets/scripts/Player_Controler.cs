@@ -56,6 +56,10 @@ public class Player_Controler : MonoBehaviour {
 			addCharge(20.0f*Time.deltaTime);
 	}
 
+	public float getDist() {
+		return dist;
+	}
+
 	void OnGUI() {
 		if (charge > 0.0f) {
 			//GUI.Box(new Rect(5, 5, Screen.width/3, 20), "" + charge);

@@ -43,6 +43,7 @@ public class PowerUp_Controler : MonoBehaviour {
 			case 3:
 				if(isDefending()) {
 					//make the ammo stronger. so the lazer will need damage to be change-able
+					gameObject.GetComponent<Player_Controler>().addDamage (40.0f);
 				}
 				break;
 			case 4:
@@ -57,7 +58,8 @@ public class PowerUp_Controler : MonoBehaviour {
 	bool isDefending() {
 		//get the player's team
 		//return if gameobject.transform.posistion - (closest station's posistion) < threshold
-
+		if(gameObject.GetComponent<Player_Controler>().getDist () <= 125.0f)
+			return true;
 		return false;
 	}
 
