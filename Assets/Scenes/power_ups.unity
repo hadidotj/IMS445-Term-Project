@@ -589,7 +589,7 @@ Transform:
   - {fileID: 742386076}
   - {fileID: 1545415077}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
 --- !u!114 &72839163
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2423,7 +2423,7 @@ Transform:
   - {fileID: 1450270844}
   - {fileID: 1610300530}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
 --- !u!114 &371048536
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2926,7 +2926,7 @@ Transform:
   - {fileID: 286981084}
   - {fileID: 2058482745}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 1
 --- !u!114 &429497575
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2966,6 +2966,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fireLocation: {fileID: 1256327073}
   fireLocation2: {fileID: 1686082984}
+  cost: 5
 --- !u!114 &429497578
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5456,7 +5457,7 @@ Transform:
   - {fileID: 1522769347}
   - {fileID: 1225941380}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 4
 --- !u!114 &907055096
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10416,7 +10417,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
 --- !u!1 &1870566577
 GameObject:
   m_ObjectHideFlags: 0

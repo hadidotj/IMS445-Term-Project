@@ -19,13 +19,16 @@ public class NetworkManager : MonoBehaviour {
 	public static NetworkManager instance;
 	public static string playerName;
 
+	private static string useMap = "Ice_Cap";
+
 	public void Awake() {
 		instance = this;
 		playerName = "Player" + Random.Range(100, 1000);
 		networkView.group = (int)NetworkChannel.PROTOCOL;
 	}
 
-	public static void CreateServer(int maxConnections = DEFAULT_MAX_CONNECTIONS, int port = DEFAULT_PORT) {
+	public static void CreateServer(string mapName, int maxConnections = DEFAULT_MAX_CONNECTIONS, int port = DEFAULT_PORT) {
+		useMap = mapName;
 		Network.InitializeSecurity();
 		Network.InitializeServer(maxConnections, port, !Network.HavePublicAddress());
 		MenuManager.DisplayDialogBox("Starting up server...");
@@ -67,8 +70,8 @@ public class NetworkManager : MonoBehaviour {
 
 	public void OnServerInitialized() {
 		MenuManager.Open_Menu("IngameMenu");
-		Application.LoadLevel("Ice_Cap");
-		currentLevelName = "Ice_Cap";
+		Application.LoadLevel(useMap);
+		currentLevelName = useMap;
 		currentLevelIdent++;
 	}
 
