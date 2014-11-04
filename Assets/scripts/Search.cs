@@ -36,7 +36,18 @@ public class Search : MonoBehaviour {
 		greenTargetsArr[0].SetActive(true);
 	}
 
-	public void TargetDestroyed(string team) {
+	public void TargetDestroyed(string team, string playerName) {
+		string otherTeam = "Red";
+		Color color = Color.green;
+		int remain = redTargets.Count;
+
+		if(team.Equals("Red")) {
+			otherTeam = "Green";
+			color = Color.red;
+			remain = greenTargets.Count;
+		}
+
+		NetworkManager.SendTextMessage(playerName + " destroyed a " + otherTeam + " target! " + (remain-1) + " targets remaining!", color);
 		NetworkManager.GametypeSend("RPCTargetDestroyed", team);
 	}
 	

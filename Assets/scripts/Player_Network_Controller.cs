@@ -3,15 +3,16 @@ using System.Collections;
 
 public class Player_Network_Controller : MonoBehaviour {
 
-	public void setTeam(bool t) {
-		networkView.RPC("RPCSetTeam", RPCMode.AllBuffered, t);
+	public void setTeam(bool t, string name) {
+		networkView.RPC("RPCSetTeam", RPCMode.AllBuffered, t, name);
 	}
 	
 	[RPC]
-	public void RPCSetTeam(bool t) {
+	public void RPCSetTeam(bool t, string name) {
 		Debug.Log("Setting Team to " + t + " for " + name);
 		//if(!teamSet) {
 		GetComponent<Team>().teamName = ((t) ? "Green" : "Red");
+		GetComponent<Player_Controler>().playerName = name;
 		GetComponentInChildren<MeshRenderer>().materials[0].color = (t) ? Color.green : Color.red;
 		//}
 	}

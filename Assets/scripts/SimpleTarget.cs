@@ -9,10 +9,10 @@ public class SimpleTarget : MonoBehaviour {
 
 	public void LazerBeamHit(GameObject owner) {
 		Team t = owner.GetComponent<Team>();
-		if(t.teamName != gameObject.GetComponent<Team>().teamName) {
+		if(Network.isServer && t.teamName != gameObject.GetComponent<Team>().teamName) {
 			hitTimes++;
 			if(hitTimes >= 1) {
-				s.TargetDestroyed(t.teamName);
+				s.TargetDestroyed(t.teamName, owner.GetComponent<Player_Controler>().playerName);
 			}
 		}
 	}

@@ -53,7 +53,7 @@ public class NetworkManager : MonoBehaviour {
 		team--;
 		Network.RemoveRPCs(player);
 		Network.DestroyPlayerObjects(player);
-		networkView.RPC("PlayerDisconnected", RPCMode.All, playerNames[player]);
+		networkView.RPC("SendTextMessageRPC", RPCMode.All, playerNames[player] + " left the game", Vector3.one);
 		playerNames.Remove(player);
 	}
 
@@ -88,7 +88,7 @@ public class NetworkManager : MonoBehaviour {
 	
 		if(Network.isServer) {
 			playerNames.Add(Network.player, playerName);
-			PlayerConnected(playerName);
+			SendTextMessageRPC(playerName + " joined the game", Vector3.one);
 		} else {
 			networkView.RPC("SetPlayerName", RPCMode.Server, playerName);
 		}
@@ -108,7 +108,7 @@ public class NetworkManager : MonoBehaviour {
 		player.GetComponent<PowerUp_Controler>().enabled = true;
 		player.GetComponent<Player_loc>().enabled = true;
 		player.GetComponent<Player_Controler>().enabled = true;
-		player.GetComponent<Player_Network_Controller>().setTeam(team%2 == 0);
+		player.GetComponent<Player_Network_Controller>().setTeam(team%2 == 0, playerName);
 	}
 
 	public static void SetGametype(MonoBehaviour gametype) {
@@ -161,19 +161,17 @@ public class NetworkManager : MonoBehaviour {
 	public void SetPlayerName(string name, NetworkMessageInfo info) {
 		if(Network.isServer) {
 			playerNames.Add(info.sender, name);
-			networkView.RPC("PlayerConnected", RPCMode.All, name);
+			networkView.RPC("SendTextMessageRPC", RPCMode.All, name + " joined the game", Vector3.one);
 		}
 	}
 
-	[RPC]
-	public void PlayerConnected(string name) {
-		object[] args = {name + " has joined the game", Color.green};
-		MenuManager.instance.SendMessage("Message", args);
+	public static void SendTextMessage(string msg, Color color) {
+		instance.networkView.RPC("SendTextMessageRPC", RPCMode.All, msg, new Vector3(color.r, color.g, color.b));
 	}
 
 	[RPC]
-	public void PlayerDisconnected(string name) {
-		object[] args = {name + " has left the game", Color.red};
+	public void SendTextMessageRPC(string msg, Vector3 color) {
+		object[] args = {msg, new Color(color.x, color.y, color.z, 1.0f)};
 		MenuManager.instance.SendMessage("Message", args);
 	}
 }

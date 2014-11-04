@@ -10,6 +10,7 @@ public class Player_Controler : MonoBehaviour {
 	public float fireCost = 10.0f;
 	public Transform fireLocation1;
 	public Transform fireLocation2;
+	public string playerName;
 
 	public void addCharge(float amnt) {
 		charge = Mathf.Clamp(charge+amnt, 0, 100);
@@ -28,8 +29,11 @@ public class Player_Controler : MonoBehaviour {
 	}
 
 	public void LazerBeamHit(GameObject attacker) {
-		if(GetComponent<Team>().teamName != attacker.GetComponent<Team>().teamName) {
+		if(charge > 0 && GetComponent<Team>().teamName != attacker.GetComponent<Team>().teamName) {
 			gameObject.networkView.RPC("LazerBeamHitMe", RPCMode.All);
+			if(charge <= 0) {
+				NetworkManager.SendTextMessage(attacker.GetComponent<Player_Controler>().playerName + " tagged " + playerName, Color.yellow);
+			}
 		}
 	}
 
