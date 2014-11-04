@@ -14,11 +14,11 @@ public class Player_Controler : MonoBehaviour {
 	public Transform fireLocation2;
 
 	public void addCharge(float amnt) {
-		charge += amnt;
+		charge = Mathf.Clamp(charge+amnt, 0, 100);
 	}
 
 	public void subtractCharge(float amnt) {
-		charge -= amnt;
+		charge = Mathf.Clamp(charge-amnt, 0, 100);
 	}
 
 	public double getCharge(){
@@ -62,11 +62,8 @@ public class Player_Controler : MonoBehaviour {
 	}
 
 	public void recharge() {
-
 		if(charge < 100.0f)
-			charge += 20.0f*Time.deltaTime*1;
-		if(charge > 100.0f)
-			charge = 100.0f;
+			addCharge(20.0f*Time.deltaTime);
 	}
 
 	void OnGUI() {

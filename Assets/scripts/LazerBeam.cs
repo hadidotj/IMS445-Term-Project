@@ -57,6 +57,10 @@ public class LazerBeam : MonoBehaviour {
 			body.collisionDetectionMode = CollisionDetectionMode.ContinuousDynamic;
 		}
 
+		if(ownerRoot.audio != null) {
+			ownerRoot.audio.Play();
+		}
+
 		return beam;
 	}
 
