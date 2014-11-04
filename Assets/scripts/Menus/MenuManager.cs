@@ -32,6 +32,7 @@ public class MenuManager : MonoBehaviour {
 				OpenMenu(dismissMenu);
 				dismissMenu = dialogMsg = null;
 			}
+			Screen.lockCursor = false; // Force cursor to show!
 		} else if(activeMenu != null) {
 			activeMenu.Draw();
 		}
