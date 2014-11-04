@@ -9,6 +9,7 @@ public class IngameMenu : AbstractMenu {
 
 	private int currentHoveredOver = -1;
 	private bool showMenu = false;
+	private bool lockCursor = true;
 	private List<GUIMessage> msgs = new List<GUIMessage>();
 
 	private class GUIMessage {
@@ -51,6 +52,8 @@ public class IngameMenu : AbstractMenu {
 				GUI.Label(new Rect(5, i*20, Screen.width-10, 20), msgs[i].text, style);
 			}
 		}
+
+		Screen.lockCursor = lockCursor;
 	}
 
 	public IEnumerator Message(object[] args) {
@@ -69,6 +72,7 @@ public class IngameMenu : AbstractMenu {
 	public void Update() {
 		if(Input.GetKeyDown(KeyCode.Escape)) {
 			showMenu = !showMenu;
+			lockCursor = !lockCursor;
 		}
 	}
 }
