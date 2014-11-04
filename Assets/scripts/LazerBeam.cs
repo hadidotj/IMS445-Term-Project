@@ -86,7 +86,7 @@ public class LazerBeam : MonoBehaviour {
 	}
 
 	public void OnTriggerEnter(Collider other) {
-		if(other.tag != TAG_NAME && other != ownerRoot && !other.transform.IsChildOf(ownerRoot.transform)) {
+		if(other.tag != TAG_NAME && ownerRoot != null && other != ownerRoot && !other.transform.IsChildOf(ownerRoot.transform)) {
 			if(Network.isServer) {
 				other.SendMessage(TRIGGER_MESSAGE, ownerRoot, SendMessageOptions.DontRequireReceiver);
 			}

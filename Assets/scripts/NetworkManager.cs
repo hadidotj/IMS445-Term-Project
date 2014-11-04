@@ -87,14 +87,14 @@ public class NetworkManager : MonoBehaviour {
 		Transform sp = sps[Random.Range(0, sps.Length)].transform;
 
 		GameObject player = Network.Instantiate(playerPrefab, sp.position + new Vector3(0, 1.2f, 0), sp.rotation, 0) as GameObject;
+		player.name = "LocalPlayer";
 		player.GetComponent<MouseLook>().enabled = true;
 		((MonoBehaviour)player.GetComponent("FPSInputController")).enabled = true;
 		player.transform.FindChild("Main Camera").gameObject.SetActive(true);
 		player.GetComponent<PowerUp_Controler>().enabled = true;
 		player.GetComponent<Player_loc>().enabled = true;
 		player.GetComponent<Player_Controler>().enabled = true;
-		player.GetComponent<Player_Controler>().setTeam(team%2 == 0);
-		player.name = "LocalPlayer";
+		player.GetComponent<Player_Network_Controller>().setTeam(team%2 == 0);
 	}
 
 	public static void SetGametype(MonoBehaviour gametype) {
@@ -102,12 +102,20 @@ public class NetworkManager : MonoBehaviour {
 	}
 
 	public static void GametypeSend(string msg, string args) {
-		instance.networkView.RPC("GametypeMessage", RPCMode.All, msg, args);
+		instance.networkView.RPC("GametypeMessage", RPCMode.AllBuffered, msg, args);
 	}
 
 	[RPC]
-	public void GametypeMessage(string msg, string args) {
-		gametype.BroadcastMessage(msg, args, SendMessageOptions.DontRequireReceiver);
+	public IEnumerator GametypeMessage(string msg, string args) {
+		int times = 5;
+		while(gametype == null && times != 0) {
+			Debug.Log("Gametype not yet set... Waiting " + times + " more times!");
+			yield return new WaitForSeconds(0.25f);
+			times --;
+		}
+		if(times != 0) {
+			gametype.BroadcastMessage(msg, args, SendMessageOptions.DontRequireReceiver);
+		}
 	}
 
 	[RPC]

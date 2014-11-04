@@ -9,9 +9,12 @@ public class Search : MonoBehaviour {
 	private ArrayList redTargets = new ArrayList();
 	private ArrayList greenTargets = new ArrayList();
 
+	void Awake() {
+		NetworkManager.SetGametype(this);
+	}
+
 	// Use this for initialization
 	void Start () {
-		NetworkManager.SetGametype(this);
 		GameObject[] redTargetsArr = GameObject.FindGameObjectsWithTag("RedTarget");
 		GameObject[] greenTargetsArr = GameObject.FindGameObjectsWithTag("GreenTarget");
 

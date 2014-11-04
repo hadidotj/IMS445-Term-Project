@@ -1,0 +1,218 @@
+Initialize engine version: 4.5.5f1 (7684ad0c5a44)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA NVS 4200M     (ID=0x1056)
+    Vendor:   NVIDIA
+    VRAM:     467 MB
+Initialize engine version: 4.5.5f1 (7684ad0c5a44)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA NVS 4200M     (ID=0x1056)
+    Vendor:   NVIDIA
+    VRAM:     467 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Builds\build3.0\build3.0_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Builds\build3.0\build3.0_Data\Managed\UnityEngine.dll into Unity Child Domain
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Builds\build3.0\build3.0_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Builds\build3.0\build3.0_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Builds\build3.0\build3.0_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Builds\build3.0\build3.0_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Builds\build3.0\build3.0_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Builds\build3.0\build3.0_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Builds\build3.0\build3.0_Data\Managed\Assembly-UnityScript-firstpass.dll (this message is harmless)
+Loading C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Builds\build3.0\build3.0_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Builds\build3.0\build3.0_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Builds\build3.0\build3.0_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
+- Completed reload, in  0.094 seconds
+Platform assembly: C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Builds\build3.0\build3.0_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Builds\build3.0\build3.0_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Builds\build3.0\build3.0_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Builds\build3.0\build3.0_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Builds\build3.0\build3.0_Data\Managed\Assembly-UnityScript-firstpass.dll (this message is harmless)
+Loading C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Builds\build3.0\build3.0_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Builds\build3.0\build3.0_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Builds\build3.0\build3.0_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
+- Completed reload, in  0.085 seconds
+desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
+desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
+<RI> Initializing input.
+<RI> Initializing input.
+<RI> Input initia<ized.
+RI> Input initialized.
+Profiler is only supported with Pro License
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/Runtime/Profiler/ProfilerConnection.cpp Line: 218)
+
+WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
+UnloadTime: 0.280521 ms
+System memory in use before: 28.7 MB.
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+System memory in use after: 26.3 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 319.
+Total: 1.090918 ms (FindLiveObjects: 0.019005 ms CreateObjectMapping: 0.008362 ms MarkObjects: 0.107571 ms  DeleteObjects: 0.353123 ms)
+
+Setting Team to True for LocalPlayer
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player_Network_Controller:RPCSetTeam(Boolean) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Network_Controller.cs:12)
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[]) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\Networking.cs:408)
+Player_Network_Controller:setTeam(Boolean) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Network_Controller.cs:7)
+NetworkManager:spawn() (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\NetworkManager.cs:97)
+NetworkManager:OnLevelWasLoaded(Int32) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\NetworkManager.cs:82)
+ 
+(Filename: C Line: 0)
+
+WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
+Profiler is only supported with Pro License
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/Runtime/Profiler/ProfilerConnection.cpp Line: 218)
+
+Platform assembly: C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Builds\build3.0\build3.0_Data\Managed\Boo.Lang.dll (this message is harmless)
+Setting Team to True for PlayerPrefab(Clone)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player_Network_Controller:RPCSetTeam(Boolean) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Network_Controller.cs:12)
+ 
+(Filename: C Line: 0)
+
+WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
+UnloadTime: 0.042192 ms
+System memory in use before: 28.9 MB.
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+System memory in use after: 26.5 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 352.
+Total: 1.079135 ms (FindLiveObjects: 0.015204 ms CreateObjectMapping: 0.008362 ms MarkObjects: 0.118974 ms  DeleteObjects: 0.339059 ms)
+
+Setting Team to False for LocalPlayer
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player_Network_Controller:RPCSetTeam(Boolean) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Network_Controller.cs:12)
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[]) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\Networking.cs:408)
+Player_Network_Controller:setTeam(Boolean) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Network_Controller.cs:7)
+NetworkManager:spawn() (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\NetworkManager.cs:97)
+NetworkManager:OnLevelWasLoaded(Int32) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\NetworkManager.cs:82)
+ 
+(Filename: C Line: 0)
+
+Setting Team to False for PlayerPrefab(Clone)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player_Network_Controller:RPCSetTeam(Boolean) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Network_Controller.cs:12)
+ 
+(Filename: C Line: 0)
+
+Platform assembly: C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Builds\build3.0\build3.0_Data\Managed\Boo.Lang.dll (this message is harmless)
+Platform assembly: C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Builds\build3.0\build3.0_Data\Managed\System.dll (this message is harmless)
+Platform assembly: C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Builds\build3.0\build3.0_Data\Managed\System.dll (this message is harmless)
+WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
+UnloadTime: 1.549332 ms
+System memory in use before: 28.7 MB.
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+System memory in use after: 16.9 MB.
+
+Unloading 36 unused Assets to reduce memory usage. Loaded Objects now: 198.
+Total: 7.180298 ms (FindLiveObjects: 0.045233 ms CreateObjectMapping: 0.031929 ms MarkObjects: 0.338678 ms  DeleteObjects: 3.957716 ms)
+
+Setting Team to True for PlayerPrefab(Clone)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player_Network_Controller:RPCSetTeam(Boolean) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Network_Controller.cs:12)
+ 
+(Filename: C Line: 0)
+
+Gametype not yet set... Waiting 5 more times!
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+<GametypeMessage>c__Iterator1:MoveNext() (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\NetworkManager.cs:112)
+ 
+(Filename: C Line: 0)
+
+WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
+UnloadTime: 0.051695 ms
+System memory in use before: 29.0 MB.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+System memory in use after: 26.6 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 354.
+Total: 1.773218 ms (FindLiveObjects: 0.026987 ms CreateObjectMapping: 0.011403 ms MarkObjects: 0.217043 ms  DeleteObjects: 0.362625 ms)
+
+Setting Team to True for LocalPlayer
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player_Network_Controller:RPCSetTeam(Boolean) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Network_Controller.cs:12)
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[]) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\Networking.cs:408)
+Player_Network_Controller:setTeam(Boolean) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Network_Controller.cs:7)
+NetworkManager:spawn() (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\NetworkManager.cs:97)
+NetworkManager:OnLevelWasLoaded(Int32) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\NetworkManager.cs:82)
+ 
+(Filename: C Line: 0)
+
+Setting Team to True for PlayerPrefab(Clone)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player_Network_Controller:RPCSetTeam(Boolean) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Network_Controller.cs:12)
+ 
+(Filename: C Line: 0)
+
+WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
+UnloadTime: 0.789490 ms
+System memory in use before: 28.6 MB.
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+System memory in use after: 16.9 MB.
+
+Unloading 34 unused Assets to reduce memory usage. Loaded Objects now: 197.
+Total: 6.675890 ms (FindLiveObjects: 0.042192 ms CreateObjectMapping: 0.028508 ms MarkObjects: 0.412800 ms  DeleteObjects: 3.633101 ms)
+
+Setting Team to True for PlayerPrefab(Clone)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player_Network_Controller:RPCSetTeam(Boolean) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Network_Controller.cs:12)
+ 
+(Filename: C Line: 0)
+
+Gametype not yet set... Waiting 5 more times!
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+<GametypeMessage>c__Iterator1:MoveNext() (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\NetworkManager.cs:112)
+ 
+(Filename: C Line: 0)
+
+WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
+UnloadTime: 0.077162 ms
+System memory in use before: 29.0 MB.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+System memory in use after: 26.6 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 354.
+Total: 0.979546 ms (FindLiveObjects: 0.014444 ms CreateObjectMapping: 0.009122 ms MarkObjects: 0.131138 ms  DeleteObjects: 0.268738 ms)
+
+Setting Team to False for LocalPlayer
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player_Network_Controller:RPCSetTeam(Boolean) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Network_Controller.cs:12)
+UnityEngine.NetworkView:Internal_RPC(NetworkView, String, RPCMode, Object[])
+UnityEngine.NetworkView:RPC(String, RPCMode, Object[]) (at C:\BuildAgent\work\d63dfc6385190b60\artifacts\StandalonePlayerGenerated\Networking.cs:408)
+Player_Network_Controller:setTeam(Boolean) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Network_Controller.cs:7)
+NetworkManager:spawn() (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\NetworkManager.cs:97)
+NetworkManager:OnLevelWasLoaded(Int32) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\NetworkManager.cs:82)
+ 
+(Filename: C Line: 0)
+
+Setting Team to False for PlayerPrefab(Clone)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+Player_Network_Controller:RPCSetTeam(Boolean) (at C:\Users\hadidotj\Documents\School\Senior\Fall 2014\IMS 445 - Game Design\FinalProject\Assets\Scripts\Player_Network_Controller.cs:12)
+ 
+(Filename: C Line: 0)
+
+WARNING: Shader Unsupported: 'Hidden/TerrainEngine/Details/BillboardWavingDoublePass' - Pass '' shader state not supported
+Waiting for finish
+Waiting for finish
