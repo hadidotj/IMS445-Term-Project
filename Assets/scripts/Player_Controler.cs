@@ -10,6 +10,7 @@ public class Player_Controler : MonoBehaviour {
 	public float fireCost = 10.0f;
 	public Transform fireLocation1;
 	public Transform fireLocation2;
+	public Texture2D crosshair;
 	public string playerName;
 
 	public void addCharge(float amnt) {
@@ -62,6 +63,8 @@ public class Player_Controler : MonoBehaviour {
 		}else {
 			GUI.Box (new Rect(5, 5, Screen.width/3, 20), "Out of charge!");
 		}
+
+		GUI.DrawTexture(new Rect(Screen.width/2.0f, Screen.height/2.0f + 16.0f, 16.0f, 16.0f), crosshair);
 	}
 
 	//(Player_loc)
