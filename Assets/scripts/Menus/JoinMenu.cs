@@ -9,7 +9,7 @@ public class JoinMenu : AbstractMenu {
 	
 	private int currentHoveredOver = -1;
 	private string joinIP = "localhost";
-	
+
 	public override void Draw(){
 		Vector3 mouse = Input.mousePosition;
 		mouse.y = Screen.height-mouse.y;
@@ -19,6 +19,9 @@ public class JoinMenu : AbstractMenu {
 
 		// IP Input
 		joinIP = GUI.TextField(new Rect(Screen.width/2.0f-200, header.height+50, 400, 25), joinIP);
+
+		// Player Name Input
+		NetworkManager.playerName = GUI.TextField(new Rect(Screen.width/2.0f-200, header.height+100, 400, 25), NetworkManager.playerName);
 
 		// Go Button
 		GUI.backgroundColor = Color.green;

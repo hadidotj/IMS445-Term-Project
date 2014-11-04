@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class IngameMenu : AbstractMenu {
 
@@ -8,6 +9,16 @@ public class IngameMenu : AbstractMenu {
 
 	private int currentHoveredOver = -1;
 	private bool showMenu = false;
+	private List<GUIMessage> msgs = new List<GUIMessage>();
+
+	private class GUIMessage {
+		public string text;
+		public Color color;
+		public GUIMessage(string text, Color color) {
+			this.text = text;
+			this.color = color;
+		}
+	}
 
 	public override void Draw(){
 		if(showMenu) {
@@ -31,7 +42,28 @@ public class IngameMenu : AbstractMenu {
 			} else if(currentHoveredOver == 1 && !backButtonRect.Contains(mouse)) {
 				currentHoveredOver = -1;
 			}
+		} else if(msgs.Count > 0) {
+			for(int i=0; i<msgs.Count; i++) {
+				GUIStyle style = new GUIStyle();
+				style.normal.textColor = msgs[i].color;
+				style.fontSize = 18;
+				style.alignment = TextAnchor.MiddleRight;
+				GUI.Label(new Rect(5, i*20, Screen.width-10, 20), msgs[i].text, style);
+			}
 		}
+	}
+
+	public IEnumerator Message(object[] args) {
+		string msg = (string) args[0];
+		Color color = (Color) args[1];
+
+		GUIMessage guimsg = new GUIMessage(msg, color);
+		if(msgs.Count == 5) {
+			msgs.RemoveAt(0);
+		}
+		msgs.Add(guimsg);
+		yield return new WaitForSeconds(30.0f);
+		msgs.Remove(guimsg);
 	}
 
 	public void Update() {

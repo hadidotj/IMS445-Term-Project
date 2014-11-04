@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public enum NetworkChannel { GAMEPLAY, PROTOCOL, OTHER };
 
@@ -13,11 +14,14 @@ public class NetworkManager : MonoBehaviour {
 	private int currentLevelIdent = 0;
 	private int team = 0;
 	private MonoBehaviour gametype;
+	private IDictionary<NetworkPlayer, string> playerNames = new Dictionary<NetworkPlayer, string>();
 
 	public static NetworkManager instance;
+	public static string playerName;
 
-	public void Start() {
+	public void Awake() {
 		instance = this;
+		playerName = "Player" + Random.Range(100, 1000);
 		networkView.group = (int)NetworkChannel.PROTOCOL;
 	}
 
@@ -46,8 +50,11 @@ public class NetworkManager : MonoBehaviour {
 	}
 
 	public void OnPlayerDisconnected(NetworkPlayer player) {
+		team--;
 		Network.RemoveRPCs(player);
 		Network.DestroyPlayerObjects(player);
+		networkView.RPC("PlayerDisconnected", RPCMode.All, playerNames[player]);
+		playerNames.Remove(player);
 	}
 
 	public static void SetNetworkChannel(NetworkChannel channel, bool enable) {
@@ -78,6 +85,13 @@ public class NetworkManager : MonoBehaviour {
 
 		Network.isMessageQueueRunning = true;
 		SetNetworkChannel(NetworkChannel.GAMEPLAY, true);
+	
+		if(Network.isServer) {
+			playerNames.Add(Network.player, playerName);
+			PlayerConnected(playerName);
+		} else {
+			networkView.RPC("SetPlayerName", RPCMode.Server, playerName);
+		}
 
 		spawn();
 	}
@@ -141,5 +155,25 @@ public class NetworkManager : MonoBehaviour {
 		this.team = team;
 
 		Application.LoadLevel(levelName);
+	}
+
+	[RPC]
+	public void SetPlayerName(string name, NetworkMessageInfo info) {
+		if(Network.isServer) {
+			playerNames.Add(info.sender, name);
+			networkView.RPC("PlayerConnected", RPCMode.All, name);
+		}
+	}
+
+	[RPC]
+	public void PlayerConnected(string name) {
+		object[] args = {name + " has joined the game", Color.green};
+		MenuManager.instance.SendMessage("Message", args);
+	}
+
+	[RPC]
+	public void PlayerDisconnected(string name) {
+		object[] args = {name + " has left the game", Color.red};
+		MenuManager.instance.SendMessage("Message", args);
 	}
 }

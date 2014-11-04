@@ -16,6 +16,9 @@ public class CreateMenu : AbstractMenu {
 		// Draw header
 		GUI.DrawTexture(new Rect(Screen.width/2.0f - header.width/2.0f, 10, header.width, header.height), header);
 
+		// Player Name
+		NetworkManager.playerName = GUI.TextField(new Rect(Screen.width/2.0f-200, header.height+50, 400, 25), NetworkManager.playerName);
+
 		// Go Button
 		GUI.backgroundColor = Color.blue;
 		Rect connectButtonRect = new Rect(Screen.width-create.width-10.0f, Screen.height-create.height-10.0f, create.width, create.height);
