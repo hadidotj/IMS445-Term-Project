@@ -18,9 +18,11 @@ public class FireLazer : MonoBehaviour {
 			} else if(pc.getMode() == 2) { // water
 				LazerBeam.CreateLazerBeam(fireLocation.position,fireLocation.rotation, Color.blue, gameObject);
 			} else if(pc.getMode() == 3) { // earth
-				LazerBeam.CreateLazerBeam(fireLocation.position,fireLocation.rotation, Color.yellow, gameObject);
+				LazerBeam.CreateLazerBeam(fireLocation.position,fireLocation.rotation, Color.gray, gameObject);
 			} else if(pc.getMode() == 4) { // air
 				LazerBeam.CreateLazerBeam(fireLocation.position,fireLocation.rotation, Color.cyan, gameObject);
+			} else if(pc.getMode() == 5) { // lightning
+				LazerBeam.CreateLazerBeam(fireLocation.position,fireLocation.rotation, Color.yellow, gameObject);
 			} else { // default
 				LazerBeam.CreateLazerBeam(fireLocation.position, fireLocation.rotation, Color.green, gameObject);
 			}

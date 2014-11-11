@@ -8,6 +8,7 @@ public class PowerUp_Controler : MonoBehaviour {
 	private float waterCurrent = 0.0f;
 	private Transform graphic;
 	private CharacterMotor chMotor;
+	private int rechargeFaster = 100;
 
 	// Use this for initialization
 	void Start () {
@@ -50,8 +51,19 @@ public class PowerUp_Controler : MonoBehaviour {
 				//double the speed rate
 				chMotor.movement.maxForwardSpeed = 60.0f;
 				break;
+			case 5:
+				//double the recharge speed
+				break;
 			default:
 				break;
+		}
+	}
+
+	public void reduce() {
+		rechargeFaster--;
+		if(rechargeFaster <= 0) {
+			rechargeFaster = 100;
+			noMode();
 		}
 	}
 
@@ -86,8 +98,12 @@ public class PowerUp_Controler : MonoBehaviour {
 	public void earthMode() {
 		changeMode(3);
 	}
-
+	
 	public void airMode() {
 		changeMode(4);
+	}
+	
+	public void lightningMode() {
+		changeMode(5);
 	}
 }

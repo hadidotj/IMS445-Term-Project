@@ -16,6 +16,8 @@ public class Give_Power : MonoBehaviour {
 				pc.earthMode();
 			} else if(powerNum == 4) {
 				pc.airMode();
+			}  else if(powerNum == 5) {
+				pc.lightningMode();
 			} else {
 				Debug.Log("There wss an error assigning the power up. Look in Give_Power.cs.");
 			}
