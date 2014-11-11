@@ -87,10 +87,10 @@ public class Player_Controler : MonoBehaviour {
 			if(SoundUtils.isNotPlayingClip(gameObject, powerUpSound)) {
 				SoundUtils.playSoundAt(gameObject, powerUpSound, charge/100.0f*powerUpSound.length, 0.8f);
 			}
-			//float rate = (powerUp.getMode() == 5) ? 2.0f : 1.0f
-			addCharge(33.0f*Time.deltaTime); // * rate
-			//powerUp.reduce()
-
+			PowerUp_Controler pc = (PowerUp_Controler) gameObject.GetComponent("PowerUp_Controler");
+			float rate = (pc.getMode() == 5) ? 2.0f : 1.0f;
+			addCharge(33.0f*Time.deltaTime * rate);
+			pc.reduce();
 		} else {
 			SoundUtils.stopAllForClip(gameObject, powerUpSound);
 		}
