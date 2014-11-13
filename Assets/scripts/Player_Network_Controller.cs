@@ -3,6 +3,25 @@ using System.Collections;
 
 public class Player_Network_Controller : MonoBehaviour {
 
+	public string playerName;
+	public GameObject nameTag;
+	
+	public void setName(string name, Color color) {
+		GetComponent<Player_Controler>().playerName = name;
+		if(nameTag == null) {
+			nameTag = new GameObject("Name Tag");
+			nameTag.transform.parent = transform;
+			GUIText tag = nameTag.AddComponent<GUIText>();
+			tag.fontSize = 15;
+			tag.color = color;
+			tag.fontStyle = FontStyle.Bold;
+			tag.alignment = TextAlignment.Center;
+			tag.anchor = TextAnchor.UpperCenter;
+			tag.enabled = false;
+		}
+		nameTag.guiText.text = name;
+	}
+
 	public void setTeam(bool t, string name) {
 		networkView.RPC("RPCSetTeam", RPCMode.AllBuffered, t, name);
 	}
@@ -12,8 +31,9 @@ public class Player_Network_Controller : MonoBehaviour {
 		Debug.Log("Setting Team to " + t + " for " + name);
 		//if(!teamSet) {
 		GetComponent<Team>().teamName = ((t) ? "Green" : "Red");
-		GetComponent<Player_Controler>().playerName = name;
-		GetComponentInChildren<MeshRenderer>().materials[0].color = (t) ? Color.green : Color.red;
+		Color color = (t) ? Color.green : Color.red;
+		setName(name, color);
+		GetComponentInChildren<MeshRenderer>().materials[0].color = color;
 		//}
 	}
 

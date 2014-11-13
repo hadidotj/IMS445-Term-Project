@@ -18,6 +18,12 @@ public class Player_Controler : MonoBehaviour {
 	public AudioClip powerDownSound;
 	public AudioClip powerUpSound;
 
+	private Camera myCam;
+
+	public void Start() {
+		myCam = gameObject.GetComponentInChildren<Camera>();
+	}
+
 	public void addCharge(float amnt) {
 		charge = Mathf.Clamp(charge+amnt, 0, 100);
 	}
@@ -89,10 +95,26 @@ public class Player_Controler : MonoBehaviour {
 			}
 			PowerUp_Controler pc = (PowerUp_Controler) gameObject.GetComponent("PowerUp_Controler");
 			float rate = (pc.getMode() == 5) ? 2.0f : 1.0f;
-			addCharge(33.0f*Time.deltaTime * rate);
+			addCharge(33.0f * Time.deltaTime * rate);
 			pc.reduce();
 		} else {
 			SoundUtils.stopAllForClip(gameObject, powerUpSound);
+		}
+
+		Plane[] planes = GeometryUtility.CalculateFrustumPlanes(myCam);
+		foreach(GameObject obj in GameObject.FindGameObjectsWithTag("Player")) {
+			if(obj != gameObject) {
+				GUIText text = obj.GetComponentInChildren<GUIText>();
+				float distance = Vector3.Distance(transform.position, obj.transform.position);
+				if(distance < 50 && GeometryUtility.TestPlanesAABB(planes, obj.collider.bounds)) {
+					// Scale text between 15 and 5 depending on distance
+					text.fontSize = (int)Mathf.Lerp(15, 5, distance/50);
+					text.transform.position = myCam.WorldToViewportPoint(obj.transform.position + new Vector3(0.0f, 1.5f, 0.0f));
+					text.enabled = true;
+				} else {
+					text.enabled = false;
+				}
+			}
 		}
 	}
 }
