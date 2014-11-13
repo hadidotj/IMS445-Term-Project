@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Player_Controler : MonoBehaviour {
 	
-	private float charge = 100.0f; // the amount of aromur and ammo can used
+	public float charge = 100.0f; // the amount of aromur and ammo can used
 	private float damage = 40.0f;
 	private float dist;
 
@@ -26,10 +26,20 @@ public class Player_Controler : MonoBehaviour {
 
 	public void addCharge(float amnt) {
 		charge = Mathf.Clamp(charge+amnt, 0, 100);
+		if(charge >= fireCost) {
+			setChargedColor(true);
+		}
 	}
 
 	public void subtractCharge(float amnt) {
 		charge = Mathf.Clamp(charge-amnt, 0, 100);
+		if(charge < fireCost) {
+			setChargedColor(false);
+		}
+	}
+
+	public void setChargedColor(bool on) {
+		GetComponent<Player_Network_Controller>().setChargedColor(on);
 	}
 
 	public double getCharge(){
