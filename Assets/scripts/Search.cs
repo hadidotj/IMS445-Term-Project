@@ -3,6 +3,8 @@ using System.Collections;
 
 public class Search : MonoBehaviour {
 
+	public bool isActive = false;
+
 	private int redScore = 0;
 	private int greenScore = 0;
 

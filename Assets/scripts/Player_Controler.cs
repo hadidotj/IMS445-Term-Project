@@ -54,6 +54,12 @@ public class Player_Controler : MonoBehaviour {
 		if(charge > 0 && GetComponent<Team>().teamName != attacker.GetComponent<Team>().teamName) {
 			gameObject.networkView.RPC("LazerBeamHitMe", RPCMode.All);
 			if(charge <= 0) {
+				if(GetComponent<TeamDeathMatch>().isActive) {
+					if(attacker.GetComponent<Team>().teamName == "Green Team")
+						GetComponent<TeamDeathMatch>().redScore++;
+					else
+						GetComponent<TeamDeathMatch>().greenScore++;
+				}
 				NetworkManager.SendTextMessage(attacker.GetComponent<Player_Controler>().playerName + " tagged " + playerName, Color.yellow);
 			}
 		}
