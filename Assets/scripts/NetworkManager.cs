@@ -119,6 +119,7 @@ public class NetworkManager : MonoBehaviour {
 	}
 
 	public static void GametypeSend(string msg, string args) {
+		Debug.Log("Sending Message: " + msg + "(" + args + ")");
 		instance.networkView.RPC("GametypeMessage", RPCMode.AllBuffered, msg, args);
 	}
 
@@ -130,7 +131,8 @@ public class NetworkManager : MonoBehaviour {
 			yield return new WaitForSeconds(0.25f);
 			times --;
 		}
-		if(times != 0) {
+		if(gametype != null) {
+			Debug.Log("Received Message: " + msg + "(" + args + ")");
 			gametype.BroadcastMessage(msg, args, SendMessageOptions.DontRequireReceiver);
 		}
 	}

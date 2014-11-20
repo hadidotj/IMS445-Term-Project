@@ -9,15 +9,26 @@ public class TeamDeathMatch : MonoBehaviour {
 	public int greenScore = 0;
 
 	// Use this for initialization
-	void Start () {
-	
+	void Awake () {
+		NetworkManager.SetGametype(this);
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		if(redScore == 250)
+
+	public void IncRedScore() {
+		redScore++;
+		checkEnd();
+		NetworkManager.SendTextMessage("Red Score: " + redScore, Color.red);
+	}
+
+	public void IncGreenScore() {
+		greenScore++;
+		checkEnd();
+		NetworkManager.SendTextMessage("Green Score: " + greenScore, Color.green);
+	}
+
+	public void checkEnd() {
+		if(redScore == 10)
 			MenuManager.DisplayDialogBox("Red Team Wins!", "IngameMenu");
-		else if(greenScore == 250)
+		else if(greenScore == 10)
 			MenuManager.DisplayDialogBox("Green Team Wins!", "IngameMenu");
 	}
 }

@@ -31,13 +31,12 @@ public class Player_Network_Controller : MonoBehaviour {
 	[RPC]
 	public void RPCSetTeam(bool t, string name) {
 		Debug.Log("Setting Team to " + t + " for " + name);
-		//if(!teamSet) {
+
 		GetComponent<Team>().teamName = ((t) ? "Green" : "Red");
 		onColor = (t) ? Color.green : Color.red;
 		currentColor = Color.black;
 		setName(name, onColor);
 		setColor (onColor);
-		//}
 	}
 
 	public void setColor(Color color) {
