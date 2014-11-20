@@ -6,6 +6,7 @@ public class Player_Network_Controller : MonoBehaviour {
 	public string playerName;
 	public GameObject nameTag;
 	private Color onColor;
+	private Color currentColor;
 	
 	public void setName(string name, Color color) {
 		GetComponent<Player_Controler>().playerName = name;
@@ -33,9 +34,25 @@ public class Player_Network_Controller : MonoBehaviour {
 		//if(!teamSet) {
 		GetComponent<Team>().teamName = ((t) ? "Green" : "Red");
 		onColor = (t) ? Color.green : Color.red;
+		currentColor = Color.black;
 		setName(name, onColor);
-		GetComponentInChildren<MeshRenderer>().materials[0].color = onColor;
+		setColor (onColor);
 		//}
+	}
+
+	public void setColor(Color color) {
+		bool dim = (currentColor != Color.black && currentColor != onColor);
+
+		currentColor = color;
+		color.a = 1.0f;
+		MeshRenderer[] meshes = GetComponentsInChildren<MeshRenderer>();
+		foreach(MeshRenderer mesh in meshes) {
+			if(dim) {
+				mesh.materials[0].color *= 4*color;
+			} else {
+				mesh.materials[0].color *= color;
+			}
+		}
 	}
 
 	public void FireMyLazer() {
@@ -67,14 +84,13 @@ public class Player_Network_Controller : MonoBehaviour {
 	}
 
 	public void setChargedColor(bool on) {
-		Color current = GetComponentInChildren<MeshRenderer>().materials[0].color;
-		if(current == onColor && !on || current != onColor && on) {
+		if(currentColor == onColor && !on || currentColor != onColor && on) {
 			networkView.RPC("RPCSetChargedColor", RPCMode.AllBuffered, on);
 		}
 	}
 
 	[RPC]
 	public void RPCSetChargedColor(bool on) {
-		GetComponentInChildren<MeshRenderer>().materials[0].color = (on) ? onColor : onColor*0.25f;
+		setColor((on) ? onColor : onColor*0.25f);
 	}
 }
