@@ -10,6 +10,7 @@ public class CreateMenu : AbstractMenu {
 	private int currentHoveredOver = -1;
 
 	private int selectedMap = 0;
+	private bool spectator = false;
 	private string[] maps = {"Ice_Cap", "Mine", "power_ups"};
 
 	public override void Draw(){
@@ -22,14 +23,17 @@ public class CreateMenu : AbstractMenu {
 		// Player Name
 		NetworkManager.playerName = GUI.TextField(new Rect(Screen.width/2.0f-200, header.height+50, 400, 25), NetworkManager.playerName);
 
+		// Spectator?
+		spectator = GUI.Toggle(new Rect(Screen.width/2.0f-200, header.height+100, 400, 25), spectator, "Join as Spectator?");
+
 		// Level Selection
-		selectedMap = GUI.SelectionGrid (new Rect(Screen.width/2.0f-200, header.height+100, 400, 100), selectedMap, maps, 3);
+		selectedMap = GUI.SelectionGrid (new Rect(Screen.width/2.0f-200, header.height+150, 400, 100), selectedMap, maps, 3);
 
 		// Go Button
 		GUI.backgroundColor = Color.blue;
 		Rect connectButtonRect = new Rect(Screen.width-create.width-10.0f, Screen.height-create.height-10.0f, create.width, create.height);
 		if(GUI.Button (connectButtonRect, create)){
-			NetworkManager.CreateServer(maps[selectedMap]);
+			NetworkManager.CreateServer(maps[selectedMap], spectator);
 		} else if(currentHoveredOver != 0 && connectButtonRect.Contains(mouse)) {
 			currentHoveredOver = 0;
 			ButtonHover();

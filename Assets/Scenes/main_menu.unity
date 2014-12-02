@@ -293,6 +293,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerPrefab: {fileID: 100002, guid: 6d695f9c2a4489441b4d6a303a379403, type: 2}
+  spectatorPrefab: {fileID: 100000, guid: 3102015cc93fe864f92b3801aae81802, type: 2}
 --- !u!114 &822459055
 MonoBehaviour:
   m_ObjectHideFlags: 0

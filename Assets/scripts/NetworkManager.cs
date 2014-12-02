@@ -9,6 +9,7 @@ public class NetworkManager : MonoBehaviour {
 	public const int DEFAULT_PORT = 28965;
 
 	public GameObject playerPrefab;
+	public GameObject spectatorPrefab;
 
 	private string currentLevelName;
 	private int currentLevelIdent = 0;
@@ -16,10 +17,15 @@ public class NetworkManager : MonoBehaviour {
 	private MonoBehaviour gametype;
 	private IDictionary<NetworkPlayer, string> playerNames = new Dictionary<NetworkPlayer, string>();
 
+	private enum PLAYER_TEAMS { GREEN, RED, SPECTATOR };
+	private int[] teamCounts = {0,0,0};
+	private IDictionary<NetworkPlayer, PLAYER_TEAMS> playerTeams = new Dictionary<NetworkPlayer, PLAYER_TEAMS>();
+
 	public static NetworkManager instance;
 	public static string playerName;
 
 	private static string useMap = "Ice_Cap";
+	private static bool spectate;
 
 	public void Awake() {
 		instance = this;
@@ -27,14 +33,16 @@ public class NetworkManager : MonoBehaviour {
 		networkView.group = (int)NetworkChannel.PROTOCOL;
 	}
 
-	public static void CreateServer(string mapName, int maxConnections = DEFAULT_MAX_CONNECTIONS, int port = DEFAULT_PORT) {
+	public static void CreateServer(string mapName, bool spectate, int maxConnections = DEFAULT_MAX_CONNECTIONS, int port = DEFAULT_PORT) {
 		useMap = mapName;
+		NetworkManager.spectate = spectate;
 		Network.InitializeSecurity();
 		Network.InitializeServer(maxConnections, port, !Network.HavePublicAddress());
 		MenuManager.DisplayDialogBox("Starting up server...");
 	}
 
-	public static void ConnectToServer(string serverIP, int port = DEFAULT_PORT) {
+	public static void ConnectToServer(string serverIP, bool spectate, int port = DEFAULT_PORT) {
+		NetworkManager.spectate = spectate;
 		Network.Connect(serverIP, port);
 		MenuManager.DisplayDialogBox("Trying to connect...");
 	}
@@ -53,7 +61,7 @@ public class NetworkManager : MonoBehaviour {
 	}
 
 	public void OnPlayerDisconnected(NetworkPlayer player) {
-		team--;
+		teamCounts[(int)playerTeams[player]]--;
 		Network.RemoveRPCs(player);
 		Network.DestroyPlayerObjects(player);
 		networkView.RPC("SendTextMessageRPC", RPCMode.All, playerNames[player] + " left the game", Vector3.one);
@@ -78,7 +86,7 @@ public class NetworkManager : MonoBehaviour {
 	public void OnConnectedToServer() {
 		MenuManager.Open_Menu("IngameMenu");
 		MenuManager.DisplayDialogBox("Obtaining level info...");
-		networkView.RPC("GetCurrentLevel", RPCMode.Server);
+		networkView.RPC("GetCurrentLevel", RPCMode.Server, NetworkManager.spectate);
 	}
 
 	public void OnLevelWasLoaded(int level) {
@@ -90,28 +98,33 @@ public class NetworkManager : MonoBehaviour {
 		SetNetworkChannel(NetworkChannel.GAMEPLAY, true);
 	
 		if(Network.isServer) {
+			team = getTeam(Network.player, NetworkManager.spectate);
 			playerNames.Add(Network.player, playerName);
 			SendTextMessageRPC(playerName + " joined the game", Vector3.one);
 		} else {
 			networkView.RPC("SetPlayerName", RPCMode.Server, playerName);
 		}
 
-		spawn();
+		spawn(NetworkManager.spectate);
 	}
 
-	public void spawn() {
+	public void spawn(bool spectate) {
 		GameObject[] sps = GameObject.FindGameObjectsWithTag((team%2 == 0) ? "SpawnPointGreen" : "SpawnPointRed");
 		Transform sp = sps[Random.Range(0, sps.Length)].transform;
 
-		GameObject player = Network.Instantiate(playerPrefab, sp.position + new Vector3(0, 1.2f, 0), sp.rotation, 0) as GameObject;
-		player.name = "LocalPlayer";
-		player.GetComponent<MouseLook>().enabled = true;
-		((MonoBehaviour)player.GetComponent("FPSInputController")).enabled = true;
-		player.transform.FindChild("Main Camera").gameObject.SetActive(true);
-		player.GetComponent<PowerUp_Controler>().enabled = true;
-		player.GetComponent<Player_loc>().enabled = true;
-		player.GetComponent<Player_Controler>().enabled = true;
-		player.GetComponent<Player_Network_Controller>().setTeam(team%2 == 0, playerName);
+		if(spectate) {
+			Instantiate(spectatorPrefab, sp.position + new Vector3(0, 5.0f, 0), sp.rotation);
+		} else {
+			GameObject player = Network.Instantiate(playerPrefab, sp.position + new Vector3(0, 1.2f, 0), sp.rotation, 0) as GameObject;
+			player.name = "LocalPlayer";
+			player.GetComponent<MouseLook>().enabled = true;
+			((MonoBehaviour)player.GetComponent("FPSInputController")).enabled = true;
+			player.transform.FindChild("Main Camera").gameObject.SetActive(true);
+			player.GetComponent<PowerUp_Controler>().enabled = true;
+			player.GetComponent<Player_loc>().enabled = true;
+			player.GetComponent<Player_Controler>().enabled = true;
+			player.GetComponent<Player_Network_Controller>().setTeam(team%2 == 0, playerName);
+		}
 	}
 
 	public static void SetGametype(MonoBehaviour gametype) {
@@ -137,9 +150,32 @@ public class NetworkManager : MonoBehaviour {
 		}
 	}
 
+	public int getTeam(NetworkPlayer player, bool spectating) {
+		PLAYER_TEAMS team = PLAYER_TEAMS.SPECTATOR;
+		if(!spectating) {
+			int redCount = teamCounts[(int)PLAYER_TEAMS.RED];
+			int greenCount = teamCounts[(int)PLAYER_TEAMS.GREEN];
+			if(redCount > greenCount) {
+				team = PLAYER_TEAMS.GREEN;
+			} else if(greenCount > redCount) {
+				team = PLAYER_TEAMS.RED;
+			} else {
+				int random = Random.Range(0, 2);
+				Debug.Log("Choosing random team: " + random);
+				team = (random == 0) ? PLAYER_TEAMS.GREEN : PLAYER_TEAMS.RED;
+			}
+		}
+		playerTeams[player] = team;
+		teamCounts[(int)team]++;
+		
+		Debug.Log("Choosing team: " + team);
+		return (int)team;
+	}
+
 	[RPC]
-	public void GetCurrentLevel(NetworkMessageInfo info) {
-		networkView.RPC("LoadNetworkLevel", info.sender, currentLevelName, currentLevelIdent, ++team);
+	public void GetCurrentLevel(bool spectating, NetworkMessageInfo info) {
+		int team = getTeam(info.sender, spectating);
+		networkView.RPC("LoadNetworkLevel", info.sender, currentLevelName, currentLevelIdent, (int)team);
 	}
 
 	[RPC]
