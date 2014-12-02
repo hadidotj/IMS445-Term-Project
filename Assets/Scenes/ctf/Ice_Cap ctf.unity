@@ -1070,7 +1070,6 @@ GameObject:
   - 4: {fileID: 18614993}
   - 95: {fileID: 18614996}
   - 114: {fileID: 18614995}
-  - 108: {fileID: 18614994}
   m_Layer: 0
   m_Name: Flowers
   m_TagString: Untagged
@@ -1104,42 +1103,6 @@ Transform:
   - {fileID: 1752425091}
   m_Father: {fileID: 2052849499}
   m_RootOrder: 4
---- !u!108 &18614994
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 10800010, guid: c10b88e430112d641b01a37dd0858fa7,
-    type: 2}
-  m_PrefabInternal: {fileID: 927985319}
-  m_GameObject: {fileID: 18614992}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Type: 2
-  m_Color: {r: .875, g: .779158235, b: .527573526, a: 1}
-  m_Intensity: 1
-  m_Range: 10
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_Strength: 1
-    m_Bias: .0500000007
-    m_Softness: 4
-    m_SoftnessFade: 1
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_ActuallyLightmapped: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 1
-  m_ShadowSamples: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
-  m_IndirectIntensity: 1
-  m_AreaSize: {x: 1, y: 1}
 --- !u!114 &18614995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3833,7 +3796,6 @@ GameObject:
   - 4: {fileID: 83244817}
   - 33: {fileID: 83244820}
   - 23: {fileID: 83244819}
-  - 108: {fileID: 83244818}
   m_Layer: 0
   m_Name: default_MeshPart4
   m_TagString: Untagged
@@ -3853,42 +3815,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1054985048}
   m_RootOrder: 4
---- !u!108 &83244818
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 10800002, guid: 7573af6d94ea30c47b592b33043ff9aa,
-    type: 2}
-  m_PrefabInternal: {fileID: 1442230724}
-  m_GameObject: {fileID: 83244816}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Type: 2
-  m_Color: {r: .808823526, g: .493005008, b: .154628024, a: 1}
-  m_Intensity: 4.19999981
-  m_Range: 10
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_Strength: 1
-    m_Bias: .0500000007
-    m_Softness: 4
-    m_SoftnessFade: 1
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_ActuallyLightmapped: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 1
-  m_ShadowSamples: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
-  m_IndirectIntensity: 1
-  m_AreaSize: {x: 1, y: 1}
 --- !u!23 &83244819
 Renderer:
   m_ObjectHideFlags: 0
@@ -3928,7 +3854,6 @@ GameObject:
   - 4: {fileID: 83530157}
   - 33: {fileID: 83530160}
   - 23: {fileID: 83530159}
-  - 108: {fileID: 83530158}
   m_Layer: 0
   m_Name: default_MeshPart2
   m_TagString: Untagged
@@ -3948,42 +3873,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1054985048}
   m_RootOrder: 2
---- !u!108 &83530158
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 10800004, guid: 7573af6d94ea30c47b592b33043ff9aa,
-    type: 2}
-  m_PrefabInternal: {fileID: 1442230724}
-  m_GameObject: {fileID: 83530156}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Type: 2
-  m_Color: {r: .845588207, g: .422794104, b: .422794104, a: 1}
-  m_Intensity: 4.11999989
-  m_Range: 10
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_Strength: 1
-    m_Bias: .0500000007
-    m_Softness: 4
-    m_SoftnessFade: 1
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_ActuallyLightmapped: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 1
-  m_ShadowSamples: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
-  m_IndirectIntensity: 1
-  m_AreaSize: {x: 1, y: 1}
 --- !u!23 &83530159
 Renderer:
   m_ObjectHideFlags: 0
@@ -4337,6 +4226,7 @@ GameObject:
   - 54: {fileID: 99421122}
   - 65: {fileID: 99421121}
   - 114: {fileID: 99421123}
+  - 108: {fileID: 1548771650}
   m_Layer: 0
   m_Name: Thunder_PowerUp_Statue
   m_TagString: Untagged
@@ -5658,7 +5548,6 @@ GameObject:
   - 33: {fileID: 126183705}
   - 135: {fileID: 126183704}
   - 23: {fileID: 126183703}
-  - 108: {fileID: 126183702}
   m_Layer: 0
   m_Name: cloud
   m_TagString: Untagged
@@ -5678,42 +5567,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1380838118}
   m_RootOrder: 9
---- !u!108 &126183702
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 10800018, guid: e6a0616e404919a4f8ed4d2c6cd16f06,
-    type: 2}
-  m_PrefabInternal: {fileID: 69756212}
-  m_GameObject: {fileID: 126183700}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Type: 2
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 0
-  m_Range: 10
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_Strength: 1
-    m_Bias: .0500000007
-    m_Softness: 4
-    m_SoftnessFade: 1
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_ActuallyLightmapped: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 1
-  m_ShadowSamples: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
-  m_IndirectIntensity: 1
-  m_AreaSize: {x: 1, y: 1}
 --- !u!23 &126183703
 Renderer:
   m_ObjectHideFlags: 0
@@ -8076,7 +7929,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 183636763}
   - 95: {fileID: 183636765}
-  - 108: {fileID: 183636764}
   m_Layer: 0
   m_Name: Creature
   m_TagString: Untagged
@@ -8097,42 +7949,6 @@ Transform:
   - {fileID: 1671016616}
   m_Father: {fileID: 918620725}
   m_RootOrder: 1
---- !u!108 &183636764
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 10800012, guid: 7573af6d94ea30c47b592b33043ff9aa,
-    type: 2}
-  m_PrefabInternal: {fileID: 1442230724}
-  m_GameObject: {fileID: 183636762}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Type: 2
-  m_Color: {r: .977941155, g: 0, b: 0, a: 1}
-  m_Intensity: 1.75
-  m_Range: 2
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_Strength: 1
-    m_Bias: .0500000007
-    m_Softness: 4
-    m_SoftnessFade: 1
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_ActuallyLightmapped: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 1
-  m_ShadowSamples: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
-  m_IndirectIntensity: 1
-  m_AreaSize: {x: 1, y: 1}
 --- !u!95 &183636765
 Animator:
   serializedVersion: 3
@@ -8471,7 +8287,6 @@ GameObject:
   - 33: {fileID: 191126982}
   - 135: {fileID: 191126981}
   - 23: {fileID: 191126980}
-  - 108: {fileID: 191126979}
   m_Layer: 0
   m_Name: cloud
   m_TagString: Untagged
@@ -8491,42 +8306,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1380838118}
   m_RootOrder: 2
---- !u!108 &191126979
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 10800004, guid: e6a0616e404919a4f8ed4d2c6cd16f06,
-    type: 2}
-  m_PrefabInternal: {fileID: 69756212}
-  m_GameObject: {fileID: 191126977}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Type: 2
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 0
-  m_Range: 10
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_Strength: 1
-    m_Bias: .0500000007
-    m_Softness: 4
-    m_SoftnessFade: 1
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_ActuallyLightmapped: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 1
-  m_ShadowSamples: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
-  m_IndirectIntensity: 1
-  m_AreaSize: {x: 1, y: 1}
 --- !u!23 &191126980
 Renderer:
   m_ObjectHideFlags: 0
@@ -8579,7 +8358,6 @@ GameObject:
   - 4: {fileID: 192284311}
   - 33: {fileID: 192284314}
   - 23: {fileID: 192284313}
-  - 108: {fileID: 192284312}
   m_Layer: 0
   m_Name: default_MeshPart4
   m_TagString: Untagged
@@ -8599,42 +8377,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 339029310}
   m_RootOrder: 4
---- !u!108 &192284312
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 10800002, guid: 7573af6d94ea30c47b592b33043ff9aa,
-    type: 2}
-  m_PrefabInternal: {fileID: 1158799160}
-  m_GameObject: {fileID: 192284310}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Type: 2
-  m_Color: {r: .808823526, g: .493005008, b: .154628024, a: 1}
-  m_Intensity: 4.19999981
-  m_Range: 10
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_Strength: 1
-    m_Bias: .0500000007
-    m_Softness: 4
-    m_SoftnessFade: 1
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_ActuallyLightmapped: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 1
-  m_ShadowSamples: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
-  m_IndirectIntensity: 1
-  m_AreaSize: {x: 1, y: 1}
 --- !u!23 &192284313
 Renderer:
   m_ObjectHideFlags: 0
@@ -9397,7 +9139,6 @@ GameObject:
   - 33: {fileID: 217371691}
   - 136: {fileID: 217371690}
   - 23: {fileID: 217371689}
-  - 108: {fileID: 217371688}
   m_Layer: 0
   m_Name: a
   m_TagString: Untagged
@@ -9417,42 +9158,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1424258379}
   m_RootOrder: 0
---- !u!108 &217371688
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 10800030, guid: e6a0616e404919a4f8ed4d2c6cd16f06,
-    type: 2}
-  m_PrefabInternal: {fileID: 69756212}
-  m_GameObject: {fileID: 217371686}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Type: 2
-  m_Color: {r: .906168759, g: .933823526, b: .432580024, a: 1}
-  m_Intensity: 3.27999997
-  m_Range: 10
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_Strength: 1
-    m_Bias: .0500000007
-    m_Softness: 4
-    m_SoftnessFade: 1
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_ActuallyLightmapped: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 1
-  m_ShadowSamples: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
-  m_IndirectIntensity: 1
-  m_AreaSize: {x: 1, y: 1}
 --- !u!23 &217371689
 Renderer:
   m_ObjectHideFlags: 0
@@ -10518,7 +10223,6 @@ GameObject:
   - 33: {fileID: 239798269}
   - 136: {fileID: 239798268}
   - 23: {fileID: 239798267}
-  - 108: {fileID: 239798266}
   m_Layer: 0
   m_Name: a
   m_TagString: Untagged
@@ -10538,42 +10242,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 568666932}
   m_RootOrder: 0
---- !u!108 &239798266
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 10800040, guid: e6a0616e404919a4f8ed4d2c6cd16f06,
-    type: 2}
-  m_PrefabInternal: {fileID: 69756212}
-  m_GameObject: {fileID: 239798264}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Type: 2
-  m_Color: {r: .906168759, g: .933823526, b: .432580024, a: 1}
-  m_Intensity: 3.27999997
-  m_Range: 10
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_Strength: 1
-    m_Bias: .0500000007
-    m_Softness: 4
-    m_SoftnessFade: 1
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_ActuallyLightmapped: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 1
-  m_ShadowSamples: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
-  m_IndirectIntensity: 1
-  m_AreaSize: {x: 1, y: 1}
 --- !u!23 &239798267
 Renderer:
   m_ObjectHideFlags: 0
@@ -11178,7 +10846,6 @@ GameObject:
   - 33: {fileID: 255770821}
   - 135: {fileID: 255770820}
   - 23: {fileID: 255770819}
-  - 108: {fileID: 255770818}
   m_Layer: 0
   m_Name: cloud
   m_TagString: Untagged
@@ -11198,42 +10865,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1380838118}
   m_RootOrder: 8
---- !u!108 &255770818
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 10800016, guid: e6a0616e404919a4f8ed4d2c6cd16f06,
-    type: 2}
-  m_PrefabInternal: {fileID: 69756212}
-  m_GameObject: {fileID: 255770816}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Type: 2
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 0
-  m_Range: 10
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_Strength: 1
-    m_Bias: .0500000007
-    m_Softness: 4
-    m_SoftnessFade: 1
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_ActuallyLightmapped: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 1
-  m_ShadowSamples: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
-  m_IndirectIntensity: 1
-  m_AreaSize: {x: 1, y: 1}
 --- !u!23 &255770819
 Renderer:
   m_ObjectHideFlags: 0
@@ -11900,7 +11531,6 @@ GameObject:
   - 33: {fileID: 280372383}
   - 136: {fileID: 280372382}
   - 23: {fileID: 280372381}
-  - 108: {fileID: 280372380}
   m_Layer: 0
   m_Name: b
   m_TagString: Untagged
@@ -11920,42 +11550,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1819847226}
   m_RootOrder: 1
---- !u!108 &280372380
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 10800044, guid: e6a0616e404919a4f8ed4d2c6cd16f06,
-    type: 2}
-  m_PrefabInternal: {fileID: 69756212}
-  m_GameObject: {fileID: 280372378}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Type: 2
-  m_Color: {r: .906168759, g: .933823526, b: .432580024, a: 1}
-  m_Intensity: 3.27999997
-  m_Range: 10
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_Strength: 1
-    m_Bias: .0500000007
-    m_Softness: 4
-    m_SoftnessFade: 1
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_ActuallyLightmapped: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 1
-  m_ShadowSamples: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
-  m_IndirectIntensity: 1
-  m_AreaSize: {x: 1, y: 1}
 --- !u!23 &280372381
 Renderer:
   m_ObjectHideFlags: 0
@@ -16531,7 +16125,6 @@ GameObject:
   - 4: {fileID: 410994430}
   - 33: {fileID: 410994434}
   - 23: {fileID: 410994433}
-  - 108: {fileID: 410994432}
   - 114: {fileID: 410994431}
   m_Layer: 0
   m_Name: Vertex_Object
@@ -16564,42 +16157,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a95e7d06fbb8e4a4aa3bf91166c1cc9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!108 &410994432
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 10800012, guid: bf60e2ad613aef14bb58c9eeb639de5c,
-    type: 2}
-  m_PrefabInternal: {fileID: 486821397}
-  m_GameObject: {fileID: 410994429}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Type: 2
-  m_Color: {r: .0948671475, g: .0236267298, b: .16911763, a: 1}
-  m_Intensity: 2.58999991
-  m_Range: 10
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_Strength: 1
-    m_Bias: .0500000007
-    m_Softness: 4
-    m_SoftnessFade: 1
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_ActuallyLightmapped: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 1
-  m_ShadowSamples: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
-  m_IndirectIntensity: 1
-  m_AreaSize: {x: 1, y: 1}
 --- !u!23 &410994433
 Renderer:
   m_ObjectHideFlags: 0
@@ -16870,7 +16427,6 @@ GameObject:
   - 4: {fileID: 417452130}
   - 95: {fileID: 417452133}
   - 114: {fileID: 417452132}
-  - 108: {fileID: 417452131}
   m_Layer: 0
   m_Name: Flowers
   m_TagString: Untagged
@@ -16904,42 +16460,6 @@ Transform:
   - {fileID: 2100963389}
   m_Father: {fileID: 1042716169}
   m_RootOrder: 5
---- !u!108 &417452131
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 10800008, guid: c10b88e430112d641b01a37dd0858fa7,
-    type: 2}
-  m_PrefabInternal: {fileID: 1833785147}
-  m_GameObject: {fileID: 417452129}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Type: 2
-  m_Color: {r: .875, g: .779158235, b: .527573526, a: 1}
-  m_Intensity: 1
-  m_Range: 10
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_Strength: 1
-    m_Bias: .0500000007
-    m_Softness: 4
-    m_SoftnessFade: 1
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_ActuallyLightmapped: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 1
-  m_ShadowSamples: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
-  m_IndirectIntensity: 1
-  m_AreaSize: {x: 1, y: 1}
 --- !u!114 &417452132
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18824,7 +18344,6 @@ GameObject:
   - 33: {fileID: 458801068}
   - 135: {fileID: 458801067}
   - 23: {fileID: 458801066}
-  - 108: {fileID: 458801065}
   m_Layer: 0
   m_Name: cloud
   m_TagString: Untagged
@@ -18844,42 +18363,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1380838118}
   m_RootOrder: 1
---- !u!108 &458801065
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 10800002, guid: e6a0616e404919a4f8ed4d2c6cd16f06,
-    type: 2}
-  m_PrefabInternal: {fileID: 69756212}
-  m_GameObject: {fileID: 458801063}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Type: 2
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 0
-  m_Range: 10
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_Strength: 1
-    m_Bias: .0500000007
-    m_Softness: 4
-    m_SoftnessFade: 1
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_ActuallyLightmapped: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 1
-  m_ShadowSamples: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
-  m_IndirectIntensity: 1
-  m_AreaSize: {x: 1, y: 1}
 --- !u!23 &458801066
 Renderer:
   m_ObjectHideFlags: 0
@@ -23526,7 +23009,6 @@ GameObject:
   - 4: {fileID: 578852080}
   - 33: {fileID: 578852084}
   - 23: {fileID: 578852083}
-  - 108: {fileID: 578852082}
   - 114: {fileID: 578852081}
   m_Layer: 0
   m_Name: Vertex_Object
@@ -23563,42 +23045,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a95e7d06fbb8e4a4aa3bf91166c1cc9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!108 &578852082
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 10800022, guid: e6a0616e404919a4f8ed4d2c6cd16f06,
-    type: 2}
-  m_PrefabInternal: {fileID: 69756212}
-  m_GameObject: {fileID: 578852079}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Type: 2
-  m_Color: {r: .906431198, g: .941176474, b: .311418712, a: 1}
-  m_Intensity: .529999971
-  m_Range: 10
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_Strength: 1
-    m_Bias: .0500000007
-    m_Softness: 4
-    m_SoftnessFade: 1
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_ActuallyLightmapped: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 1
-  m_ShadowSamples: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
-  m_IndirectIntensity: 1
-  m_AreaSize: {x: 1, y: 1}
 --- !u!23 &578852083
 Renderer:
   m_ObjectHideFlags: 0
@@ -25200,70 +24646,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 661866066}
   m_GameObject: {fileID: 603700715}
   m_Mesh: {fileID: 4300036, guid: a5c81c52b2d10fb4b8442385057a8456, type: 3}
---- !u!1 &606046861
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100032, guid: 7573af6d94ea30c47b592b33043ff9aa, type: 2}
-  m_PrefabInternal: {fileID: 1442230724}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 606046862}
-  - 108: {fileID: 606046863}
-  m_Layer: 0
-  m_Name: extra_light
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &606046862
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400032, guid: 7573af6d94ea30c47b592b33043ff9aa, type: 2}
-  m_PrefabInternal: {fileID: 1442230724}
-  m_GameObject: {fileID: 606046861}
-  m_LocalRotation: {x: 0, y: -.999993265, z: 0, w: -.00367952278}
-  m_LocalPosition: {x: .26000008, y: -.0919504166, z: -3.60819286e-09}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 918620725}
-  m_RootOrder: 2
---- !u!108 &606046863
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 10800016, guid: 7573af6d94ea30c47b592b33043ff9aa,
-    type: 2}
-  m_PrefabInternal: {fileID: 1442230724}
-  m_GameObject: {fileID: 606046861}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Type: 2
-  m_Color: {r: .83088237, g: .281033754, b: .281033754, a: 1}
-  m_Intensity: 1
-  m_Range: 15
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_Strength: 1
-    m_Bias: .0500000007
-    m_Softness: 4
-    m_SoftnessFade: 1
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_ActuallyLightmapped: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 1
-  m_ShadowSamples: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
-  m_IndirectIntensity: 1
-  m_AreaSize: {x: 1, y: 1}
 --- !u!1 &606310089
 GameObject:
   m_ObjectHideFlags: 0
@@ -25469,9 +24851,9 @@ Light:
   m_Enabled: 1
   serializedVersion: 3
   m_Type: 2
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1.02999997
-  m_Range: 5
+  m_Color: {r: .816176474, g: .878296196, b: 1, a: 1}
+  m_Intensity: 1
+  m_Range: 25
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
@@ -25621,7 +25003,6 @@ GameObject:
   - 4: {fileID: 609390507}
   - 33: {fileID: 609390510}
   - 23: {fileID: 609390509}
-  - 108: {fileID: 609390508}
   m_Layer: 0
   m_Name: default_MeshPart2
   m_TagString: Untagged
@@ -25641,42 +25022,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 339029310}
   m_RootOrder: 2
---- !u!108 &609390508
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 10800004, guid: 7573af6d94ea30c47b592b33043ff9aa,
-    type: 2}
-  m_PrefabInternal: {fileID: 1158799160}
-  m_GameObject: {fileID: 609390506}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Type: 2
-  m_Color: {r: .845588207, g: .422794104, b: .422794104, a: 1}
-  m_Intensity: 4.11999989
-  m_Range: 10
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_Strength: 1
-    m_Bias: .0500000007
-    m_Softness: 4
-    m_SoftnessFade: 1
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_ActuallyLightmapped: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 1
-  m_ShadowSamples: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
-  m_IndirectIntensity: 1
-  m_AreaSize: {x: 1, y: 1}
 --- !u!23 &609390509
 Renderer:
   m_ObjectHideFlags: 0
@@ -25774,7 +25119,6 @@ GameObject:
   - 4: {fileID: 611848178}
   - 95: {fileID: 611848181}
   - 114: {fileID: 611848180}
-  - 108: {fileID: 611848179}
   m_Layer: 0
   m_Name: Flowers
   m_TagString: Untagged
@@ -25808,42 +25152,6 @@ Transform:
   - {fileID: 1817391977}
   m_Father: {fileID: 2052849499}
   m_RootOrder: 3
---- !u!108 &611848179
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 10800002, guid: c10b88e430112d641b01a37dd0858fa7,
-    type: 2}
-  m_PrefabInternal: {fileID: 927985319}
-  m_GameObject: {fileID: 611848177}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Type: 2
-  m_Color: {r: .875, g: .779158235, b: .527573526, a: 1}
-  m_Intensity: 1
-  m_Range: 10
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_Strength: 1
-    m_Bias: .0500000007
-    m_Softness: 4
-    m_SoftnessFade: 1
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_ActuallyLightmapped: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 1
-  m_ShadowSamples: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
-  m_IndirectIntensity: 1
-  m_AreaSize: {x: 1, y: 1}
 --- !u!114 &611848180
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25883,7 +25191,6 @@ GameObject:
   - 33: {fileID: 615823352}
   - 135: {fileID: 615823351}
   - 23: {fileID: 615823350}
-  - 108: {fileID: 615823349}
   m_Layer: 0
   m_Name: cloud
   m_TagString: Untagged
@@ -25903,42 +25210,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1380838118}
   m_RootOrder: 3
---- !u!108 &615823349
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 10800006, guid: e6a0616e404919a4f8ed4d2c6cd16f06,
-    type: 2}
-  m_PrefabInternal: {fileID: 69756212}
-  m_GameObject: {fileID: 615823347}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Type: 2
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 0
-  m_Range: 10
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_Strength: 1
-    m_Bias: .0500000007
-    m_Softness: 4
-    m_SoftnessFade: 1
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_ActuallyLightmapped: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 1
-  m_ShadowSamples: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
-  m_IndirectIntensity: 1
-  m_AreaSize: {x: 1, y: 1}
 --- !u!23 &615823350
 Renderer:
   m_ObjectHideFlags: 0
@@ -25991,7 +25262,6 @@ GameObject:
   - 4: {fileID: 617248488}
   - 95: {fileID: 617248491}
   - 114: {fileID: 617248490}
-  - 108: {fileID: 617248489}
   m_Layer: 0
   m_Name: Flowers
   m_TagString: Untagged
@@ -26025,42 +25295,6 @@ Transform:
   - {fileID: 1598876759}
   m_Father: {fileID: 2052849499}
   m_RootOrder: 5
---- !u!108 &617248489
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 10800008, guid: c10b88e430112d641b01a37dd0858fa7,
-    type: 2}
-  m_PrefabInternal: {fileID: 927985319}
-  m_GameObject: {fileID: 617248487}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Type: 2
-  m_Color: {r: .875, g: .779158235, b: .527573526, a: 1}
-  m_Intensity: 1
-  m_Range: 10
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_Strength: 1
-    m_Bias: .0500000007
-    m_Softness: 4
-    m_SoftnessFade: 1
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_ActuallyLightmapped: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 1
-  m_ShadowSamples: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
-  m_IndirectIntensity: 1
-  m_AreaSize: {x: 1, y: 1}
 --- !u!114 &617248490
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26834,7 +26068,6 @@ GameObject:
   - 33: {fileID: 641081231}
   - 136: {fileID: 641081230}
   - 23: {fileID: 641081229}
-  - 108: {fileID: 641081228}
   m_Layer: 0
   m_Name: d
   m_TagString: Untagged
@@ -26854,42 +26087,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 568666932}
   m_RootOrder: 2
---- !u!108 &641081228
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 10800036, guid: e6a0616e404919a4f8ed4d2c6cd16f06,
-    type: 2}
-  m_PrefabInternal: {fileID: 69756212}
-  m_GameObject: {fileID: 641081226}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Type: 2
-  m_Color: {r: .906168759, g: .933823526, b: .432580024, a: 1}
-  m_Intensity: 3.27999997
-  m_Range: 10
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_Strength: 1
-    m_Bias: .0500000007
-    m_Softness: 4
-    m_SoftnessFade: 1
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_ActuallyLightmapped: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 1
-  m_ShadowSamples: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
-  m_IndirectIntensity: 1
-  m_AreaSize: {x: 1, y: 1}
 --- !u!23 &641081229
 Renderer:
   m_ObjectHideFlags: 0
@@ -27292,7 +26489,6 @@ GameObject:
   - 33: {fileID: 651377840}
   - 136: {fileID: 651377839}
   - 23: {fileID: 651377838}
-  - 108: {fileID: 651377837}
   m_Layer: 0
   m_Name: b
   m_TagString: Untagged
@@ -27312,42 +26508,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 568666932}
   m_RootOrder: 1
---- !u!108 &651377837
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 10800038, guid: e6a0616e404919a4f8ed4d2c6cd16f06,
-    type: 2}
-  m_PrefabInternal: {fileID: 69756212}
-  m_GameObject: {fileID: 651377835}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Type: 2
-  m_Color: {r: .906168759, g: .933823526, b: .432580024, a: 1}
-  m_Intensity: 3.27999997
-  m_Range: 10
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_Strength: 1
-    m_Bias: .0500000007
-    m_Softness: 4
-    m_SoftnessFade: 1
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_ActuallyLightmapped: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 1
-  m_ShadowSamples: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
-  m_IndirectIntensity: 1
-  m_AreaSize: {x: 1, y: 1}
 --- !u!23 &651377838
 Renderer:
   m_ObjectHideFlags: 0
@@ -32584,7 +31744,6 @@ GameObject:
   - 4: {fileID: 788448954}
   - 95: {fileID: 788448957}
   - 114: {fileID: 788448956}
-  - 108: {fileID: 788448955}
   m_Layer: 0
   m_Name: Flowers
   m_TagString: Untagged
@@ -32618,42 +31777,6 @@ Transform:
   - {fileID: 1750682153}
   m_Father: {fileID: 1042716169}
   m_RootOrder: 3
---- !u!108 &788448955
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 10800002, guid: c10b88e430112d641b01a37dd0858fa7,
-    type: 2}
-  m_PrefabInternal: {fileID: 1833785147}
-  m_GameObject: {fileID: 788448953}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Type: 2
-  m_Color: {r: .875, g: .779158235, b: .527573526, a: 1}
-  m_Intensity: 1
-  m_Range: 10
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_Strength: 1
-    m_Bias: .0500000007
-    m_Softness: 4
-    m_SoftnessFade: 1
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_ActuallyLightmapped: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 1
-  m_ShadowSamples: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
-  m_IndirectIntensity: 1
-  m_AreaSize: {x: 1, y: 1}
 --- !u!114 &788448956
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35271,7 +34394,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 844771976}
   - 95: {fileID: 844771978}
-  - 108: {fileID: 844771977}
   m_Layer: 0
   m_Name: snowFlake
   m_TagString: Untagged
@@ -35292,42 +34414,6 @@ Transform:
   - {fileID: 1130233040}
   m_Father: {fileID: 608106400}
   m_RootOrder: 1
---- !u!108 &844771977
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 10800010, guid: bf60e2ad613aef14bb58c9eeb639de5c,
-    type: 2}
-  m_PrefabInternal: {fileID: 486821397}
-  m_GameObject: {fileID: 844771975}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Type: 2
-  m_Color: {r: .192744359, g: .683502734, b: .845588207, a: 1}
-  m_Intensity: 2.27999997
-  m_Range: 10
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_Strength: 1
-    m_Bias: .0500000007
-    m_Softness: 4
-    m_SoftnessFade: 1
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_ActuallyLightmapped: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 1
-  m_ShadowSamples: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
-  m_IndirectIntensity: 1
-  m_AreaSize: {x: 1, y: 1}
 --- !u!95 &844771978
 Animator:
   serializedVersion: 3
@@ -35471,7 +34557,6 @@ GameObject:
   - 33: {fileID: 848895673}
   - 135: {fileID: 848895672}
   - 23: {fileID: 848895671}
-  - 108: {fileID: 848895670}
   m_Layer: 0
   m_Name: cloud
   m_TagString: Untagged
@@ -35491,42 +34576,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1380838118}
   m_RootOrder: 5
---- !u!108 &848895670
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 10800010, guid: e6a0616e404919a4f8ed4d2c6cd16f06,
-    type: 2}
-  m_PrefabInternal: {fileID: 69756212}
-  m_GameObject: {fileID: 848895668}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Type: 2
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 0
-  m_Range: 10
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_Strength: 1
-    m_Bias: .0500000007
-    m_Softness: 4
-    m_SoftnessFade: 1
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_ActuallyLightmapped: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 1
-  m_ShadowSamples: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
-  m_IndirectIntensity: 1
-  m_AreaSize: {x: 1, y: 1}
 --- !u!23 &848895671
 Renderer:
   m_ObjectHideFlags: 0
@@ -35579,7 +34628,6 @@ GameObject:
   - 4: {fileID: 848936133}
   - 95: {fileID: 848936136}
   - 114: {fileID: 848936135}
-  - 108: {fileID: 848936134}
   m_Layer: 0
   m_Name: Flowers
   m_TagString: Untagged
@@ -35619,13 +34667,13 @@ Light:
   m_PrefabParentObject: {fileID: 10800000, guid: c10b88e430112d641b01a37dd0858fa7,
     type: 2}
   m_PrefabInternal: {fileID: 1833785147}
-  m_GameObject: {fileID: 848936132}
+  m_GameObject: {fileID: 1714773881}
   m_Enabled: 1
   serializedVersion: 3
   m_Type: 2
-  m_Color: {r: .875, g: .779158235, b: .527573526, a: 1}
+  m_Color: {r: 0, g: 1, b: .296551704, a: 1}
   m_Intensity: 1
-  m_Range: 10
+  m_Range: 25
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
@@ -38181,7 +37229,6 @@ Transform:
   m_Children:
   - {fileID: 1305249067}
   - {fileID: 183636763}
-  - {fileID: 606046862}
   - {fileID: 1296945861}
   m_Father: {fileID: 1882520235}
   m_RootOrder: 3
@@ -38702,7 +37749,6 @@ GameObject:
   - 33: {fileID: 926525462}
   - 135: {fileID: 926525461}
   - 23: {fileID: 926525460}
-  - 108: {fileID: 926525459}
   m_Layer: 0
   m_Name: cloud
   m_TagString: Untagged
@@ -38722,42 +37768,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1380838118}
   m_RootOrder: 6
---- !u!108 &926525459
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 10800012, guid: e6a0616e404919a4f8ed4d2c6cd16f06,
-    type: 2}
-  m_PrefabInternal: {fileID: 69756212}
-  m_GameObject: {fileID: 926525457}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Type: 2
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 0
-  m_Range: 10
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_Strength: 1
-    m_Bias: .0500000007
-    m_Softness: 4
-    m_SoftnessFade: 1
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_ActuallyLightmapped: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 1
-  m_ShadowSamples: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
-  m_IndirectIntensity: 1
-  m_AreaSize: {x: 1, y: 1}
 --- !u!23 &926525460
 Renderer:
   m_ObjectHideFlags: 0
@@ -39814,7 +38824,6 @@ GameObject:
   - 4: {fileID: 949041371}
   - 33: {fileID: 949041374}
   - 23: {fileID: 949041373}
-  - 108: {fileID: 949041372}
   m_Layer: 0
   m_Name: default_MeshPart1
   m_TagString: Untagged
@@ -39834,42 +38843,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 339029310}
   m_RootOrder: 1
---- !u!108 &949041372
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 10800006, guid: 7573af6d94ea30c47b592b33043ff9aa,
-    type: 2}
-  m_PrefabInternal: {fileID: 1158799160}
-  m_GameObject: {fileID: 949041370}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Type: 2
-  m_Color: {r: .841262937, g: .852941155, b: .00627163192, a: 1}
-  m_Intensity: 4.11999989
-  m_Range: 10
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_Strength: 1
-    m_Bias: .0500000007
-    m_Softness: 4
-    m_SoftnessFade: 1
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_ActuallyLightmapped: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 1
-  m_ShadowSamples: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
-  m_IndirectIntensity: 1
-  m_AreaSize: {x: 1, y: 1}
 --- !u!23 &949041373
 Renderer:
   m_ObjectHideFlags: 0
@@ -42107,7 +41080,6 @@ Transform:
   m_Children:
   - {fileID: 2035540425}
   - {fileID: 1832956853}
-  - {fileID: 1930574715}
   - {fileID: 1167078845}
   m_Father: {fileID: 1882520235}
   m_RootOrder: 0
@@ -44007,7 +42979,6 @@ GameObject:
   - 4: {fileID: 1051762690}
   - 95: {fileID: 1051762693}
   - 114: {fileID: 1051762692}
-  - 108: {fileID: 1051762691}
   m_Layer: 0
   m_Name: Flowers
   m_TagString: Untagged
@@ -44041,42 +43012,6 @@ Transform:
   - {fileID: 1173154658}
   m_Father: {fileID: 1042716169}
   m_RootOrder: 4
---- !u!108 &1051762691
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 10800010, guid: c10b88e430112d641b01a37dd0858fa7,
-    type: 2}
-  m_PrefabInternal: {fileID: 1833785147}
-  m_GameObject: {fileID: 1051762689}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Type: 2
-  m_Color: {r: .875, g: .779158235, b: .527573526, a: 1}
-  m_Intensity: 1
-  m_Range: 10
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_Strength: 1
-    m_Bias: .0500000007
-    m_Softness: 4
-    m_SoftnessFade: 1
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_ActuallyLightmapped: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 1
-  m_ShadowSamples: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
-  m_IndirectIntensity: 1
-  m_AreaSize: {x: 1, y: 1}
 --- !u!114 &1051762692
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46260,7 +45195,6 @@ GameObject:
   - 33: {fileID: 1111439302}
   - 23: {fileID: 1111439301}
   - 95: {fileID: 1111439300}
-  - 108: {fileID: 1111439299}
   m_Layer: 0
   m_Name: Plant N110614
   m_TagString: Untagged
@@ -46280,42 +45214,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1042716169}
   m_RootOrder: 1
---- !u!108 &1111439299
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 10800012, guid: c10b88e430112d641b01a37dd0858fa7,
-    type: 2}
-  m_PrefabInternal: {fileID: 1833785147}
-  m_GameObject: {fileID: 1111439297}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Type: 2
-  m_Color: {r: .811549127, g: .875, b: .521139681, a: 1}
-  m_Intensity: 1
-  m_Range: 10
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_Strength: 1
-    m_Bias: .0500000007
-    m_Softness: 4
-    m_SoftnessFade: 1
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_ActuallyLightmapped: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 1
-  m_ShadowSamples: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
-  m_IndirectIntensity: 1
-  m_AreaSize: {x: 1, y: 1}
 --- !u!95 &1111439300
 Animator:
   serializedVersion: 3
@@ -46487,7 +45385,6 @@ GameObject:
   - 4: {fileID: 1115267759}
   - 95: {fileID: 1115267762}
   - 114: {fileID: 1115267761}
-  - 108: {fileID: 1115267760}
   m_Layer: 0
   m_Name: small_snowFlake
   m_TagString: Untagged
@@ -46508,42 +45405,6 @@ Transform:
   - {fileID: 1021360957}
   m_Father: {fileID: 1256160696}
   m_RootOrder: 5
---- !u!108 &1115267760
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 10800006, guid: bf60e2ad613aef14bb58c9eeb639de5c,
-    type: 2}
-  m_PrefabInternal: {fileID: 1752833838}
-  m_GameObject: {fileID: 1115267758}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Type: 2
-  m_Color: {r: .0899653956, g: .401742101, b: .764705896, a: 1}
-  m_Intensity: 1
-  m_Range: 10
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_Strength: 1
-    m_Bias: .0500000007
-    m_Softness: 4
-    m_SoftnessFade: 1
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_ActuallyLightmapped: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 1
-  m_ShadowSamples: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
-  m_IndirectIntensity: 1
-  m_AreaSize: {x: 1, y: 1}
 --- !u!114 &1115267761
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47015,7 +45876,6 @@ GameObject:
   - 4: {fileID: 1126975551}
   - 33: {fileID: 1126975554}
   - 23: {fileID: 1126975553}
-  - 108: {fileID: 1126975552}
   m_Layer: 0
   m_Name: default_MeshPart1
   m_TagString: Untagged
@@ -47035,42 +45895,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1054985048}
   m_RootOrder: 1
---- !u!108 &1126975552
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 10800006, guid: 7573af6d94ea30c47b592b33043ff9aa,
-    type: 2}
-  m_PrefabInternal: {fileID: 1442230724}
-  m_GameObject: {fileID: 1126975550}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Type: 2
-  m_Color: {r: .841262937, g: .852941155, b: .00627163192, a: 1}
-  m_Intensity: 4.11999989
-  m_Range: 10
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_Strength: 1
-    m_Bias: .0500000007
-    m_Softness: 4
-    m_SoftnessFade: 1
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_ActuallyLightmapped: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 1
-  m_ShadowSamples: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
-  m_IndirectIntensity: 1
-  m_AreaSize: {x: 1, y: 1}
 --- !u!23 &1126975553
 Renderer:
   m_ObjectHideFlags: 0
@@ -49165,8 +47989,8 @@ MeshFilter:
 --- !u!1 &1166637664
 GameObject:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabParentObject: {fileID: 100000, guid: d8d5caf2025464f4da731e48c0d681d1, type: 2}
+  m_PrefabInternal: {fileID: 1627780134}
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1166637667}
@@ -49182,8 +48006,9 @@ GameObject:
 --- !u!114 &1166637665
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabParentObject: {fileID: 11400000, guid: d8d5caf2025464f4da731e48c0d681d1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1627780134}
   m_GameObject: {fileID: 1166637664}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -49193,8 +48018,9 @@ MonoBehaviour:
 --- !u!114 &1166637666
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabParentObject: {fileID: 11400002, guid: d8d5caf2025464f4da731e48c0d681d1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1627780134}
   m_GameObject: {fileID: 1166637664}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -49204,8 +48030,8 @@ MonoBehaviour:
 --- !u!4 &1166637667
 Transform:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabParentObject: {fileID: 400000, guid: d8d5caf2025464f4da731e48c0d681d1, type: 2}
+  m_PrefabInternal: {fileID: 1627780134}
   m_GameObject: {fileID: 1166637664}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 618.265259, y: 115.81366, z: 748.665894}
@@ -49243,7 +48069,7 @@ Transform:
   m_LocalScale: {x: .25, y: .25, z: .25}
   m_Children: []
   m_Father: {fileID: 1004559901}
-  m_RootOrder: 3
+  m_RootOrder: 2
 --- !u!114 &1167078846
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49267,8 +48093,8 @@ Light:
   serializedVersion: 3
   m_Type: 2
   m_Color: {r: .20588237, g: .0181660969, b: .0181660969, a: 1}
-  m_Intensity: 2.58999991
-  m_Range: 10
+  m_Intensity: 1
+  m_Range: 25
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
@@ -49751,7 +48577,6 @@ GameObject:
   - 4: {fileID: 1173233104}
   - 95: {fileID: 1173233107}
   - 114: {fileID: 1173233106}
-  - 108: {fileID: 1173233105}
   m_Layer: 0
   m_Name: Flowers
   m_TagString: Untagged
@@ -49785,42 +48610,6 @@ Transform:
   - {fileID: 816660433}
   m_Father: {fileID: 2052849499}
   m_RootOrder: 0
---- !u!108 &1173233105
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 10800004, guid: c10b88e430112d641b01a37dd0858fa7,
-    type: 2}
-  m_PrefabInternal: {fileID: 927985319}
-  m_GameObject: {fileID: 1173233103}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Type: 2
-  m_Color: {r: .875, g: .779158235, b: .527573526, a: 1}
-  m_Intensity: 1
-  m_Range: 10
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_Strength: 1
-    m_Bias: .0500000007
-    m_Softness: 4
-    m_SoftnessFade: 1
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_ActuallyLightmapped: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 1
-  m_ShadowSamples: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
-  m_IndirectIntensity: 1
-  m_AreaSize: {x: 1, y: 1}
 --- !u!114 &1173233106
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54046,9 +52835,9 @@ Light:
   m_Enabled: 1
   serializedVersion: 3
   m_Type: 2
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1.02999997
-  m_Range: 5
+  m_Color: {r: .816176474, g: .878296196, b: 1, a: 1}
+  m_Intensity: 1
+  m_Range: 25
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
@@ -55095,7 +53884,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1288853627}
   - 95: {fileID: 1288853629}
-  - 108: {fileID: 1288853628}
   m_Layer: 0
   m_Name: snowFlake
   m_TagString: Untagged
@@ -55116,42 +53904,6 @@ Transform:
   - {fileID: 1696419399}
   m_Father: {fileID: 608106400}
   m_RootOrder: 2
---- !u!108 &1288853628
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 10800008, guid: bf60e2ad613aef14bb58c9eeb639de5c,
-    type: 2}
-  m_PrefabInternal: {fileID: 486821397}
-  m_GameObject: {fileID: 1288853626}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Type: 2
-  m_Color: {r: .326665223, g: .667005658, b: .779411793, a: 1}
-  m_Intensity: 2.06999993
-  m_Range: 10
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_Strength: 1
-    m_Bias: .0500000007
-    m_Softness: 4
-    m_SoftnessFade: 1
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_ActuallyLightmapped: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 1
-  m_ShadowSamples: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
-  m_IndirectIntensity: 1
-  m_AreaSize: {x: 1, y: 1}
 --- !u!95 &1288853629
 Animator:
   serializedVersion: 3
@@ -55448,7 +54200,7 @@ Transform:
   m_LocalScale: {x: .25, y: .25, z: .25}
   m_Children: []
   m_Father: {fileID: 918620725}
-  m_RootOrder: 3
+  m_RootOrder: 2
 --- !u!114 &1296945862
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55472,8 +54224,8 @@ Light:
   serializedVersion: 3
   m_Type: 2
   m_Color: {r: .20588237, g: .0181660969, b: .0181660969, a: 1}
-  m_Intensity: 2.58999991
-  m_Range: 10
+  m_Intensity: 1
+  m_Range: 25
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
@@ -56115,7 +54867,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1305249067}
   - 95: {fileID: 1305249069}
-  - 108: {fileID: 1305249068}
   m_Layer: 0
   m_Name: Creature
   m_TagString: Untagged
@@ -56136,42 +54887,6 @@ Transform:
   - {fileID: 1054985048}
   m_Father: {fileID: 918620725}
   m_RootOrder: 0
---- !u!108 &1305249068
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 10800008, guid: 7573af6d94ea30c47b592b33043ff9aa,
-    type: 2}
-  m_PrefabInternal: {fileID: 1442230724}
-  m_GameObject: {fileID: 1305249066}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Type: 2
-  m_Color: {r: .882352948, g: .83268708, b: .162197232, a: 1}
-  m_Intensity: 4.11999989
-  m_Range: 10
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_Strength: 1
-    m_Bias: .0500000007
-    m_Softness: 4
-    m_SoftnessFade: 1
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_ActuallyLightmapped: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 1
-  m_ShadowSamples: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
-  m_IndirectIntensity: 1
-  m_AreaSize: {x: 1, y: 1}
 --- !u!95 &1305249069
 Animator:
   serializedVersion: 3
@@ -56974,7 +55689,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1321411644}
   - 95: {fileID: 1321411646}
-  - 108: {fileID: 1321411645}
   m_Layer: 0
   m_Name: snowFlake
   m_TagString: Untagged
@@ -56995,42 +55709,6 @@ Transform:
   - {fileID: 958112741}
   m_Father: {fileID: 1256160696}
   m_RootOrder: 2
---- !u!108 &1321411645
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 10800008, guid: bf60e2ad613aef14bb58c9eeb639de5c,
-    type: 2}
-  m_PrefabInternal: {fileID: 1752833838}
-  m_GameObject: {fileID: 1321411643}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Type: 2
-  m_Color: {r: .326665223, g: .667005658, b: .779411793, a: 1}
-  m_Intensity: 2.06999993
-  m_Range: 10
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_Strength: 1
-    m_Bias: .0500000007
-    m_Softness: 4
-    m_SoftnessFade: 1
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_ActuallyLightmapped: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 1
-  m_ShadowSamples: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
-  m_IndirectIntensity: 1
-  m_AreaSize: {x: 1, y: 1}
 --- !u!95 &1321411646
 Animator:
   serializedVersion: 3
@@ -57115,7 +55793,6 @@ GameObject:
   - 4: {fileID: 1325163773}
   - 95: {fileID: 1325163776}
   - 114: {fileID: 1325163775}
-  - 108: {fileID: 1325163774}
   m_Layer: 0
   m_Name: Flowers
   m_TagString: Untagged
@@ -57149,42 +55826,6 @@ Transform:
   - {fileID: 1247477094}
   m_Father: {fileID: 2052849499}
   m_RootOrder: 7
---- !u!108 &1325163774
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 10800006, guid: c10b88e430112d641b01a37dd0858fa7,
-    type: 2}
-  m_PrefabInternal: {fileID: 927985319}
-  m_GameObject: {fileID: 1325163772}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Type: 2
-  m_Color: {r: .875, g: .779158235, b: .527573526, a: 1}
-  m_Intensity: 1
-  m_Range: 10
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_Strength: 1
-    m_Bias: .0500000007
-    m_Softness: 4
-    m_SoftnessFade: 1
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_ActuallyLightmapped: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 1
-  m_ShadowSamples: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
-  m_IndirectIntensity: 1
-  m_AreaSize: {x: 1, y: 1}
 --- !u!114 &1325163775
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57570,7 +56211,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1340386922}
   - 95: {fileID: 1340386924}
-  - 108: {fileID: 1340386923}
   m_Layer: 0
   m_Name: snowFlake
   m_TagString: Untagged
@@ -57591,42 +56231,6 @@ Transform:
   - {fileID: 76920953}
   m_Father: {fileID: 1256160696}
   m_RootOrder: 1
---- !u!108 &1340386923
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 10800010, guid: bf60e2ad613aef14bb58c9eeb639de5c,
-    type: 2}
-  m_PrefabInternal: {fileID: 1752833838}
-  m_GameObject: {fileID: 1340386921}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Type: 2
-  m_Color: {r: .192744359, g: .683502734, b: .845588207, a: 1}
-  m_Intensity: 2.27999997
-  m_Range: 10
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_Strength: 1
-    m_Bias: .0500000007
-    m_Softness: 4
-    m_SoftnessFade: 1
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_ActuallyLightmapped: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 1
-  m_ShadowSamples: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
-  m_IndirectIntensity: 1
-  m_AreaSize: {x: 1, y: 1}
 --- !u!95 &1340386924
 Animator:
   serializedVersion: 3
@@ -58427,7 +57031,6 @@ GameObject:
   - 4: {fileID: 1359114937}
   - 95: {fileID: 1359114940}
   - 114: {fileID: 1359114939}
-  - 108: {fileID: 1359114938}
   m_Layer: 0
   m_Name: small_snowFlake
   m_TagString: Untagged
@@ -58448,42 +57051,6 @@ Transform:
   - {fileID: 1202771130}
   m_Father: {fileID: 608106400}
   m_RootOrder: 3
---- !u!108 &1359114938
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 10800004, guid: bf60e2ad613aef14bb58c9eeb639de5c,
-    type: 2}
-  m_PrefabInternal: {fileID: 486821397}
-  m_GameObject: {fileID: 1359114936}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Type: 2
-  m_Color: {r: .291504622, g: .0475778617, b: .647058845, a: 1}
-  m_Intensity: 4.38999987
-  m_Range: 10
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_Strength: 1
-    m_Bias: .0500000007
-    m_Softness: 4
-    m_SoftnessFade: 1
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_ActuallyLightmapped: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 1
-  m_ShadowSamples: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
-  m_IndirectIntensity: 1
-  m_AreaSize: {x: 1, y: 1}
 --- !u!114 &1359114939
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58724,7 +57291,6 @@ GameObject:
   - 33: {fileID: 1361733651}
   - 136: {fileID: 1361733650}
   - 23: {fileID: 1361733649}
-  - 108: {fileID: 1361733648}
   m_Layer: 0
   m_Name: b
   m_TagString: Untagged
@@ -58744,42 +57310,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 195771537}
   m_RootOrder: 1
---- !u!108 &1361733648
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 10800026, guid: e6a0616e404919a4f8ed4d2c6cd16f06,
-    type: 2}
-  m_PrefabInternal: {fileID: 69756212}
-  m_GameObject: {fileID: 1361733646}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Type: 2
-  m_Color: {r: .906168759, g: .933823526, b: .432580024, a: 1}
-  m_Intensity: 3.27999997
-  m_Range: 10
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_Strength: 1
-    m_Bias: .0500000007
-    m_Softness: 4
-    m_SoftnessFade: 1
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_ActuallyLightmapped: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 1
-  m_ShadowSamples: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
-  m_IndirectIntensity: 1
-  m_AreaSize: {x: 1, y: 1}
 --- !u!23 &1361733649
 Renderer:
   m_ObjectHideFlags: 0
@@ -59034,7 +57564,6 @@ GameObject:
   - 4: {fileID: 1371015682}
   - 95: {fileID: 1371015685}
   - 114: {fileID: 1371015684}
-  - 108: {fileID: 1371015683}
   m_Layer: 0
   m_Name: Flowers
   m_TagString: Untagged
@@ -59068,42 +57597,6 @@ Transform:
   - {fileID: 2063708844}
   m_Father: {fileID: 1042716169}
   m_RootOrder: 0
---- !u!108 &1371015683
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 10800004, guid: c10b88e430112d641b01a37dd0858fa7,
-    type: 2}
-  m_PrefabInternal: {fileID: 1833785147}
-  m_GameObject: {fileID: 1371015681}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Type: 2
-  m_Color: {r: .875, g: .779158235, b: .527573526, a: 1}
-  m_Intensity: 1
-  m_Range: 10
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_Strength: 1
-    m_Bias: .0500000007
-    m_Softness: 4
-    m_SoftnessFade: 1
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_ActuallyLightmapped: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 1
-  m_ShadowSamples: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
-  m_IndirectIntensity: 1
-  m_AreaSize: {x: 1, y: 1}
 --- !u!114 &1371015684
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59741,7 +58234,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1380838118}
-  - 108: {fileID: 1380838119}
   m_Layer: 0
   m_Name: CLOUD
   m_TagString: Untagged
@@ -59772,42 +58264,6 @@ Transform:
   - {fileID: 1980101164}
   m_Father: {fileID: 99421120}
   m_RootOrder: 1
---- !u!108 &1380838119
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 10800020, guid: e6a0616e404919a4f8ed4d2c6cd16f06,
-    type: 2}
-  m_PrefabInternal: {fileID: 69756212}
-  m_GameObject: {fileID: 1380838117}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Type: 2
-  m_Color: {r: .823529422, g: .78494215, b: .569204152, a: 1}
-  m_Intensity: 1.59000003
-  m_Range: 6.8499999
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_Strength: 1
-    m_Bias: .0500000007
-    m_Softness: 4
-    m_SoftnessFade: 1
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_ActuallyLightmapped: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 1
-  m_ShadowSamples: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
-  m_IndirectIntensity: 1
-  m_AreaSize: {x: 1, y: 1}
 --- !u!1 &1380880811
 GameObject:
   m_ObjectHideFlags: 0
@@ -61126,7 +59582,6 @@ GameObject:
   - 33: {fileID: 1408361854}
   - 136: {fileID: 1408361853}
   - 23: {fileID: 1408361852}
-  - 108: {fileID: 1408361851}
   m_Layer: 0
   m_Name: a
   m_TagString: Untagged
@@ -61146,42 +59601,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 195771537}
   m_RootOrder: 0
---- !u!108 &1408361851
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 10800028, guid: e6a0616e404919a4f8ed4d2c6cd16f06,
-    type: 2}
-  m_PrefabInternal: {fileID: 69756212}
-  m_GameObject: {fileID: 1408361849}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Type: 2
-  m_Color: {r: .906168759, g: .933823526, b: .432580024, a: 1}
-  m_Intensity: 3.27999997
-  m_Range: 10
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_Strength: 1
-    m_Bias: .0500000007
-    m_Softness: 4
-    m_SoftnessFade: 1
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_ActuallyLightmapped: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 1
-  m_ShadowSamples: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
-  m_IndirectIntensity: 1
-  m_AreaSize: {x: 1, y: 1}
 --- !u!23 &1408361852
 Renderer:
   m_ObjectHideFlags: 0
@@ -61790,7 +60209,6 @@ GameObject:
   - 33: {fileID: 1423381171}
   - 23: {fileID: 1423381170}
   - 95: {fileID: 1423381169}
-  - 108: {fileID: 1423381168}
   m_Layer: 0
   m_Name: Plant N110614
   m_TagString: Untagged
@@ -61810,42 +60228,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2052849499}
   m_RootOrder: 1
---- !u!108 &1423381168
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 10800012, guid: c10b88e430112d641b01a37dd0858fa7,
-    type: 2}
-  m_PrefabInternal: {fileID: 927985319}
-  m_GameObject: {fileID: 1423381166}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Type: 2
-  m_Color: {r: .811549127, g: .875, b: .521139681, a: 1}
-  m_Intensity: 1
-  m_Range: 10
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_Strength: 1
-    m_Bias: .0500000007
-    m_Softness: 4
-    m_SoftnessFade: 1
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_ActuallyLightmapped: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 1
-  m_ShadowSamples: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
-  m_IndirectIntensity: 1
-  m_AreaSize: {x: 1, y: 1}
 --- !u!95 &1423381169
 Animator:
   serializedVersion: 3
@@ -63167,7 +61549,6 @@ GameObject:
   - 33: {fileID: 1467019906}
   - 135: {fileID: 1467019905}
   - 23: {fileID: 1467019904}
-  - 108: {fileID: 1467019903}
   m_Layer: 0
   m_Name: cloud
   m_TagString: Untagged
@@ -63187,42 +61568,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1380838118}
   m_RootOrder: 7
---- !u!108 &1467019903
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 10800014, guid: e6a0616e404919a4f8ed4d2c6cd16f06,
-    type: 2}
-  m_PrefabInternal: {fileID: 69756212}
-  m_GameObject: {fileID: 1467019901}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Type: 2
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 0
-  m_Range: 10
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_Strength: 1
-    m_Bias: .0500000007
-    m_Softness: 4
-    m_SoftnessFade: 1
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_ActuallyLightmapped: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 1
-  m_ShadowSamples: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
-  m_IndirectIntensity: 1
-  m_AreaSize: {x: 1, y: 1}
 --- !u!23 &1467019904
 Renderer:
   m_ObjectHideFlags: 0
@@ -63391,7 +61736,6 @@ GameObject:
   - 4: {fileID: 1469579712}
   - 95: {fileID: 1469579715}
   - 114: {fileID: 1469579714}
-  - 108: {fileID: 1469579713}
   m_Layer: 0
   m_Name: small_snowFlake
   m_TagString: Untagged
@@ -63412,42 +61756,6 @@ Transform:
   - {fileID: 1460609104}
   m_Father: {fileID: 608106400}
   m_RootOrder: 5
---- !u!108 &1469579713
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 10800006, guid: bf60e2ad613aef14bb58c9eeb639de5c,
-    type: 2}
-  m_PrefabInternal: {fileID: 486821397}
-  m_GameObject: {fileID: 1469579711}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Type: 2
-  m_Color: {r: .0899653956, g: .401742101, b: .764705896, a: 1}
-  m_Intensity: 1
-  m_Range: 10
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_Strength: 1
-    m_Bias: .0500000007
-    m_Softness: 4
-    m_SoftnessFade: 1
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_ActuallyLightmapped: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 1
-  m_ShadowSamples: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
-  m_IndirectIntensity: 1
-  m_AreaSize: {x: 1, y: 1}
 --- !u!114 &1469579714
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63862,7 +62170,6 @@ GameObject:
   - 33: {fileID: 1477860844}
   - 136: {fileID: 1477860843}
   - 23: {fileID: 1477860842}
-  - 108: {fileID: 1477860841}
   m_Layer: 0
   m_Name: a
   m_TagString: Untagged
@@ -63882,42 +62189,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1819847226}
   m_RootOrder: 0
---- !u!108 &1477860841
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 10800042, guid: e6a0616e404919a4f8ed4d2c6cd16f06,
-    type: 2}
-  m_PrefabInternal: {fileID: 69756212}
-  m_GameObject: {fileID: 1477860839}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Type: 2
-  m_Color: {r: .906168759, g: .933823526, b: .432580024, a: 1}
-  m_Intensity: 3.27999997
-  m_Range: 10
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_Strength: 1
-    m_Bias: .0500000007
-    m_Softness: 4
-    m_SoftnessFade: 1
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_ActuallyLightmapped: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 1
-  m_ShadowSamples: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
-  m_IndirectIntensity: 1
-  m_AreaSize: {x: 1, y: 1}
 --- !u!23 &1477860842
 Renderer:
   m_ObjectHideFlags: 0
@@ -64727,7 +62998,6 @@ GameObject:
   - 33: {fileID: 1495032349}
   - 135: {fileID: 1495032348}
   - 23: {fileID: 1495032347}
-  - 108: {fileID: 1495032346}
   m_Layer: 0
   m_Name: cloud
   m_TagString: Untagged
@@ -64747,42 +63017,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1380838118}
   m_RootOrder: 4
---- !u!108 &1495032346
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 10800008, guid: e6a0616e404919a4f8ed4d2c6cd16f06,
-    type: 2}
-  m_PrefabInternal: {fileID: 69756212}
-  m_GameObject: {fileID: 1495032344}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Type: 2
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 0
-  m_Range: 10
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_Strength: 1
-    m_Bias: .0500000007
-    m_Softness: 4
-    m_SoftnessFade: 1
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_ActuallyLightmapped: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 1
-  m_ShadowSamples: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
-  m_IndirectIntensity: 1
-  m_AreaSize: {x: 1, y: 1}
 --- !u!23 &1495032347
 Renderer:
   m_ObjectHideFlags: 0
@@ -65009,7 +63243,6 @@ GameObject:
   - 4: {fileID: 1497499854}
   - 95: {fileID: 1497499857}
   - 114: {fileID: 1497499856}
-  - 108: {fileID: 1497499855}
   m_Layer: 0
   m_Name: small_snowFlake
   m_TagString: Untagged
@@ -65030,42 +63263,6 @@ Transform:
   - {fileID: 1041258712}
   m_Father: {fileID: 608106400}
   m_RootOrder: 4
---- !u!108 &1497499855
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 10800002, guid: bf60e2ad613aef14bb58c9eeb639de5c,
-    type: 2}
-  m_PrefabInternal: {fileID: 486821397}
-  m_GameObject: {fileID: 1497499853}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Type: 2
-  m_Color: {r: .818471253, g: .289522082, b: .875, a: 1}
-  m_Intensity: 1
-  m_Range: 10
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_Strength: 1
-    m_Bias: .0500000007
-    m_Softness: 4
-    m_SoftnessFade: 1
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_ActuallyLightmapped: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 1
-  m_ShadowSamples: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
-  m_IndirectIntensity: 1
-  m_AreaSize: {x: 1, y: 1}
 --- !u!114 &1497499856
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -67490,7 +65687,6 @@ GameObject:
   - 33: {fileID: 1539401924}
   - 136: {fileID: 1539401923}
   - 23: {fileID: 1539401922}
-  - 108: {fileID: 1539401921}
   m_Layer: 0
   m_Name: b
   m_TagString: Untagged
@@ -67510,42 +65706,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1424258379}
   m_RootOrder: 1
---- !u!108 &1539401921
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 10800032, guid: e6a0616e404919a4f8ed4d2c6cd16f06,
-    type: 2}
-  m_PrefabInternal: {fileID: 69756212}
-  m_GameObject: {fileID: 1539401919}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Type: 2
-  m_Color: {r: .906168759, g: .933823526, b: .432580024, a: 1}
-  m_Intensity: 3.27999997
-  m_Range: 10
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_Strength: 1
-    m_Bias: .0500000007
-    m_Softness: 4
-    m_SoftnessFade: 1
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_ActuallyLightmapped: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 1
-  m_ShadowSamples: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
-  m_IndirectIntensity: 1
-  m_AreaSize: {x: 1, y: 1}
 --- !u!23 &1539401922
 Renderer:
   m_ObjectHideFlags: 0
@@ -67807,7 +65967,6 @@ GameObject:
   - 33: {fileID: 1548771653}
   - 135: {fileID: 1548771652}
   - 23: {fileID: 1548771651}
-  - 108: {fileID: 1548771650}
   m_Layer: 0
   m_Name: cloud
   m_TagString: Untagged
@@ -67833,13 +65992,13 @@ Light:
   m_PrefabParentObject: {fileID: 10800000, guid: e6a0616e404919a4f8ed4d2c6cd16f06,
     type: 2}
   m_PrefabInternal: {fileID: 69756212}
-  m_GameObject: {fileID: 1548771648}
+  m_GameObject: {fileID: 99421119}
   m_Enabled: 1
   serializedVersion: 3
   m_Type: 2
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 0
-  m_Range: 10
+  m_Color: {r: 1, g: .972413778, b: 0, a: 1}
+  m_Intensity: 1
+  m_Range: 25
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
@@ -68348,7 +66507,6 @@ GameObject:
   - 4: {fileID: 1570471742}
   - 95: {fileID: 1570471745}
   - 114: {fileID: 1570471744}
-  - 108: {fileID: 1570471743}
   m_Layer: 0
   m_Name: Flowers
   m_TagString: Untagged
@@ -68388,13 +66546,13 @@ Light:
   m_PrefabParentObject: {fileID: 10800000, guid: c10b88e430112d641b01a37dd0858fa7,
     type: 2}
   m_PrefabInternal: {fileID: 927985319}
-  m_GameObject: {fileID: 1570471741}
+  m_GameObject: {fileID: 2122172997}
   m_Enabled: 1
   serializedVersion: 3
   m_Type: 2
-  m_Color: {r: .875, g: .779158235, b: .527573526, a: 1}
+  m_Color: {r: 0, g: 1, b: .296551704, a: 1}
   m_Intensity: 1
-  m_Range: 10
+  m_Range: 25
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
@@ -69327,7 +67485,6 @@ GameObject:
   - 4: {fileID: 1595841309}
   - 95: {fileID: 1595841312}
   - 114: {fileID: 1595841311}
-  - 108: {fileID: 1595841310}
   m_Layer: 0
   m_Name: small_snowFlake
   m_TagString: Untagged
@@ -69348,42 +67505,6 @@ Transform:
   - {fileID: 1443414974}
   m_Father: {fileID: 1256160696}
   m_RootOrder: 4
---- !u!108 &1595841310
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 10800002, guid: bf60e2ad613aef14bb58c9eeb639de5c,
-    type: 2}
-  m_PrefabInternal: {fileID: 1752833838}
-  m_GameObject: {fileID: 1595841308}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Type: 2
-  m_Color: {r: .818471253, g: .289522082, b: .875, a: 1}
-  m_Intensity: 1
-  m_Range: 10
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_Strength: 1
-    m_Bias: .0500000007
-    m_Softness: 4
-    m_SoftnessFade: 1
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_ActuallyLightmapped: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 1
-  m_ShadowSamples: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
-  m_IndirectIntensity: 1
-  m_AreaSize: {x: 1, y: 1}
 --- !u!114 &1595841311
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70589,6 +68710,50 @@ MeshFilter:
   m_PrefabInternal: {fileID: 927985319}
   m_GameObject: {fileID: 1626350072}
   m_Mesh: {fileID: 4300020, guid: 864577a0f1ef8134c9b1d783e706c4dd, type: 3}
+--- !u!1001 &1627780134
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: d8d5caf2025464f4da731e48c0d681d1, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 618.265259
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: d8d5caf2025464f4da731e48c0d681d1, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 115.81366
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: d8d5caf2025464f4da731e48c0d681d1, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 748.665894
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: d8d5caf2025464f4da731e48c0d681d1, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: d8d5caf2025464f4da731e48c0d681d1, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: d8d5caf2025464f4da731e48c0d681d1, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: d8d5caf2025464f4da731e48c0d681d1, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: d8d5caf2025464f4da731e48c0d681d1, type: 2}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: d8d5caf2025464f4da731e48c0d681d1, type: 2}
+  m_RootGameObject: {fileID: 1166637664}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &1628441337
 GameObject:
   m_ObjectHideFlags: 0
@@ -71196,7 +69361,6 @@ GameObject:
   - 33: {fileID: 1643629954}
   - 136: {fileID: 1643629953}
   - 23: {fileID: 1643629952}
-  - 108: {fileID: 1643629951}
   m_Layer: 0
   m_Name: d
   m_TagString: Untagged
@@ -71216,42 +69380,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1819847226}
   m_RootOrder: 2
---- !u!108 &1643629951
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 10800046, guid: e6a0616e404919a4f8ed4d2c6cd16f06,
-    type: 2}
-  m_PrefabInternal: {fileID: 69756212}
-  m_GameObject: {fileID: 1643629949}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Type: 2
-  m_Color: {r: .906168759, g: .933823526, b: .432580024, a: 1}
-  m_Intensity: 3.27999997
-  m_Range: 10
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_Strength: 1
-    m_Bias: .0500000007
-    m_Softness: 4
-    m_SoftnessFade: 1
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_ActuallyLightmapped: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 1
-  m_ShadowSamples: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
-  m_IndirectIntensity: 1
-  m_AreaSize: {x: 1, y: 1}
 --- !u!23 &1643629952
 Renderer:
   m_ObjectHideFlags: 0
@@ -73870,8 +71998,8 @@ GameObject:
   - 4: {fileID: 1714773882}
   - 33: {fileID: 1714773886}
   - 23: {fileID: 1714773885}
-  - 108: {fileID: 1714773884}
   - 114: {fileID: 1714773883}
+  - 108: {fileID: 848936134}
   m_Layer: 0
   m_Name: Vertex_Object
   m_TagString: Untagged
@@ -73903,42 +72031,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a95e7d06fbb8e4a4aa3bf91166c1cc9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!108 &1714773884
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 10800014, guid: c10b88e430112d641b01a37dd0858fa7,
-    type: 2}
-  m_PrefabInternal: {fileID: 1833785147}
-  m_GameObject: {fileID: 1714773881}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Type: 2
-  m_Color: {r: .389273316, g: .705882311, b: .653478026, a: 1}
-  m_Intensity: 2.58999991
-  m_Range: 10
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_Strength: 1
-    m_Bias: .0500000007
-    m_Softness: 4
-    m_SoftnessFade: 1
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_ActuallyLightmapped: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 1
-  m_ShadowSamples: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
-  m_IndirectIntensity: 1
-  m_AreaSize: {x: 1, y: 1}
 --- !u!23 &1714773885
 Renderer:
   m_ObjectHideFlags: 0
@@ -74210,7 +72302,6 @@ GameObject:
   - 4: {fileID: 1726103590}
   - 33: {fileID: 1726103593}
   - 23: {fileID: 1726103592}
-  - 108: {fileID: 1726103591}
   m_Layer: 0
   m_Name: default_MeshPart3
   m_TagString: Untagged
@@ -74230,42 +72321,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1054985048}
   m_RootOrder: 3
---- !u!108 &1726103591
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 10800014, guid: 7573af6d94ea30c47b592b33043ff9aa,
-    type: 2}
-  m_PrefabInternal: {fileID: 1442230724}
-  m_GameObject: {fileID: 1726103589}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Type: 2
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 4.11999989
-  m_Range: 10
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_Strength: 1
-    m_Bias: .0500000007
-    m_Softness: 4
-    m_SoftnessFade: 1
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_ActuallyLightmapped: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 1
-  m_ShadowSamples: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
-  m_IndirectIntensity: 1
-  m_AreaSize: {x: 1, y: 1}
 --- !u!23 &1726103592
 Renderer:
   m_ObjectHideFlags: 0
@@ -77311,7 +75366,6 @@ GameObject:
   - 4: {fileID: 1815217449}
   - 33: {fileID: 1815217452}
   - 23: {fileID: 1815217451}
-  - 108: {fileID: 1815217450}
   m_Layer: 0
   m_Name: default_MeshPart0
   m_TagString: Untagged
@@ -77331,42 +75385,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1054985048}
   m_RootOrder: 0
---- !u!108 &1815217450
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 10800010, guid: 7573af6d94ea30c47b592b33043ff9aa,
-    type: 2}
-  m_PrefabInternal: {fileID: 1442230724}
-  m_GameObject: {fileID: 1815217448}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Type: 2
-  m_Color: {r: .875, g: .701508641, b: .135110319, a: 1}
-  m_Intensity: 4.11999989
-  m_Range: 10
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_Strength: 1
-    m_Bias: .0500000007
-    m_Softness: 4
-    m_SoftnessFade: 1
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_ActuallyLightmapped: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 1
-  m_ShadowSamples: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
-  m_IndirectIntensity: 1
-  m_AreaSize: {x: 1, y: 1}
 --- !u!23 &1815217451
 Renderer:
   m_ObjectHideFlags: 0
@@ -78554,7 +76572,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1832956853}
   - 95: {fileID: 1832956855}
-  - 108: {fileID: 1832956854}
   m_Layer: 0
   m_Name: Creature
   m_TagString: Untagged
@@ -78575,42 +76592,6 @@ Transform:
   - {fileID: 541857000}
   m_Father: {fileID: 1004559901}
   m_RootOrder: 1
---- !u!108 &1832956854
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 10800012, guid: 7573af6d94ea30c47b592b33043ff9aa,
-    type: 2}
-  m_PrefabInternal: {fileID: 1158799160}
-  m_GameObject: {fileID: 1832956852}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Type: 2
-  m_Color: {r: .977941155, g: 0, b: 0, a: 1}
-  m_Intensity: 1.75
-  m_Range: 2
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_Strength: 1
-    m_Bias: .0500000007
-    m_Softness: 4
-    m_SoftnessFade: 1
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_ActuallyLightmapped: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 1
-  m_ShadowSamples: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
-  m_IndirectIntensity: 1
-  m_AreaSize: {x: 1, y: 1}
 --- !u!95 &1832956855
 Animator:
   serializedVersion: 3
@@ -81758,70 +79739,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 927985319}
   m_GameObject: {fileID: 1929703792}
   m_Mesh: {fileID: 4300006, guid: 864577a0f1ef8134c9b1d783e706c4dd, type: 3}
---- !u!1 &1930574714
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 100032, guid: 7573af6d94ea30c47b592b33043ff9aa, type: 2}
-  m_PrefabInternal: {fileID: 1158799160}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 1930574715}
-  - 108: {fileID: 1930574716}
-  m_Layer: 0
-  m_Name: extra_light
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1930574715
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 400032, guid: 7573af6d94ea30c47b592b33043ff9aa, type: 2}
-  m_PrefabInternal: {fileID: 1158799160}
-  m_GameObject: {fileID: 1930574714}
-  m_LocalRotation: {x: 0, y: -.999993265, z: 0, w: -.00367952278}
-  m_LocalPosition: {x: .26000008, y: -.0919504166, z: -3.60819286e-09}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1004559901}
-  m_RootOrder: 2
---- !u!108 &1930574716
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 10800016, guid: 7573af6d94ea30c47b592b33043ff9aa,
-    type: 2}
-  m_PrefabInternal: {fileID: 1158799160}
-  m_GameObject: {fileID: 1930574714}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Type: 2
-  m_Color: {r: .83088237, g: .281033754, b: .281033754, a: 1}
-  m_Intensity: 1
-  m_Range: 15
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_Strength: 1
-    m_Bias: .0500000007
-    m_Softness: 4
-    m_SoftnessFade: 1
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_ActuallyLightmapped: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 1
-  m_ShadowSamples: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
-  m_IndirectIntensity: 1
-  m_AreaSize: {x: 1, y: 1}
 --- !u!1 &1932213419
 GameObject:
   m_ObjectHideFlags: 0
@@ -83178,7 +81095,6 @@ GameObject:
   - 4: {fileID: 1953525330}
   - 33: {fileID: 1953525333}
   - 23: {fileID: 1953525332}
-  - 108: {fileID: 1953525331}
   m_Layer: 0
   m_Name: default_MeshPart0
   m_TagString: Untagged
@@ -83198,42 +81114,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 339029310}
   m_RootOrder: 0
---- !u!108 &1953525331
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 10800010, guid: 7573af6d94ea30c47b592b33043ff9aa,
-    type: 2}
-  m_PrefabInternal: {fileID: 1158799160}
-  m_GameObject: {fileID: 1953525329}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Type: 2
-  m_Color: {r: .875, g: .701508641, b: .135110319, a: 1}
-  m_Intensity: 4.11999989
-  m_Range: 10
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_Strength: 1
-    m_Bias: .0500000007
-    m_Softness: 4
-    m_SoftnessFade: 1
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_ActuallyLightmapped: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 1
-  m_ShadowSamples: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
-  m_IndirectIntensity: 1
-  m_AreaSize: {x: 1, y: 1}
 --- !u!23 &1953525332
 Renderer:
   m_ObjectHideFlags: 0
@@ -85467,7 +83347,6 @@ GameObject:
   - 33: {fileID: 2015891859}
   - 136: {fileID: 2015891858}
   - 23: {fileID: 2015891857}
-  - 108: {fileID: 2015891856}
   m_Layer: 0
   m_Name: d
   m_TagString: Untagged
@@ -85487,42 +83366,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1424258379}
   m_RootOrder: 2
---- !u!108 &2015891856
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 10800034, guid: e6a0616e404919a4f8ed4d2c6cd16f06,
-    type: 2}
-  m_PrefabInternal: {fileID: 69756212}
-  m_GameObject: {fileID: 2015891854}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Type: 2
-  m_Color: {r: .906168759, g: .933823526, b: .432580024, a: 1}
-  m_Intensity: 3.27999997
-  m_Range: 10
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_Strength: 1
-    m_Bias: .0500000007
-    m_Softness: 4
-    m_SoftnessFade: 1
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_ActuallyLightmapped: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 1
-  m_ShadowSamples: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
-  m_IndirectIntensity: 1
-  m_AreaSize: {x: 1, y: 1}
 --- !u!23 &2015891857
 Renderer:
   m_ObjectHideFlags: 0
@@ -86018,7 +83861,6 @@ GameObject:
   - 4: {fileID: 2024700029}
   - 95: {fileID: 2024700032}
   - 114: {fileID: 2024700031}
-  - 108: {fileID: 2024700030}
   m_Layer: 0
   m_Name: small_snowFlake
   m_TagString: Untagged
@@ -86039,42 +83881,6 @@ Transform:
   - {fileID: 2086235336}
   m_Father: {fileID: 1256160696}
   m_RootOrder: 3
---- !u!108 &2024700030
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 10800004, guid: bf60e2ad613aef14bb58c9eeb639de5c,
-    type: 2}
-  m_PrefabInternal: {fileID: 1752833838}
-  m_GameObject: {fileID: 2024700028}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Type: 2
-  m_Color: {r: .291504622, g: .0475778617, b: .647058845, a: 1}
-  m_Intensity: 4.38999987
-  m_Range: 10
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_Strength: 1
-    m_Bias: .0500000007
-    m_Softness: 4
-    m_SoftnessFade: 1
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_ActuallyLightmapped: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 1
-  m_ShadowSamples: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
-  m_IndirectIntensity: 1
-  m_AreaSize: {x: 1, y: 1}
 --- !u!114 &2024700031
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -86344,7 +84150,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 2035540425}
   - 95: {fileID: 2035540427}
-  - 108: {fileID: 2035540426}
   m_Layer: 0
   m_Name: Creature
   m_TagString: Untagged
@@ -86365,42 +84170,6 @@ Transform:
   - {fileID: 339029310}
   m_Father: {fileID: 1004559901}
   m_RootOrder: 0
---- !u!108 &2035540426
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 10800008, guid: 7573af6d94ea30c47b592b33043ff9aa,
-    type: 2}
-  m_PrefabInternal: {fileID: 1158799160}
-  m_GameObject: {fileID: 2035540424}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Type: 2
-  m_Color: {r: .882352948, g: .83268708, b: .162197232, a: 1}
-  m_Intensity: 4.11999989
-  m_Range: 10
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_Strength: 1
-    m_Bias: .0500000007
-    m_Softness: 4
-    m_SoftnessFade: 1
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_ActuallyLightmapped: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 1
-  m_ShadowSamples: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
-  m_IndirectIntensity: 1
-  m_AreaSize: {x: 1, y: 1}
 --- !u!95 &2035540427
 Animator:
   serializedVersion: 3
@@ -86918,7 +84687,6 @@ GameObject:
   - 4: {fileID: 2048207064}
   - 95: {fileID: 2048207067}
   - 114: {fileID: 2048207066}
-  - 108: {fileID: 2048207065}
   m_Layer: 0
   m_Name: Flowers
   m_TagString: Untagged
@@ -86952,42 +84720,6 @@ Transform:
   - {fileID: 1888606168}
   m_Father: {fileID: 1042716169}
   m_RootOrder: 7
---- !u!108 &2048207065
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 10800006, guid: c10b88e430112d641b01a37dd0858fa7,
-    type: 2}
-  m_PrefabInternal: {fileID: 1833785147}
-  m_GameObject: {fileID: 2048207063}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Type: 2
-  m_Color: {r: .875, g: .779158235, b: .527573526, a: 1}
-  m_Intensity: 1
-  m_Range: 10
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_Strength: 1
-    m_Bias: .0500000007
-    m_Softness: 4
-    m_SoftnessFade: 1
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_ActuallyLightmapped: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 1
-  m_ShadowSamples: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
-  m_IndirectIntensity: 1
-  m_AreaSize: {x: 1, y: 1}
 --- !u!114 &2048207066
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -87903,7 +85635,6 @@ GameObject:
   - 33: {fileID: 2068692700}
   - 136: {fileID: 2068692699}
   - 23: {fileID: 2068692698}
-  - 108: {fileID: 2068692697}
   m_Layer: 0
   m_Name: d
   m_TagString: Untagged
@@ -87923,42 +85654,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 195771537}
   m_RootOrder: 2
---- !u!108 &2068692697
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 10800024, guid: e6a0616e404919a4f8ed4d2c6cd16f06,
-    type: 2}
-  m_PrefabInternal: {fileID: 69756212}
-  m_GameObject: {fileID: 2068692695}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Type: 2
-  m_Color: {r: .906168759, g: .933823526, b: .432580024, a: 1}
-  m_Intensity: 3.27999997
-  m_Range: 10
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_Strength: 1
-    m_Bias: .0500000007
-    m_Softness: 4
-    m_SoftnessFade: 1
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_ActuallyLightmapped: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 1
-  m_ShadowSamples: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
-  m_IndirectIntensity: 1
-  m_AreaSize: {x: 1, y: 1}
 --- !u!23 &2068692698
 Renderer:
   m_ObjectHideFlags: 0
@@ -88389,7 +86084,6 @@ GameObject:
   - 4: {fileID: 2083258248}
   - 33: {fileID: 2083258251}
   - 23: {fileID: 2083258250}
-  - 108: {fileID: 2083258249}
   m_Layer: 0
   m_Name: default_MeshPart3
   m_TagString: Untagged
@@ -88409,42 +86103,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 339029310}
   m_RootOrder: 3
---- !u!108 &2083258249
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 10800014, guid: 7573af6d94ea30c47b592b33043ff9aa,
-    type: 2}
-  m_PrefabInternal: {fileID: 1158799160}
-  m_GameObject: {fileID: 2083258247}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Type: 2
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 4.11999989
-  m_Range: 10
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_Strength: 1
-    m_Bias: .0500000007
-    m_Softness: 4
-    m_SoftnessFade: 1
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_ActuallyLightmapped: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 1
-  m_ShadowSamples: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
-  m_IndirectIntensity: 1
-  m_AreaSize: {x: 1, y: 1}
 --- !u!23 &2083258250
 Renderer:
   m_ObjectHideFlags: 0
@@ -88922,7 +86580,6 @@ GameObject:
   - 4: {fileID: 2093771940}
   - 33: {fileID: 2093771944}
   - 23: {fileID: 2093771943}
-  - 108: {fileID: 2093771942}
   - 114: {fileID: 2093771941}
   m_Layer: 0
   m_Name: Vertex_Object
@@ -88955,42 +86612,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a95e7d06fbb8e4a4aa3bf91166c1cc9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!108 &2093771942
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 10800012, guid: bf60e2ad613aef14bb58c9eeb639de5c,
-    type: 2}
-  m_PrefabInternal: {fileID: 1752833838}
-  m_GameObject: {fileID: 2093771939}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Type: 2
-  m_Color: {r: .0948671475, g: .0236267298, b: .16911763, a: 1}
-  m_Intensity: 2.58999991
-  m_Range: 10
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_Strength: 1
-    m_Bias: .0500000007
-    m_Softness: 4
-    m_SoftnessFade: 1
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_ActuallyLightmapped: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 1
-  m_ShadowSamples: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
-  m_IndirectIntensity: 1
-  m_AreaSize: {x: 1, y: 1}
 --- !u!23 &2093771943
 Renderer:
   m_ObjectHideFlags: 0
@@ -90070,8 +87691,8 @@ GameObject:
   - 4: {fileID: 2122172998}
   - 33: {fileID: 2122173002}
   - 23: {fileID: 2122173001}
-  - 108: {fileID: 2122173000}
   - 114: {fileID: 2122172999}
+  - 108: {fileID: 1570471743}
   m_Layer: 0
   m_Name: Vertex_Object
   m_TagString: Untagged
@@ -90103,42 +87724,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a95e7d06fbb8e4a4aa3bf91166c1cc9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!108 &2122173000
-Light:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 10800014, guid: c10b88e430112d641b01a37dd0858fa7,
-    type: 2}
-  m_PrefabInternal: {fileID: 927985319}
-  m_GameObject: {fileID: 2122172997}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Type: 2
-  m_Color: {r: .389273316, g: .705882311, b: .653478026, a: 1}
-  m_Intensity: 2.58999991
-  m_Range: 10
-  m_SpotAngle: 30
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: -1
-    m_Strength: 1
-    m_Bias: .0500000007
-    m_Softness: 4
-    m_SoftnessFade: 1
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_ActuallyLightmapped: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_Lightmapping: 1
-  m_ShadowSamples: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
-  m_IndirectIntensity: 1
-  m_AreaSize: {x: 1, y: 1}
 --- !u!23 &2122173001
 Renderer:
   m_ObjectHideFlags: 0
