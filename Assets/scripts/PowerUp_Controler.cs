@@ -6,7 +6,6 @@ public class PowerUp_Controler : MonoBehaviour {
 	private int mode = -1;
 	private float waterDuration = 5.0f;
 	private float waterCurrent = 0.0f;
-	private Transform graphic;
 	private CharacterMotor chMotor;
 	private int rechargeFaster = 100;
 
@@ -18,8 +17,6 @@ public class PowerUp_Controler : MonoBehaviour {
 			// increments till it finds the  the graphics componet of the fpc
 			name = gameObject.transform.GetChild (i).name;
 		}
-		// name = gameObject.transform.GetChild (i).name;
-		graphic = gameObject.transform.GetChild (i);
 
 		chMotor = GetComponent<CharacterMotor>();
 	}
@@ -33,12 +30,15 @@ public class PowerUp_Controler : MonoBehaviour {
 				break;
 			case 2:
 				waterCurrent += Time.deltaTime;
+				bool render = false;
 				if(waterCurrent >= waterDuration) {
 					waterCurrent = 0;
 					noMode();
-					graphic.renderer.enabled = true;
-				} else {
-					graphic.renderer.enabled = false;
+					render = true;
+				}
+				MeshRenderer[] meshes = GetComponentsInChildren<MeshRenderer>();
+				foreach(MeshRenderer mesh in meshes) {
+					mesh.enabled = render;
 				}
 				break;
 			case 3:

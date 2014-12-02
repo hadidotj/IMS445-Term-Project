@@ -58,12 +58,22 @@ public class IngameMenu : AbstractMenu {
 				GUI.skin.label.alignment = TextAnchor.MiddleRight;
 				GUI.Label(new Rect(5, 0, scoreWindowRect.width-10, 30), NetworkManager.instance.currentLevelName);
 				GUI.skin.label.fontSize = 12;
+				GUI.skin.label.alignment = TextAnchor.MiddleLeft;
 
-				scrollPosition = GUILayout.BeginScrollView(scrollPosition, GUILayout.Width(Screen.width-20), GUILayout.Height(Screen.height-20)); {
-					collectData();
-					showTable();
+				Rect scoreAreaRect = new Rect(0, 35, scoreWindowRect.width, scoreWindowRect.height - 55);
+				GUILayout.BeginArea(scoreAreaRect); {
+					scrollPosition = GUILayout.BeginScrollView(scrollPosition, GUIStyle.none, GUI.skin.verticalScrollbar, GUILayout.Width(scoreAreaRect.width), GUILayout.Height(scoreAreaRect.height)); {
+						// Column headers
+						GUILayout.BeginHorizontal();
+						GUILayout.Label("", GUILayout.Width(scoreAreaRect.width*0.6f));
+						GUILayout.Label("Score", GUILayout.Width(scoreAreaRect.width*0.1f));
+						GUILayout.Label("Tags", GUILayout.Width(scoreAreaRect.width*0.1f));
+						GUILayout.Label("Tagged", GUILayout.Width(scoreAreaRect.width*0.1f));
+						GUILayout.Label("Ratio", GUILayout.Width(scoreAreaRect.width*0.1f));
+						GUILayout.EndHorizontal();
 
-				} GUILayout.EndScrollView();
+					} GUILayout.EndScrollView();
+				} GUILayout.EndArea();
 
 				GUI.skin.label.fontSize = 12;
 				GUI.skin.label.alignment = TextAnchor.MiddleLeft;
@@ -87,14 +97,6 @@ public class IngameMenu : AbstractMenu {
 		}
 
 		Screen.lockCursor = lockCursor;
-	}
-
-	private void collectData() {
-
-	}
-
-	private void showTable() {
-
 	}
 
 	public IEnumerator Message(object[] args) {
