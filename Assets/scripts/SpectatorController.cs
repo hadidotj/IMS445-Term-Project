@@ -2,10 +2,12 @@
 using System.Collections;
 
 public class SpectatorController : MonoBehaviour {
-	public static readonly float speed = 10;
+	public static readonly float speedNormal = 10;
+	public static readonly float speedSprint = 25;
 
 	void FixedUpdate () {
 		Vector3 directionVector = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+		float speed = Input.GetAxis("SpectatorSprint") > 0 ? speedSprint : speedNormal;
 		if (directionVector != Vector3.zero) {
 			// Get the length of the directon vector and then normalize it
 			// Dividing by the length is cheaper than normalizing when we already have the length anyway

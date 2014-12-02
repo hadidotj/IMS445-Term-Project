@@ -27,7 +27,7 @@ public class CreateMenu : AbstractMenu {
 		spectator = GUI.Toggle(new Rect(Screen.width/2.0f-200, header.height+100, 400, 25), spectator, "Join as Spectator?");
 
 		// Level Selection
-		selectedMap = GUI.SelectionGrid (new Rect(Screen.width/2.0f-200, header.height+100, 400, 100), selectedMap, maps, 4);
+		selectedMap = GUI.SelectionGrid (new Rect(Screen.width/2.0f-200, header.height+150, 400, 100), selectedMap, maps, 4);
 
 		// Go Button
 		GUI.backgroundColor = Color.blue;
