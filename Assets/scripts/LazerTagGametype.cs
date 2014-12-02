@@ -7,7 +7,11 @@ public class LazerTagGametype : MonoBehaviour {
 		return name;
 	}
 
-	public int getTeamScore(string teamName) {
-		return 0; 
+	public virtual int getTeamScore(string teamName) {
+		return 0;
+	}
+
+	public virtual bool hasTeams() {
+		return true;
 	}
 }

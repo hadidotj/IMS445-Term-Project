@@ -23,6 +23,7 @@ public class NetworkManager : MonoBehaviour {
 
 	public static NetworkManager instance;
 	public static string playerName;
+	public static string hostName;
 
 	private static string useMap = "Ice_Cap";
 	private static bool spectate;
@@ -30,6 +31,7 @@ public class NetworkManager : MonoBehaviour {
 	public void Awake() {
 		instance = this;
 		playerName = "Player" + Random.Range(100, 1000);
+		hostName = playerName;
 		networkView.group = (int)NetworkChannel.PROTOCOL;
 	}
 
@@ -172,11 +174,11 @@ public class NetworkManager : MonoBehaviour {
 	[RPC]
 	public void GetCurrentLevel(bool spectating, NetworkMessageInfo info) {
 		int team = getTeam(info.sender, spectating);
-		networkView.RPC("LoadNetworkLevel", info.sender, currentLevelName, currentLevelIdent, (int)team);
+		networkView.RPC("LoadNetworkLevel", info.sender, currentLevelName, currentLevelIdent, (int)team, hostName);
 	}
 
 	[RPC]
-	public void LoadNetworkLevel(string levelName, int levelIdent, int team) {
+	public void LoadNetworkLevel(string levelName, int levelIdent, int team, string hostName) {
 		MenuManager.DisplayDialogBox("Loading level...");
 
 		SetNetworkChannel(NetworkChannel.GAMEPLAY, false);
@@ -192,6 +194,7 @@ public class NetworkManager : MonoBehaviour {
 
 		this.team = team;
 		this.currentLevelName = levelName;
+		NetworkManager.hostName = hostName;
 
 		Application.LoadLevel(levelName);
 	}

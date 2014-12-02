@@ -67,7 +67,7 @@ public class IngameMenu : AbstractMenu {
 
 				GUI.skin.label.fontSize = 12;
 				GUI.skin.label.alignment = TextAnchor.MiddleLeft;
-				GUI.Label(new Rect(5, scoreWindowRect.height-20, scoreWindowRect.width-10, 20), "Server Host Player Name");
+				GUI.Label(new Rect(5, scoreWindowRect.height-20, scoreWindowRect.width-10, 20), NetworkManager.hostName);
 
 				NetworkPlayer nullPlayer = new NetworkPlayer();
 				NetworkPlayer player = (Network.isServer) ? Network.player : ((Network.connections.Length > 0) ? Network.connections[0] : nullPlayer);
@@ -115,7 +115,7 @@ public class IngameMenu : AbstractMenu {
 			showScores = false;
 			showMenu = !showMenu;
 			lockCursor = !lockCursor;
-		} else {
+		} else if(!showMenu) {
 			showScores = Input.GetKey(KeyCode.Tab);
 			lockCursor = !showScores;
 		}
