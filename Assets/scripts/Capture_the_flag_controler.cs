@@ -11,6 +11,14 @@ public class Capture_the_flag_controler : LazerTagGametype {
 		NetworkManager.SetGametype(this);
 	}
 
+	void FixedUpdate() {
+		if(isGameOver()) {
+			Destroy(GameObject.FindGameObjectWithTag("Flag"));
+			string message = ((redScore == 3) ? "Red" : "Green" )+ " Team Wins!";
+			MenuManager.DisplayDialogBox(message, "IngameMenu");
+		}
+	}
+
 	private bool isGameOver() {
 		return (redScore == 3 || greenScore == 3);
 	}
@@ -27,5 +35,18 @@ public class Capture_the_flag_controler : LazerTagGametype {
 			Debug.Log("There was an error in increaasing the score.");
 			break;
 		}
+	}
+
+	
+	
+	public int getScore(string team){
+		if (team.Equals ("Red"))
+			return redScore;
+		else
+			return greenScore;
+	}
+	
+	public override int getTeamScore(string team) {
+		return getScore(team);
 	}
 }

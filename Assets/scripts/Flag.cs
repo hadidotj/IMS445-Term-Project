@@ -14,11 +14,10 @@ public class Flag : MonoBehaviour {
 		Debug.Log ("starting at " + startingPos.ToString());
 	}
 
+	[RPC]
 	void OnTriggerEnter(Collider collider) {
 		if(collider.transform.tag.Equals("Player") && !held) {
 			if (collider.transform == null) return;
-
-			Debug.Log ("Flag's new parent is " + collider.transform.name);
 			obj = collider.gameObject;
 			transform.parent = collider.transform;
 			held = true;
@@ -32,9 +31,7 @@ public class Flag : MonoBehaviour {
 	}
 
 	void FixedUpdate () {
-//		Debug.Log("I the flag am " + ((held) ? "" : "not ") + "being held");
 		if(held) { // reduce the player's charge
-			Debug.Log(obj.name);
 			Player_Controler pc = (Player_Controler) obj.GetComponent<Player_Controler>();
 			pc.subtractCharge(0.1f);
 			held = pc.getCharge() > 0.0f;
