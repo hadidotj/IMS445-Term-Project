@@ -12,13 +12,18 @@ public class Flag : MonoBehaviour {
 		cfc = (Capture_the_flag_controler)GameObject.FindWithTag("GameController").GetComponent<Capture_the_flag_controler>();
 	}
 
-	void OnTriggerEnter(Collider other) {
-		if(other.transform.tag == "Player" && !held) {
-			transform.parent = other.transform;
+	void OnCollisionEnter(Collision other) {
+		Debug.Log ("I the flag was collided");
+	}
+
+	void OnTriggerEnter(Collider collider) {
+		Debug.Log ("I the flag was triggered");
+		if(collider.transform.tag.Equals("Player") && !held) {
+			transform.parent = collider.transform;
 			held = true;
-		} else if(held && other.transform.tag == "Pedistal") {
+		} else if(held && collider.transform.tag.Equals("Pedistal")) {
 			held = false;
-			cfc.flagCaptured((transform.parent.GetComponent<Team>().teamName == "Red") ? 1 : 2);
+			cfc.flagCaptured((transform.parent.GetComponent<Team>().teamName.Equals("Red")) ? 1 : 2);
 			transform.parent = null;
 			transform.position = startingPos;
 		}

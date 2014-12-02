@@ -10,7 +10,7 @@ public class CreateMenu : AbstractMenu {
 	private int currentHoveredOver = -1;
 
 	private int selectedMap = 0;
-	private string[] maps = {"Ice_Cap", "Mine", "power_ups"};
+	private string[] maps = {"Ice_Cap", "Mine", "power_ups", "Ice_Cap ctf"};
 
 	public override void Draw(){
 		Vector3 mouse = Input.mousePosition;
@@ -23,7 +23,7 @@ public class CreateMenu : AbstractMenu {
 		NetworkManager.playerName = GUI.TextField(new Rect(Screen.width/2.0f-200, header.height+50, 400, 25), NetworkManager.playerName);
 
 		// Level Selection
-		selectedMap = GUI.SelectionGrid (new Rect(Screen.width/2.0f-200, header.height+100, 400, 100), selectedMap, maps, 3);
+		selectedMap = GUI.SelectionGrid (new Rect(Screen.width/2.0f-200, header.height+100, 400, 100), selectedMap, maps, 4);
 
 		// Go Button
 		GUI.backgroundColor = Color.blue;
