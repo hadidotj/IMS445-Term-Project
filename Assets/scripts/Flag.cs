@@ -10,15 +10,14 @@ public class Flag : MonoBehaviour {
 	void Start() {
 		startingPos = transform.position;
 		cfc = (Capture_the_flag_controler)GameObject.FindWithTag("GameController").GetComponent<Capture_the_flag_controler>();
-	}
-
-	void OnCollisionEnter(Collision other) {
-		Debug.Log ("I the flag was collided");
+		Debug.Log ("starting at " + startingPos.ToString());
 	}
 
 	void OnTriggerEnter(Collider collider) {
-		Debug.Log ("I the flag was triggered");
 		if(collider.transform.tag.Equals("Player") && !held) {
+			if (collider.transform == null) return;
+
+			Debug.Log ("I the flag was triggered");
 			transform.parent = collider.transform;
 			held = true;
 		} else if(held && collider.transform.tag.Equals("Pedistal")) {
@@ -30,6 +29,7 @@ public class Flag : MonoBehaviour {
 	}
 
 	void FixedUpdate () {
+//		Debug.Log("I the flag am " + ((held) ? "" : "not ") + "being held");
 		if(held) { // reduce the player's charge
 			Player_Controler pc = (Player_Controler) transform.parent.GetComponent<Player_Controler>();
 			pc.subtractCharge(2.0f);
