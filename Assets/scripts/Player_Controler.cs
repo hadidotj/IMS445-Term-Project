@@ -57,6 +57,7 @@ public class Player_Controler : MonoBehaviour {
 				//if(GetComponent<TeamDeathMatch>().isActive) {
 					if(attacker.GetComponent<Team>().teamName == "Green") {
 						NetworkManager.GametypeSend("IncGreenScore", "none");
+					GetComponent<Player_Network_Controller>().playerScore++;
 					} else {
 						NetworkManager.GametypeSend("IncRedScore", "none");
 					}

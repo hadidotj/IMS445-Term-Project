@@ -4,6 +4,7 @@ using System.Collections;
 public class Player_Network_Controller : MonoBehaviour {
 
 	public string playerName;
+	public int playerScore = 0;
 	public GameObject nameTag;
 	private Color onColor;
 	private Color currentColor;
