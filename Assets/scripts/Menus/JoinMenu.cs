@@ -9,6 +9,7 @@ public class JoinMenu : AbstractMenu {
 	
 	private int currentHoveredOver = -1;
 	private string joinIP = "localhost";
+	private bool spectator = false;
 
 	public override void Draw(){
 		Vector3 mouse = Input.mousePosition;
@@ -23,11 +24,14 @@ public class JoinMenu : AbstractMenu {
 		// Player Name Input
 		NetworkManager.playerName = GUI.TextField(new Rect(Screen.width/2.0f-200, header.height+100, 400, 25), NetworkManager.playerName);
 
+		// Spectator?
+		spectator = GUI.Toggle(new Rect(Screen.width/2.0f-200, header.height+150, 400, 25), spectator, "Join as Spectator?");
+
 		// Go Button
 		GUI.backgroundColor = Color.green;
 		Rect connectButtonRect = new Rect(Screen.width-connect.width-10.0f, Screen.height-connect.height-10.0f, connect.width, connect.height);
 		if(GUI.Button (connectButtonRect, connect)){
-			NetworkManager.ConnectToServer(joinIP);
+			NetworkManager.ConnectToServer(joinIP, spectator);
 			ButtonPressed("MainMenu");
 		} else if(currentHoveredOver != 0 && connectButtonRect.Contains(mouse)) {
 			currentHoveredOver = 0;
