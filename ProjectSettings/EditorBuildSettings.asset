@@ -7,9 +7,13 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/Scenes/main_menu.unity
+  - enabled: 0
+    path: Assets/Scenes/main_menu.unity
   - enabled: 1
     path: Assets/Scenes/Ice_Cap.unity
   - enabled: 1
     path: Assets/Scenes/Mine.unity
   - enabled: 1
     path: Assets/Scenes/power_ups.unity
+  - enabled: 1
+    path: Assets/Scenes/Ice_Cap ctf.unity

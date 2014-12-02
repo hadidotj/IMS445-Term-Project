@@ -3,12 +3,11 @@ using System.Collections;
 
 public class Capture_the_flag_controler : MonoBehaviour {
 
+
 	private int redScore = 0, greenScore = 0;
 
-	void Update () {
-		if(isGameOver()) {
-			// TODO TURN THE GAME OFF
-		}
+	void Awake() {
+		NetworkManager.SetGametype(this);
 	}
 
 	private bool isGameOver() {
