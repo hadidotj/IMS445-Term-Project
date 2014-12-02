@@ -9,7 +9,9 @@ public class IngameMenu : AbstractMenu {
 
 	private int currentHoveredOver = -1;
 	private bool showMenu = false;
+	private bool showScores = false;
 	private bool lockCursor = true;
+	private Vector2 scrollPosition;
 	private List<GUIMessage> msgs = new List<GUIMessage>();
 
 	private class GUIMessage {
@@ -43,6 +45,37 @@ public class IngameMenu : AbstractMenu {
 			} else if(currentHoveredOver == 1 && !backButtonRect.Contains(mouse)) {
 				currentHoveredOver = -1;
 			}
+		} else if(showScores) {
+			GUI.Box(new Rect(0, 0, Screen.width, Screen.height), "");
+
+			Rect scoreWindowRect = new Rect(Screen.width*0.125f, 25f, Screen.width*0.75f, Screen.height-50f);
+			GUI.Box(scoreWindowRect, "");
+
+			GUILayout.BeginArea(scoreWindowRect); {
+				GUI.skin.label.fontSize = 20;
+				GUI.skin.label.alignment = TextAnchor.MiddleLeft;
+				GUI.Label(new Rect(5, 0, scoreWindowRect.width-10, 30), NetworkManager.instance.gametype.getName());
+				GUI.skin.label.alignment = TextAnchor.MiddleRight;
+				GUI.Label(new Rect(5, 0, scoreWindowRect.width-10, 30), NetworkManager.instance.currentLevelName);
+				GUI.skin.label.fontSize = 12;
+
+				scrollPosition = GUILayout.BeginScrollView(scrollPosition, GUILayout.Width(Screen.width-20), GUILayout.Height(Screen.height-20)); {
+					collectData();
+					showTable();
+
+				} GUILayout.EndScrollView();
+
+				GUI.skin.label.fontSize = 12;
+				GUI.skin.label.alignment = TextAnchor.MiddleLeft;
+				GUI.Label(new Rect(5, scoreWindowRect.height-20, scoreWindowRect.width-10, 20), "Server Host Player Name");
+
+				NetworkPlayer nullPlayer = new NetworkPlayer();
+				NetworkPlayer player = (Network.isServer) ? Network.player : ((Network.connections.Length > 0) ? Network.connections[0] : nullPlayer);
+				if(nullPlayer.Equals(player)) {
+					GUI.skin.label.alignment = TextAnchor.MiddleRight;
+					GUI.Label(new Rect(5, scoreWindowRect.height-20, scoreWindowRect.width-10, 20), player.ipAddress + ":" + player.port);
+				}
+			} GUILayout.EndArea();
 		} else if(msgs.Count > 0) {
 			for(int i=0; i<msgs.Count; i++) {
 				GUIStyle style = new GUIStyle();
@@ -54,6 +87,14 @@ public class IngameMenu : AbstractMenu {
 		}
 
 		Screen.lockCursor = lockCursor;
+	}
+
+	private void collectData() {
+
+	}
+
+	private void showTable() {
+
 	}
 
 	public IEnumerator Message(object[] args) {
@@ -71,8 +112,12 @@ public class IngameMenu : AbstractMenu {
 
 	public void Update() {
 		if(Input.GetKeyDown(KeyCode.Escape)) {
+			showScores = false;
 			showMenu = !showMenu;
 			lockCursor = !lockCursor;
+		} else {
+			showScores = Input.GetKey(KeyCode.Tab);
+			lockCursor = !showScores;
 		}
 	}
 }

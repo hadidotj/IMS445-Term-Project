@@ -1,12 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Capture_the_flag_controler : MonoBehaviour {
+public class Capture_the_flag_controler : LazerTagGametype {
 
 
 	private int redScore = 0, greenScore = 0;
 
 	void Awake() {
+		name = "Capture the Flag";
 		NetworkManager.SetGametype(this);
 	}
 

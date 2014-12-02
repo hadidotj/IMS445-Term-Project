@@ -6,7 +6,7 @@ public class GameModeManager : MonoBehaviour {
 	private int gameMode;
 	// Use this for initialization
 	void Start () {
-	
+		gameMode = 0;
 	}
 	
 	// Update is called once per frame

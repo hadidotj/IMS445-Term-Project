@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Search : MonoBehaviour {
+public class Search : LazerTagGametype {
 
 	public bool isActive = false;
 
@@ -12,6 +12,7 @@ public class Search : MonoBehaviour {
 	private ArrayList greenTargets = new ArrayList();
 
 	void Awake() {
+		name = "Search and Destroy";
 		NetworkManager.SetGametype(this);
 	}
 

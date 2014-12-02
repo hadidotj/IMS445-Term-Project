@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class TeamDeathMatch : MonoBehaviour {
+public class TeamDeathMatch : LazerTagGametype {
 
 	public bool isActive = true;
 
@@ -10,6 +10,7 @@ public class TeamDeathMatch : MonoBehaviour {
 
 	// Use this for initialization
 	void Awake () {
+		name = "Team Death Match";
 		NetworkManager.SetGametype(this);
 	}
 

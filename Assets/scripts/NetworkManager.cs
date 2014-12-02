@@ -11,10 +11,10 @@ public class NetworkManager : MonoBehaviour {
 	public GameObject playerPrefab;
 	public GameObject spectatorPrefab;
 
-	private string currentLevelName;
+	public string currentLevelName;
 	private int currentLevelIdent = 0;
 	private int team = 0;
-	private MonoBehaviour gametype;
+	public LazerTagGametype gametype;
 	private IDictionary<NetworkPlayer, string> playerNames = new Dictionary<NetworkPlayer, string>();
 
 	private enum PLAYER_TEAMS { GREEN, RED, SPECTATOR };
@@ -127,7 +127,7 @@ public class NetworkManager : MonoBehaviour {
 		}
 	}
 
-	public static void SetGametype(MonoBehaviour gametype) {
+	public static void SetGametype(LazerTagGametype gametype) {
 		instance.gametype = gametype;
 	}
 
@@ -161,14 +161,11 @@ public class NetworkManager : MonoBehaviour {
 				team = PLAYER_TEAMS.RED;
 			} else {
 				int random = Random.Range(0, 2);
-				Debug.Log("Choosing random team: " + random);
 				team = (random == 0) ? PLAYER_TEAMS.GREEN : PLAYER_TEAMS.RED;
 			}
 		}
 		playerTeams[player] = team;
 		teamCounts[(int)team]++;
-		
-		Debug.Log("Choosing team: " + team);
 		return (int)team;
 	}
 
@@ -194,6 +191,7 @@ public class NetworkManager : MonoBehaviour {
 		}
 
 		this.team = team;
+		this.currentLevelName = levelName;
 
 		Application.LoadLevel(levelName);
 	}
