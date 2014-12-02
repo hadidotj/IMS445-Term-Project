@@ -13,6 +13,7 @@ public class IngameMenu : AbstractMenu {
 	private bool lockCursor = true;
 	private Vector2 scrollPosition;
 	private List<GUIMessage> msgs = new List<GUIMessage>();
+	private List<ScoreInfo> scoreInfo = new List<ScoreInfo>();
 
 	private class GUIMessage {
 		public string text;
@@ -20,6 +21,23 @@ public class IngameMenu : AbstractMenu {
 		public GUIMessage(string text, Color color) {
 			this.text = text;
 			this.color = color;
+		}
+	}
+
+	private class ScoreInfo {
+		public bool isTeam = false;
+		public string name;
+		public Color color;
+		public int score;
+		public int tags;
+		public int tagged;
+		public List<ScoreInfo> players = new List<ScoreInfo>();
+
+		public ScoreInfo(string _name, int _score, int _tags, int _tagged) {
+			name = _name;
+			score = _score;
+			tags = _tags;
+			tagged = _tagged;
 		}
 	}
 
@@ -61,72 +79,26 @@ public class IngameMenu : AbstractMenu {
 				GUI.skin.label.alignment = TextAnchor.MiddleLeft;
 
 				Rect scoreAreaRect = new Rect(0, 35, scoreWindowRect.width, scoreWindowRect.height - 55);
+				gatherData();
 				GUILayout.BeginArea(scoreAreaRect); {
 					scrollPosition = GUILayout.BeginScrollView(scrollPosition, GUIStyle.none, GUI.skin.verticalScrollbar, GUILayout.Width(scoreAreaRect.width), GUILayout.Height(scoreAreaRect.height)); {
-						// Column headers
-						GUILayout.BeginHorizontal();
-						GUILayout.Label("", GUILayout.Width(scoreAreaRect.width*0.6f));
-						GUILayout.Label("Score", GUILayout.Width(scoreAreaRect.width*0.1f));
-						GUILayout.Label("Tags", GUILayout.Width(scoreAreaRect.width*0.1f));
-						GUILayout.Label("Tagged", GUILayout.Width(scoreAreaRect.width*0.1f));
-						GUILayout.Label("Ratio", GUILayout.Width(scoreAreaRect.width*0.1f));
-						GUILayout.EndHorizontal();
+						if(scoreInfo.Count > 2) {
+							printHeader(scoreAreaRect);
+						}
 
-						GUI.skin.label.fontSize = 20;
-						GUI.skin.label.alignment = TextAnchor.MiddleCenter;
-						GUI.skin.label.normal.textColor = Color.green;
-						GUILayout.BeginHorizontal();
-						GUILayout.Label("Team Name 1", GUILayout.Width(scoreAreaRect.width*0.6f));
-						GUI.skin.label.alignment = TextAnchor.MiddleLeft;
-						GUILayout.Label("0", GUILayout.Width(scoreAreaRect.width*0.1f));
-						GUILayout.Label("0", GUILayout.Width(scoreAreaRect.width*0.1f));
-						GUILayout.Label("0", GUILayout.Width(scoreAreaRect.width*0.1f));
-						GUILayout.Label("0", GUILayout.Width(scoreAreaRect.width*0.1f));
-						GUILayout.EndHorizontal();
+						foreach(ScoreInfo info in scoreInfo) {
+							if(info.isTeam) {
+								printHeader(scoreAreaRect);
+								printTeamInfo(scoreAreaRect, info);
 
-						GUI.skin.label.fontSize = 15;
-						GUI.skin.label.alignment = TextAnchor.MiddleLeft;
-						GUI.skin.label.normal.textColor = Color.white;
-						GUILayout.BeginHorizontal();
-						GUILayout.Label("Player Name 1", GUILayout.Width(scoreAreaRect.width*0.6f));
-						GUILayout.Label("0", GUILayout.Width(scoreAreaRect.width*0.1f));
-						GUILayout.Label("0", GUILayout.Width(scoreAreaRect.width*0.1f));
-						GUILayout.Label("0", GUILayout.Width(scoreAreaRect.width*0.1f));
-						GUILayout.Label("0", GUILayout.Width(scoreAreaRect.width*0.1f));
-						GUILayout.EndHorizontal();
-
-						GUILayout.Space(10);
-
-						GUILayout.BeginHorizontal();
-						GUILayout.Label("", GUILayout.Width(scoreAreaRect.width*0.6f));
-						GUILayout.Label("Score", GUILayout.Width(scoreAreaRect.width*0.1f));
-						GUILayout.Label("Tags", GUILayout.Width(scoreAreaRect.width*0.1f));
-						GUILayout.Label("Tagged", GUILayout.Width(scoreAreaRect.width*0.1f));
-						GUILayout.Label("Ratio", GUILayout.Width(scoreAreaRect.width*0.1f));
-						GUILayout.EndHorizontal();
-
-						GUI.skin.label.fontSize = 20;
-						GUI.skin.label.alignment = TextAnchor.MiddleCenter;
-						GUI.skin.label.normal.textColor = Color.red;
-						GUILayout.BeginHorizontal();
-						GUILayout.Label("Team Name 2", GUILayout.Width(scoreAreaRect.width*0.6f));
-						GUI.skin.label.alignment = TextAnchor.MiddleLeft;
-						GUILayout.Label("0", GUILayout.Width(scoreAreaRect.width*0.1f));
-						GUILayout.Label("0", GUILayout.Width(scoreAreaRect.width*0.1f));
-						GUILayout.Label("0", GUILayout.Width(scoreAreaRect.width*0.1f));
-						GUILayout.Label("0", GUILayout.Width(scoreAreaRect.width*0.1f));
-						GUILayout.EndHorizontal();
-
-						GUI.skin.label.fontSize = 15;
-						GUI.skin.label.alignment = TextAnchor.MiddleLeft;
-						GUI.skin.label.normal.textColor = Color.white;
-						GUILayout.BeginHorizontal();
-						GUILayout.Label("Player Name 2", GUILayout.Width(scoreAreaRect.width*0.6f));
-						GUILayout.Label("0", GUILayout.Width(scoreAreaRect.width*0.1f));
-						GUILayout.Label("0", GUILayout.Width(scoreAreaRect.width*0.1f));
-						GUILayout.Label("0", GUILayout.Width(scoreAreaRect.width*0.1f));
-						GUILayout.Label("0", GUILayout.Width(scoreAreaRect.width*0.1f));
-						GUILayout.EndHorizontal();
+								foreach(ScoreInfo playerInfo in info.players) {
+									printPlayerScore(scoreAreaRect, playerInfo);
+								}
+								GUILayout.Space(10);
+							} else {
+								printPlayerScore(scoreAreaRect, info);
+							}
+						}
 						
 					} GUILayout.EndScrollView();
 				} GUILayout.EndArea();
@@ -153,6 +125,63 @@ public class IngameMenu : AbstractMenu {
 		}
 
 		Screen.lockCursor = lockCursor;
+	}
+
+	private void gatherData() {
+		scoreInfo.Clear();
+
+		ScoreInfo red = new ScoreInfo("Red Team", NetworkManager.instance.gametype.getTeamScore("Red"), 0, 0);
+		red.color = Color.red;
+		red.isTeam = true;
+		red.players.Add(new ScoreInfo("Player 1", 1, 2, 3));
+		red.players.Add(new ScoreInfo("Player 2", 4, 5, 6));
+
+		ScoreInfo green = new ScoreInfo("Green Team", NetworkManager.instance.gametype.getTeamScore("Green"), 0, 0);
+		green.color = Color.green;
+		green.isTeam = true;
+		green.players.Add(new ScoreInfo("Player 3", 7, 8, 9));
+		green.players.Add(new ScoreInfo("Player 4", 1, 2, 3));
+
+		scoreInfo.Add(red);
+		scoreInfo.Add(green);
+	}
+
+	private void printHeader(Rect scoreAreaRect) {
+		GUILayout.BeginHorizontal();
+		GUILayout.Label("", GUILayout.Width(scoreAreaRect.width*0.6f));
+		GUILayout.Label("Score", GUILayout.Width(scoreAreaRect.width*0.1f));
+		GUILayout.Label("Tags", GUILayout.Width(scoreAreaRect.width*0.1f));
+		GUILayout.Label("Tagged", GUILayout.Width(scoreAreaRect.width*0.1f));
+		GUILayout.Label("Ratio", GUILayout.Width(scoreAreaRect.width*0.1f));
+		GUILayout.EndHorizontal();
+	}
+
+	private void printTeamInfo(Rect scoreAreaRect, ScoreInfo info) {
+		GUI.skin.label.fontSize = 20;
+		GUI.skin.label.alignment = TextAnchor.MiddleCenter;
+		GUI.skin.label.normal.textColor = info.color;
+		GUILayout.BeginHorizontal();
+		GUILayout.Label(info.name, GUILayout.Width(scoreAreaRect.width*0.6f));
+		GUI.skin.label.alignment = TextAnchor.MiddleLeft;
+		GUILayout.Label(""+info.score, GUILayout.Width(scoreAreaRect.width*0.1f));
+		GUILayout.Label(""+info.tags, GUILayout.Width(scoreAreaRect.width*0.1f));
+		GUILayout.Label(""+info.tagged, GUILayout.Width(scoreAreaRect.width*0.1f));
+		GUILayout.Label(""+((float)info.tags/(float)info.tagged), GUILayout.Width(scoreAreaRect.width*0.1f));
+		GUILayout.EndHorizontal();
+		GUI.skin.label.normal.textColor = Color.white;
+	}
+
+	private void printPlayerScore(Rect scoreAreaRect, ScoreInfo info) {
+		GUI.skin.label.fontSize = 15;
+		GUI.skin.label.alignment = TextAnchor.MiddleLeft;
+		GUI.skin.label.normal.textColor = Color.white;
+		GUILayout.BeginHorizontal();
+		GUILayout.Label(info.name, GUILayout.Width(scoreAreaRect.width*0.6f));
+		GUILayout.Label(""+info.score, GUILayout.Width(scoreAreaRect.width*0.1f));
+		GUILayout.Label(""+info.tags, GUILayout.Width(scoreAreaRect.width*0.1f));
+		GUILayout.Label(""+info.tagged, GUILayout.Width(scoreAreaRect.width*0.1f));
+		GUILayout.Label(""+((float)info.tags/(float)info.tagged), GUILayout.Width(scoreAreaRect.width*0.1f));
+		GUILayout.EndHorizontal();
 	}
 
 	public IEnumerator Message(object[] args) {

@@ -15,11 +15,11 @@ public class NetworkManager : MonoBehaviour {
 	private int currentLevelIdent = 0;
 	private int team = 0;
 	public LazerTagGametype gametype;
-	private IDictionary<NetworkPlayer, string> playerNames = new Dictionary<NetworkPlayer, string>();
+	public IDictionary<NetworkPlayer, string> playerNames = new Dictionary<NetworkPlayer, string>();
 
-	private enum PLAYER_TEAMS { GREEN, RED, SPECTATOR };
+	public enum PLAYER_TEAMS { GREEN, RED, SPECTATOR };
 	private int[] teamCounts = {0,0,0};
-	private IDictionary<NetworkPlayer, PLAYER_TEAMS> playerTeams = new Dictionary<NetworkPlayer, PLAYER_TEAMS>();
+	public IDictionary<NetworkPlayer, PLAYER_TEAMS> playerTeams = new Dictionary<NetworkPlayer, PLAYER_TEAMS>();
 
 	public static NetworkManager instance;
 	public static string playerName;
@@ -201,8 +201,8 @@ public class NetworkManager : MonoBehaviour {
 
 	[RPC]
 	public void SetPlayerName(string name, NetworkMessageInfo info) {
+		playerNames.Add(info.sender, name);
 		if(Network.isServer) {
-			playerNames.Add(info.sender, name);
 			networkView.RPC("SendTextMessageRPC", RPCMode.All, name + " joined the game", Vector3.one);
 		}
 	}

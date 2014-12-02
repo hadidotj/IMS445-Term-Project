@@ -82,4 +82,8 @@ public class Search : LazerTagGametype {
 		else
 			return greenScore;
 	}
+
+	public override int getTeamScore(string team) {
+		return getScore(team);
+	}
 }
