@@ -129,7 +129,7 @@ public class Player_Controler : MonoBehaviour {
 					text.transform.position = myCam.WorldToViewportPoint(obj.transform.position + new Vector3(0.0f, 1.5f, 0.0f));
 					text.enabled = true;
 				} else {
-					text.enabled = false;
+					// text.enabled = false;
 				}
 			}
 		}
