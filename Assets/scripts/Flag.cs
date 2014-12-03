@@ -11,9 +11,9 @@ public class Flag : MonoBehaviour {
 	void Start() {
 		startingPos = transform.position;
 		cfc = (Capture_the_flag_controler)GameObject.FindWithTag("GameController").GetComponent<Capture_the_flag_controler>();
-		Debug.Log ("starting at " + startingPos.ToString());
 	}
 
+	string teamHolding = "";
 	[RPC]
 	void OnTriggerEnter(Collider collider) {
 		if(collider.transform.tag.Equals("Player") && !held) {
@@ -21,12 +21,15 @@ public class Flag : MonoBehaviour {
 			obj = collider.gameObject;
 			transform.parent = collider.transform;
 			held = true;
-		} else if(held && collider.transform.tag.Equals("Pedistal")) {
+			teamHolding = obj.GetComponent<Team>().teamName;
+		} else if(held && collider.transform.tag.Equals("Pedistal") &&
+		          (teamHolding.Equals(collider.gameObject.GetComponent<Team>().teamName))) {
 			held = false;
 			cfc.flagCaptured((transform.parent.GetComponent<Team>().teamName.Equals("Red")) ? 1 : 2);
 			transform.parent = null;
 			transform.position = startingPos;
 			obj = null;
+			teamHolding = "";
 		}
 	}
 
@@ -38,6 +41,7 @@ public class Flag : MonoBehaviour {
 			if (!held){ // can nolonger hold it
 				transform.parent = null; // the scene
 				obj = null;
+				teamHolding = "";
 			}
 		}
 	}

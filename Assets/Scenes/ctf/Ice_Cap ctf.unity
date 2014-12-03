@@ -24038,6 +24038,10 @@ Prefab:
       propertyPath: m_Name
       value: Pedistel_r
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: a22ad522083e10d42abbb066802e7839, type: 2}
+      propertyPath: teamName
+      value: Red
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a22ad522083e10d42abbb066802e7839, type: 2}
   m_RootGameObject: {fileID: 1027028172}
@@ -35460,6 +35464,10 @@ Prefab:
       propertyPath: m_Name
       value: Pedistel_g
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: a22ad522083e10d42abbb066802e7839, type: 2}
+      propertyPath: teamName
+      value: Green
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a22ad522083e10d42abbb066802e7839, type: 2}
   m_RootGameObject: {fileID: 1160543197}
@@ -42155,6 +42163,7 @@ GameObject:
   - 4: {fileID: 1027028175}
   - 54: {fileID: 1027028174}
   - 136: {fileID: 1027028173}
+  - 114: {fileID: 1027028176}
   m_Layer: 0
   m_Name: Pedistel_r
   m_TagString: Pedistal
@@ -42206,6 +42215,19 @@ Transform:
   - {fileID: 1869329814}
   m_Father: {fileID: 0}
   m_RootOrder: 4
+--- !u!114 &1027028176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: a22ad522083e10d42abbb066802e7839,
+    type: 2}
+  m_PrefabInternal: {fileID: 590051110}
+  m_GameObject: {fileID: 1027028172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ac5b55fdf6221f49bccbccf6cbc0dca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  teamName: Red
 --- !u!1 &1031211219
 GameObject:
   m_ObjectHideFlags: 0
@@ -47703,6 +47725,7 @@ GameObject:
   - 4: {fileID: 1160543198}
   - 54: {fileID: 1160543200}
   - 136: {fileID: 1160543199}
+  - 114: {fileID: 1160543201}
   m_Layer: 0
   m_Name: Pedistel_g
   m_TagString: Pedistal
@@ -47754,6 +47777,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &1160543201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: a22ad522083e10d42abbb066802e7839,
+    type: 2}
+  m_PrefabInternal: {fileID: 873486857}
+  m_GameObject: {fileID: 1160543197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ac5b55fdf6221f49bccbccf6cbc0dca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  teamName: Green
 --- !u!1 &1161292138
 GameObject:
   m_ObjectHideFlags: 0
@@ -47997,7 +48033,7 @@ GameObject:
   - 114: {fileID: 1166637666}
   - 114: {fileID: 1166637665}
   m_Layer: 0
-  m_Name: Game Manager
+  m_Name: ctf Game Manager
   m_TagString: GameController
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
