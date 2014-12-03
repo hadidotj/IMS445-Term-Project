@@ -11,35 +11,37 @@ public class Flag : MonoBehaviour {
 	void Start() {
 		startingPos = transform.position;
 		cfc = (Capture_the_flag_controler)GameObject.FindWithTag("GameController").GetComponent<Capture_the_flag_controler>();
-		Debug.Log ("starting at " + startingPos.ToString());
 	}
 
+	string teamHolding = "";
+	[RPC]
 	void OnTriggerEnter(Collider collider) {
 		if(collider.transform.tag.Equals("Player") && !held) {
 			if (collider.transform == null) return;
-
-			Debug.Log ("Flag's new parent is " + collider.transform.name);
 			obj = collider.gameObject;
 			transform.parent = collider.transform;
 			held = true;
-		} else if(held && collider.transform.tag.Equals("Pedistal")) {
+			teamHolding = obj.GetComponent<Team>().teamName;
+		} else if(held && collider.transform.tag.Equals("Pedistal") &&
+		          (teamHolding.Equals(collider.gameObject.GetComponent<Team>().teamName))) {
 			held = false;
 			cfc.flagCaptured((transform.parent.GetComponent<Team>().teamName.Equals("Red")) ? 1 : 2);
 			transform.parent = null;
 			transform.position = startingPos;
 			obj = null;
+			teamHolding = "";
 		}
 	}
 
 	void FixedUpdate () {
-//		Debug.Log("I the flag am " + ((held) ? "" : "not ") + "being held");
 		if(held) { // reduce the player's charge
 			Player_Controler pc = (Player_Controler) obj.GetComponent<Player_Controler>();
-			pc.subtractCharge(2.0f);
-			held = pc.getCharge() > 0;
-			if (held){ // can nolonger hold it
+			pc.subtractCharge(0.1f);
+			held = pc.getCharge() > 0.0f;
+			if (!held){ // can nolonger hold it
 				transform.parent = null; // the scene
 				obj = null;
+				teamHolding = "";
 			}
 		}
 	}

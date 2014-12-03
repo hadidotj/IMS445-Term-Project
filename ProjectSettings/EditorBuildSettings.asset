@@ -16,4 +16,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/power_ups.unity
   - enabled: 1
-    path: Assets/Scenes/Ice_Cap ctf.unity
+    path: Assets/Scenes/ctf/Ice_Cap ctf.unity
+  - enabled: 1
+    path: Assets/Scenes/ctf/Mine ctf.unity
