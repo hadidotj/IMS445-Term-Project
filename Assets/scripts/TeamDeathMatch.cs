@@ -32,4 +32,8 @@ public class TeamDeathMatch : LazerTagGametype {
 		else if(greenScore == 10)
 			MenuManager.DisplayDialogBox("Green Team Wins!", "IngameMenu");
 	}
+
+	public override int getTeamScore(string team) {
+		return ("Red".Equals(team)) ? redScore : greenScore;
+	}
 }
