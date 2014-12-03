@@ -173,8 +173,10 @@ public class IngameMenu : AbstractMenu {
 						info.players.Add(new ScoreInfo(name, 0, 0, 0));
 					}
 				}
+				info.players.Sort(delegate (ScoreInfo a, ScoreInfo b) { return b.score - a.score; });
 			} else {
 				scoreInfo.Add(playerInfo[player.GetComponent<Player_Controler>().playerName]);
+				scoreInfo.Sort(delegate (ScoreInfo a, ScoreInfo b) { return b.score - a.score; });
 			}
 		}
 	}
