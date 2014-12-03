@@ -11,7 +11,7 @@ public class CreateMenu : AbstractMenu {
 
 	private int selectedMap = 0;
 	private bool spectator = false;
-	private string[] maps = {"Ice_Cap", "Mine", "power_ups", "Ice_Cap ctf", "Mine ctf"};
+	private string[] maps = {"Ice_Cap", "Mine", "power_ups", "Ice_Cap ctf", "Mine ctf", "lavalevel ctf"};
 
 	public override void Draw(){
 		Vector3 mouse = Input.mousePosition;
@@ -27,7 +27,7 @@ public class CreateMenu : AbstractMenu {
 		spectator = GUI.Toggle(new Rect(Screen.width/2.0f-200, header.height+100, 400, 25), spectator, "Join as Spectator?");
 
 		// Level Selection
-		selectedMap = GUI.SelectionGrid (new Rect(Screen.width/2.0f-200, header.height+150, 400, 100), selectedMap, maps, 5);
+		selectedMap = GUI.SelectionGrid (new Rect(Screen.width/2.0f-200, header.height+150, 400, 100), selectedMap, maps, 6);
 
 		// Go Button
 		GUI.backgroundColor = Color.blue;
