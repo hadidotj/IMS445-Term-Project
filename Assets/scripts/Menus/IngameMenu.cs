@@ -199,7 +199,8 @@ public class IngameMenu : AbstractMenu {
 		GUILayout.Label(""+info.score, GUILayout.Width(scoreAreaRect.width*0.1f));
 		GUILayout.Label(""+info.tags, GUILayout.Width(scoreAreaRect.width*0.1f));
 		GUILayout.Label(""+info.tagged, GUILayout.Width(scoreAreaRect.width*0.1f));
-		GUILayout.Label(""+((float)info.tags/(float)info.tagged), GUILayout.Width(scoreAreaRect.width*0.1f));
+		float ratio = (info.tags == 0 || info.tagged == 0) ? 0 : (float)info.tags/(float)info.tagged;
+		GUILayout.Label(""+ratio, GUILayout.Width(scoreAreaRect.width*0.1f));
 		GUILayout.EndHorizontal();
 		GUI.skin.label.normal.textColor = Color.white;
 	}
@@ -208,13 +209,24 @@ public class IngameMenu : AbstractMenu {
 		GUI.skin.label.fontSize = 15;
 		GUI.skin.label.alignment = TextAnchor.MiddleLeft;
 		GUI.skin.label.normal.textColor = Color.white;
+
+		Texture2D org = GUI.skin.label.normal.background;
+		if(info.name.Equals(NetworkManager.playerName)) {
+			GUI.skin.label.normal.background = new Texture2D(1,1);
+			GUI.skin.label.normal.background.SetPixel(0, 0, new Color(1.0f, 1.0f, 1.0f, 0.25f));
+			GUI.skin.label.normal.background.Apply();
+		}
+
 		GUILayout.BeginHorizontal();
 		GUILayout.Label(info.name, GUILayout.Width(scoreAreaRect.width*0.6f));
 		GUILayout.Label(""+info.score, GUILayout.Width(scoreAreaRect.width*0.1f));
 		GUILayout.Label(""+info.tags, GUILayout.Width(scoreAreaRect.width*0.1f));
 		GUILayout.Label(""+info.tagged, GUILayout.Width(scoreAreaRect.width*0.1f));
-		GUILayout.Label(""+((float)info.tags/(float)info.tagged), GUILayout.Width(scoreAreaRect.width*0.1f));
+		float ratio = (info.tags == 0 || info.tagged == 0) ? 0 : (float)info.tags/(float)info.tagged;
+		GUILayout.Label(""+ratio, GUILayout.Width(scoreAreaRect.width*0.1f));
 		GUILayout.EndHorizontal();
+
+		GUI.skin.label.normal.background = org;
 	}
 
 	public IEnumerator Message(object[] args) {

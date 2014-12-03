@@ -110,18 +110,20 @@ public class Player_Controler : MonoBehaviour {
 			SoundUtils.stopAllForClip(gameObject, powerUpSound);
 		}
 
-		Plane[] planes = GeometryUtility.CalculateFrustumPlanes(myCam);
-		foreach(GameObject obj in GameObject.FindGameObjectsWithTag("Player")) {
-			if(obj != gameObject) {
-				GUIText text = obj.GetComponentInChildren<GUIText>();
-				float distance = Vector3.Distance(transform.position, obj.transform.position);
-				if(distance < 50 && GeometryUtility.TestPlanesAABB(planes, obj.collider.bounds)) {
-					// Scale text between 15 and 5 depending on distance
-					text.fontSize = (int)Mathf.Lerp(15, 5, distance/50);
-					text.transform.position = myCam.WorldToViewportPoint(obj.transform.position + new Vector3(0.0f, 1.5f, 0.0f));
-					text.enabled = true;
-				} else {
-					// text.enabled = false;
+		if(myCam != null) {
+			Plane[] planes = GeometryUtility.CalculateFrustumPlanes(myCam);
+			foreach(GameObject obj in GameObject.FindGameObjectsWithTag("Player")) {
+				if(obj != gameObject) {
+					GUIText text = obj.GetComponentInChildren<GUIText>();
+					float distance = Vector3.Distance(transform.position, obj.transform.position);
+					if(distance < 50 && GeometryUtility.TestPlanesAABB(planes, obj.collider.bounds)) {
+						// Scale text between 15 and 5 depending on distance
+						text.fontSize = (int)Mathf.Lerp(15, 5, distance/50);
+						text.transform.position = myCam.WorldToViewportPoint(obj.transform.position + new Vector3(0.0f, 1.5f, 0.0f));
+						text.enabled = true;
+					} else {
+						// text.enabled = false;
+					}
 				}
 			}
 		}
