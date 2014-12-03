@@ -14,6 +14,7 @@ public class IngameMenu : AbstractMenu {
 	private Vector2 scrollPosition;
 	private List<GUIMessage> msgs = new List<GUIMessage>();
 	private List<ScoreInfo> scoreInfo = new List<ScoreInfo>();
+	private Dictionary<string, ScoreInfo> playerInfo = new Dictionary<string, ScoreInfo>();
 
 	private class GUIMessage {
 		public string text;
@@ -38,6 +39,16 @@ public class IngameMenu : AbstractMenu {
 			score = _score;
 			tags = _tags;
 			tagged = _tagged;
+			isTeam = false;
+			color = Color.white;
+		}
+
+		public ScoreInfo(string _name, int _score, bool _isTeam, Color _color) {
+			name = _name;
+			score = _score;
+			tags = tagged = 0;
+			isTeam = _isTeam;
+			color = _color;
 		}
 	}
 
@@ -130,20 +141,42 @@ public class IngameMenu : AbstractMenu {
 	private void gatherData() {
 		scoreInfo.Clear();
 
-		ScoreInfo red = new ScoreInfo("Red Team", NetworkManager.instance.gametype.getTeamScore("Red"), 0, 0);
-		red.color = Color.red;
-		red.isTeam = true;
-		red.players.Add(new ScoreInfo("Player 1", 1, 2, 3));
-		red.players.Add(new ScoreInfo("Player 2", 4, 5, 6));
+		if(NetworkManager.instance.gametype.hasTeams()) {
+			ScoreInfo red = new ScoreInfo("Red", NetworkManager.instance.gametype.getTeamScore("Red"), true, Color.red);
+			ScoreInfo green = new ScoreInfo("Green", NetworkManager.instance.gametype.getTeamScore("Green"), true, Color.green);
 
-		ScoreInfo green = new ScoreInfo("Green Team", NetworkManager.instance.gametype.getTeamScore("Green"), 0, 0);
-		green.color = Color.green;
-		green.isTeam = true;
-		green.players.Add(new ScoreInfo("Player 3", 7, 8, 9));
-		green.players.Add(new ScoreInfo("Player 4", 1, 2, 3));
+			addPlayers(red);
+			addPlayers(green);
 
-		scoreInfo.Add(red);
-		scoreInfo.Add(green);
+			red.name = "Read Team";
+			green.name = "Green Team";
+			scoreInfo.Add(red);
+			scoreInfo.Add(green);
+		} else {
+			addPlayers(null);
+		}
+	}
+
+	private void addPlayers(ScoreInfo info) {
+		GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
+		foreach(GameObject player in players) {
+			if(info != null) {
+				string team = player.GetComponent<Team>().teamName;
+				if(team.Equals(info.name)) {
+					string name = player.GetComponent<Player_Controler>().playerName;
+					if(playerInfo.ContainsKey(name)) {
+						ScoreInfo tmp = playerInfo[name];
+						info.tags += tmp.tags;
+						info.tagged += tmp.tagged;
+						info.players.Add(tmp);
+					} else {
+						info.players.Add(new ScoreInfo(name, 0, 0, 0));
+					}
+				}
+			} else {
+				scoreInfo.Add(playerInfo[player.GetComponent<Player_Controler>().playerName]);
+			}
+		}
 	}
 
 	private void printHeader(Rect scoreAreaRect) {
@@ -195,6 +228,31 @@ public class IngameMenu : AbstractMenu {
 		msgs.Add(guimsg);
 		yield return new WaitForSeconds(30.0f);
 		msgs.Remove(guimsg);
+	}
+
+	public void Tagged(object[] args) {
+		string attacker = (string)args[0];
+		string victim = (string)args[1];
+
+		if(!playerInfo.ContainsKey(attacker)) {
+			playerInfo.Add(attacker, new ScoreInfo(attacker, 0, 0, 0));
+		}
+
+		if(!playerInfo.ContainsKey(victim)) {
+			playerInfo.Add(victim, new ScoreInfo(victim, 0, 0, 0));
+		}
+
+		playerInfo[attacker].score++;
+		playerInfo[attacker].tags++;
+		playerInfo[victim].tagged++;
+	}
+
+	public void Scored(object[] args) {
+		string person = (string)args[0];
+		if(!playerInfo.ContainsKey(person)) {
+			playerInfo.Add(person, new ScoreInfo(person, 0, 0, 0));
+		}
+		playerInfo[person].score += (int)args[1];
 	}
 
 	public void Update() {

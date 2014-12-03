@@ -4,7 +4,7 @@ using System.Collections;
 public class Player_Controler : MonoBehaviour {
 	
 	public float charge = 100.0f; // the amount of aromur and ammo can used
-	private float damage = 40.0f;
+	public float damage = 40.0f;
 	private float dist;
 
 	public float fireCost = 10.0f;
@@ -57,22 +57,13 @@ public class Player_Controler : MonoBehaviour {
 				//if(GetComponent<TeamDeathMatch>().isActive) {
 					if(attacker.GetComponent<Team>().teamName == "Green") {
 						NetworkManager.GametypeSend("IncGreenScore", "none");
-					GetComponent<Player_Network_Controller>().playerScore++;
+						GetComponent<Player_Network_Controller>().playerScore++;
 					} else {
 						NetworkManager.GametypeSend("IncRedScore", "none");
 					}
 				//}
-				NetworkManager.SendTextMessage(attacker.GetComponent<Player_Controler>().playerName + " tagged " + playerName, Color.yellow);
+				NetworkManager.SendTagged(attacker.GetComponent<Player_Controler>().playerName, playerName);
 			}
-		}
-	}
-
-	[RPC]
-	public void LazerBeamHitMe() {
-		subtractCharge(damage);
-		SoundUtils.playSound(gameObject, taggedSound, 1.0f);
-		if(charge <= 0) {
-			SoundUtils.playSound(gameObject, powerDownSound, 0.8f);
 		}
 	}
 

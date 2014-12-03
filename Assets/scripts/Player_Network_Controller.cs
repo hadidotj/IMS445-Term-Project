@@ -91,4 +91,14 @@ public class Player_Network_Controller : MonoBehaviour {
 	public void RPCSetChargedColor(bool on) {
 		setColor((on) ? onColor : onColor*0.25f);
 	}
+
+	[RPC]
+	public void LazerBeamHitMe() {
+		Player_Controler cont = gameObject.GetComponent<Player_Controler>();
+		cont.subtractCharge(cont.damage);
+		SoundUtils.playSound(gameObject, cont.taggedSound, 1.0f);
+		if(cont.charge <= 0) {
+			SoundUtils.playSound(gameObject, cont.powerDownSound, 0.8f);
+		}
+	}
 }

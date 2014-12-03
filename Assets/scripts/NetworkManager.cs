@@ -216,4 +216,21 @@ public class NetworkManager : MonoBehaviour {
 		object[] args = {msg, new Color(color.x, color.y, color.z, 1.0f)};
 		MenuManager.instance.SendMessage("Message", args);
 	}
+
+	public static void SendTagged(string attacker, string victim) {
+		instance.networkView.RPC("SendTaggedRPC", RPCMode.AllBuffered, attacker, victim);
+	}
+
+	[RPC]
+	public void SendTaggedRPC(string attacker, string victim) {
+		object[] args = {attacker + " tagged " + victim, Color.yellow};
+		MenuManager.instance.SendMessage("Message", args);
+		object[] taggedArgs = {attacker, victim};
+		MenuManager.instance.SendMessage("Tagged", taggedArgs);
+	}
+
+
+
+
+
 }
