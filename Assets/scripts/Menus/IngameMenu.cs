@@ -152,7 +152,7 @@ public class IngameMenu : AbstractMenu {
 			green.name = "Green Team";
 			scoreInfo.Add(red);
 			scoreInfo.Add(green);
-			scoreInfo.Sort();
+			scoreInfo.Sort(delegate (ScoreInfo a, ScoreInfo b) { return b.score - a.score; });
 		} else {
 			addPlayers(null);
 		}
