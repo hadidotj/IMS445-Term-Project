@@ -8,6 +8,8 @@ public class AbstractMenu : MonoBehaviour {
 	public virtual void Draw() {
 		Debug.LogWarning("AbstractMenu.Draw() called though it is not implemented. Make sure " + name + " is overriding the Draw method!");
 	}
+
+	public virtual void OnOpen() { }
 	
 	public virtual void ButtonPressed(string buttonName = null) {
 		SoundUtils.playSound(gameObject, menuManager.clickSound);

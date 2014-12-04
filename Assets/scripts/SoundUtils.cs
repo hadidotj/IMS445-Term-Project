@@ -29,22 +29,30 @@ public class SoundUtils {
 	public static bool STARTED = false;
 
 	/**
-	 * Sets the global volume level from the saved user preference
+	 * Sets the global volume level from the saved user preferences
 	 */
 	public void Awake() {
+		SoundUtils.setupSoundUtils();
+	}
+
+	/**
+	 * Sets the global volume level from the saved user preferences
+	 */
+	public static void setupSoundUtils() {
 		if(!STARTED) {
 			STARTED = true;
-
+			
 			if(PlayerPrefs.HasKey(PLAYER_PREF_KEY)) {
-				float volumeSetting = PlayerPrefs.GetFloat(PLAYER_PREF_KEY);
+				float volumeSetting = PlayerPrefs.GetFloat(PLAYER_PREF_KEY, 1.0f);
 				if(volumeSetting >= 0.0f && volumeSetting <= 1.0f) {
 					GLOBAL_VOLUME = volumeSetting;
 				} else {
 					Debug.LogError("ERROR: SoundUtils.cs received invalid volume level setting \"" +
-						volumeSetting + "\" from UserPrefs! Setting gloabl sound to 100%.");
+					               volumeSetting + "\" from UserPrefs! Setting gloabl sound to 100%.");
 				}
 			} else {
 				PlayerPrefs.SetFloat(PLAYER_PREF_KEY, GLOBAL_VOLUME);
+				PlayerPrefs.Save();
 			}
 		}
 	}
@@ -57,6 +65,7 @@ public class SoundUtils {
 		if(volume >= 0.0f && volume <= 1.0f) {
 			GLOBAL_VOLUME = volume;
 			PlayerPrefs.SetFloat(PLAYER_PREF_KEY, volume);
+			PlayerPrefs.Save();
 			return true;
 		}
 		return false;

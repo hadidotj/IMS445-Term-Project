@@ -14,6 +14,11 @@ public class OptionsMenu : AbstractMenu {
 	public void Start() {
 		volumeSetting = SoundUtils.GLOBAL_VOLUME;
 	}
+
+	public override void OnOpen() {
+		SoundUtils.setupSoundUtils();
+		volumeSetting = SoundUtils.GLOBAL_VOLUME;
+	}
 	
 	public override void Draw(){
 		Vector3 mouse = Input.mousePosition;
@@ -68,5 +73,6 @@ public class OptionsMenu : AbstractMenu {
 
 	public void ApplySettings() {
 		SoundUtils.SetGlobalVolume(volumeSetting);
+		PlayerPrefs.Save();
 	}
 }

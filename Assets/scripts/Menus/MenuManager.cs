@@ -54,6 +54,7 @@ public class MenuManager : MonoBehaviour {
 		foreach(AbstractMenu menu in menus) {
 			if(menu.GetType().Name == name) {
 				activeMenu = menu;
+				activeMenu.OnOpen();
 				return;
 			}
 		}
