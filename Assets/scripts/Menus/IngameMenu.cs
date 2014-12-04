@@ -152,6 +152,7 @@ public class IngameMenu : AbstractMenu {
 			green.name = "Green Team";
 			scoreInfo.Add(red);
 			scoreInfo.Add(green);
+			scoreInfo.Sort();
 		} else {
 			addPlayers(null);
 		}

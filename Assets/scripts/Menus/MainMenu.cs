@@ -14,6 +14,20 @@ public class MainMenu : AbstractMenu {
 
 	private int currentHoveredOver = -1;
 
+	public void Awake() {
+		SoundUtils.setupSoundUtils();
+		if(PlayerPrefs.HasKey(OptionsMenu.QUALITY_SETTING_USER_PREF_KEY)) {
+			QualitySettings.SetQualityLevel(PlayerPrefs.GetInt(OptionsMenu.QUALITY_SETTING_USER_PREF_KEY, 0), true);
+		}
+		if(PlayerPrefs.HasKey(OptionsMenu.RESOLUTION_WIDTH_UPK) && PlayerPrefs.HasKey(OptionsMenu.RESOLUTION_HEIGHT_UPK)) {
+			Screen.SetResolution(
+				PlayerPrefs.GetInt(OptionsMenu.RESOLUTION_WIDTH_UPK),
+				PlayerPrefs.GetInt(OptionsMenu.RESOLUTION_HEIGHT_UPK),
+				PlayerPrefs.GetInt(OptionsMenu.FULL_SCREEN_UPK, 1) == 1
+				);
+		}
+	}
+
 	public override void Draw(){
 		float centerX = Screen.width/2.0f;
 		float buttonsHeight = 0.0f;

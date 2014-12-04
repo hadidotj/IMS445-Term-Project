@@ -25,7 +25,7 @@ public class Flag : MonoBehaviour {
 		} else if(held && collider.transform.tag.Equals("Pedistal") &&
 		          (teamHolding.Equals(collider.gameObject.GetComponent<Team>().teamName))) {
 			held = false;
-			cfc.flagCaptured((transform.parent.GetComponent<Team>().teamName.Equals("Red")) ? 1 : 2);
+			cfc.flagCaptured(transform.parent.GetComponent<Player_Controler>().playerName, transform.parent.GetComponent<Team>().teamName);
 			transform.parent = null;
 			transform.position = startingPos;
 			obj = null;

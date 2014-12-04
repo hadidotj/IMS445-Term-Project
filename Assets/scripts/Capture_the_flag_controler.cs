@@ -23,22 +23,27 @@ public class Capture_the_flag_controler : LazerTagGametype {
 		return (redScore == 3 || greenScore == 3);
 	}
 
-	public void flagCaptured(int team) {
-		switch(team) {
-		case 1:
+	public void flagCaptured(string name, string team) {
+		string otherTeam = "Red";
+		Color color = Color.green;
+		
+		if(team.Equals("Red")) {
+			otherTeam = "Green";
+			color = Color.red;
+		}
+
+		NetworkManager.SendTextMessage(name + " captured a " + otherTeam + " flag!", color);
+		NetworkManager.GametypeSend("RPCTargetDestroyed", team);
+	}
+
+	public void RPCTargetDestroyed(string team) {
+		if(team.Equals("Red")) {
 			redScore++;
-			break;
-		case 2:
+		} else {
 			greenScore++;
-			break;
-		default:
-			Debug.Log("There was an error in increaasing the score.");
-			break;
 		}
 	}
 
-	
-	
 	public int getScore(string team){
 		if (team.Equals ("Red"))
 			return redScore;
