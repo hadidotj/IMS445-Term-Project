@@ -266,6 +266,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   header: {fileID: 2800000, guid: 5ce124f901e707943b4b5f244cdb7558, type: 3}
+  apply: {fileID: 2800000, guid: fbb5886072fc8ca428455808d4c199fe, type: 3}
   back: {fileID: 2800000, guid: 6793f3712c576a74982ab66a64267984, type: 3}
 --- !u!114 &822459053
 MonoBehaviour:
@@ -294,6 +295,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerPrefab: {fileID: 100002, guid: 6d695f9c2a4489441b4d6a303a379403, type: 2}
   spectatorPrefab: {fileID: 100000, guid: 3102015cc93fe864f92b3801aae81802, type: 2}
+  currentLevelName: 
+  gametype: {fileID: 0}
 --- !u!114 &822459055
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -12,6 +12,55 @@ using System.Collections;
  */
 [System.Serializable]
 public class SoundUtils {
+	/**
+	 * Key for PlayerPrefs settings
+	 */
+	public static readonly string PLAYER_PREF_KEY = "SoundUtils";
+
+	/**
+	 * Variable for controlling the global volume level.
+	 */
+	public static float GLOBAL_VOLUME = 1.0f;
+
+	/**
+	 * Variable tracking whether the SoundUtils setup
+	 * as occurred (setting global/channel volume)
+	 */
+	public static bool STARTED = false;
+
+	/**
+	 * Sets the global volume level from the saved user preference
+	 */
+	public void Awake() {
+		if(!STARTED) {
+			STARTED = true;
+
+			if(PlayerPrefs.HasKey(PLAYER_PREF_KEY)) {
+				float volumeSetting = PlayerPrefs.GetFloat(PLAYER_PREF_KEY);
+				if(volumeSetting >= 0.0f && volumeSetting <= 1.0f) {
+					GLOBAL_VOLUME = volumeSetting;
+				} else {
+					Debug.LogError("ERROR: SoundUtils.cs received invalid volume level setting \"" +
+						volumeSetting + "\" from UserPrefs! Setting gloabl sound to 100%.");
+				}
+			} else {
+				PlayerPrefs.SetFloat(PLAYER_PREF_KEY, GLOBAL_VOLUME);
+			}
+		}
+	}
+
+	/**
+	 * Sets the global volume.
+	 * @param volume - The global volume level, between 0 and 1.
+	 */
+	public static bool SetGlobalVolume(float volume) {
+		if(volume >= 0.0f && volume <= 1.0f) {
+			GLOBAL_VOLUME = volume;
+			PlayerPrefs.SetFloat(PLAYER_PREF_KEY, volume);
+			return true;
+		}
+		return false;
+	}
 
 	/**
 	 * Plays a unique sound on the given game object. It does not stop other sounds that may be playing.
@@ -26,7 +75,7 @@ public class SoundUtils {
 	public static void playSoundAt(GameObject gameObject, AudioClip clip, float startTime = 0, float volume = 1.0f) {
 		AudioSource src = gameObject.AddComponent<AudioSource> () as AudioSource;
 		src.clip = clip;
-		src.volume = volume;
+		src.volume = GLOBAL_VOLUME * volume;
 		src.rolloffMode = AudioRolloffMode.Linear;
 		src.minDistance = 1.0f;
 		src.maxDistance = 20.0f;
@@ -58,7 +107,7 @@ public class SoundUtils {
 		AudioSource src = gameObject.AddComponent<AudioSource> () as AudioSource;
 		src.clip = clip;
 		src.loop = true;
-		src.volume = volume;
+		src.volume = GLOBAL_VOLUME * volume;
 		src.Play();
 	}
 
